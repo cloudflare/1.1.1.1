@@ -6,5 +6,25 @@
   "repository": "git@github.com:cloudflare/1.1.1.1.git",
   "author": "Cloudflare Inc.",
   "license": "BSD-3-Clause",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@types/i18next": "^8.4.3",
+    "@types/i18next-browser-languagedetector": "^2.0.1",
+    "@types/webpack": "^4.1.1",
+    "@types/webpack-env": "^1.13.5",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.0.7",
+    "pug": "^2.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "ts-loader": "^4.1.0",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "tslint-config-standard": "^7.0.0",
+    "tspath": "^1.2.10",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-serve": "^0.2.0"
+  }
 }
