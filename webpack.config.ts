@@ -6,18 +6,18 @@ import webpack, {
   NoEmitOnErrorsPlugin,
   SourceMapDevToolPlugin
 } from 'webpack'
+import * as HtmlWebpackPlugin from 'html-webpack-plugin'
+import * as CleanWebpackPlugin from 'clean-webpack-plugin'
 
-// type Environmnt
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 const environment = (process.env.NODE_ENV || 'development') as webpack.Configuration['mode']
 const path = require('path')
 const joinP = path.join.bind(null, __dirname)
 const fs = require('fs')
-
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 
 const exclude = /node_modules/
 
@@ -74,13 +74,26 @@ if (environment === 'development') {
   )
 }
 
+let styleLoader = {
+  loader: 'style-loader',
+  options: {
+    sourceMap: true
+  }
+}
+
 if (environment === 'production') {
-  $.plugins.unshift(new CleanWebpackPlugin($.output.path))
+  styleLoader = MiniCssExtractPlugin.loader
+
+  $.plugins.unshift(new CleanWebpackPlugin($.output.path!))
 
   $.plugins.push(
     new SourceMapDevToolPlugin({
       filename: '[file].map'
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css'
+    })
     // new UglifyJsPlugin()
   )
 }
@@ -141,12 +154,7 @@ $.module = {
       test: /\.styl$/,
       exclude,
       use: [
-        {
-          loader: 'style-loader',
-          options: {
-            sourceMap: true
-          }
-        },
+        styleLoader,
         {
           loader: 'css-loader',
           options: {
