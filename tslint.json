@@ -1,0 +1,10 @@
+{
+  "extends": ["tslint-react", "tslint-config-standard"],
+  "defaultSeverity": "warning",
+  "rules": {
+    "jsx-wrap-multiline": false,
+    "jsx-alignment": false,
+    "jsx-no-multiline-js": false,
+    "no-unused-variable": [true, {"severity": "warning"}]
+  }
+}
