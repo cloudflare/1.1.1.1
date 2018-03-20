@@ -1,11 +1,18 @@
 import fs from 'fs'
 import { port } from '../source/utilities/routes'
 import config from '../webpack.config'
+import { say } from 'cowsay'
 const serve = require('webpack-serve')
 
 serve({
   config,
   port,
+  logLevel: 'info',
+  on: {
+    listening: () => {
+      console.log(say({ text: `http://localhost:${port}` }))
+    }
+  }
 //  http2: true,
 //   https: {
 //     key: fs.readFileSync('...key'),   // Private keys in PEM format.

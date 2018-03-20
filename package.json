@@ -16,6 +16,7 @@
     "@types/webpack": "^4.1.1",
     "@types/webpack-env": "^1.13.5",
     "clean-webpack-plugin": "^0.1.19",
+    "cowsay": "^1.2.1",
     "css-loader": "^0.28.11",
     "fork-ts-checker-webpack-plugin": "^0.4.1",
     "html-loader": "^0.5.5",

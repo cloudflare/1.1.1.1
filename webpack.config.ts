@@ -173,7 +173,7 @@ const hotReloadEntries = [
 $.entry['site'] = ['./source/pages/index.ts']
 
 $.plugins.push(new HtmlWebpackPlugin({
-  filename: `pages/index.html`,
+  filename: `index.html`,
   template: joinP('source/pages/index.pug')
 }))
 
