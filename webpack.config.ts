@@ -181,6 +181,7 @@ const hotReloadEntries = [
 $.entry['site'] = ['./source/pages/index.ts']
 
 $.plugins.push(new HtmlWebpackPlugin({
+  favicon: 'media/favicon.png',
   filename: `index.html`,
   template: joinP('source/pages/index.pug')
 }))
