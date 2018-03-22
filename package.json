@@ -16,14 +16,17 @@
     "@types/html-webpack-plugin": "^2.30.3",
     "@types/i18next": "^8.4.3",
     "@types/i18next-browser-languagedetector": "^2.0.1",
+    "@types/platform": "^1.3.1",
     "@types/webpack": "^4.1.1",
     "@types/webpack-env": "^1.13.5",
     "clean-webpack-plugin": "^0.1.19",
     "cowsay": "^1.2.1",
     "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
     "fork-ts-checker-webpack-plugin": "^0.4.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.7",
+    "jstransformer-marked": "^1.0.3",
     "mini-css-extract-plugin": "^0.2.0",
     "pug": "^2.0.1",
     "pug-html-loader": "^1.1.5",
@@ -46,6 +49,7 @@
   ],
   "dependencies": {
     "i18next": "^10.5.1",
-    "i18next-browser-languagedetector": "^2.1.0"
+    "i18next-browser-languagedetector": "^2.1.0",
+    "platform": "^1.3.5"
   }
 }

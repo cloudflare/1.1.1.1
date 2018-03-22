@@ -1,0 +1,29 @@
+section[data-section="setup"]
+  display flex
+  justify-content center
+  flex-flow column
+  font-size .85em
+
+  padding calc(var(--section-vertical-padding) / 2) 12px
+  width 56em
+  max-width 100%
+  margin 0 auto
+
+  &::after
+    content ''
+    display block
+    height 15em
+    background #ccc
+    border 2px solid #444
+    border-radius 3px
+    margin-top 1em
+
+  .instruction-picker
+    display flex
+    align-items center
+    justify-content center
+
+    & > *:not(:last-child)
+      margin-right 1em
+
+

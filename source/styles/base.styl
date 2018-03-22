@@ -1,10 +1,104 @@
-*
-  box-sizing border-box
-
 :root
   --serif-fonts Georgia, serif
   --sans-serif-fonts "Open Sans", Helvetica, Arial, sans-serif
   --monospace-fonts Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
+  --accent-fonts "Roboto Slab", sans-serif
+  --text-color #000000
+  --accent-color #348af0
+  --accent-text-color #0069e4
+  --section-vertical-padding 4em
+  --border-radius .1875em
+
+  --brand-accent-red #f16975
+  --brand-accent-orange #f69259
+  --brand-accent-yellow #ffdb6f
+  --brand-accent-green #65cc9a
+  --brand-accent-light-blue #76c4e2
+  --brand-accent-purple1 #8176b5
+  --brand-accent-purple2 #ba77b1
+  --brand-accent-blue #408bc9
+
+*
+  box-sizing inherit
+
+html
+  text-rendering optimizeLegibility
+  font-family var(--sans-serif-fonts)
+  font-size 10px
+  line-height 1.5
+  word-wrap break-word
+  box-sizing border-box
+  color var(--text-color)
 
 body
-  font-family var(--sans-serif-fonts)
+  font-size 2em
+  margin 0
+
+abbr
+  cursor help
+
+@media (max-width: 56em)
+  :root
+    --section-vertical-padding: 3em
+
+  body
+    font-size: 1.7em
+
+@media (max-width: 48em)
+  body
+    font-size: 1.5em
+
+@media (max-width: 36em)
+  :root
+    --section-vertical-padding 2em
+
+@media (min-height: 48em) and (min-width: 42em)
+  :root
+    --section-vertical-padding 5em
+
+.light-on-dark
+  color white
+  text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
+
+.language-selector
+  position absolute
+  top .5em
+  right .5em
+  font-size .7em
+
+  .selector-label
+    display inline-block
+    & > *:not(:last-child)
+      margin-right .5em
+
+  .dropdown
+    display none
+
+  &[data-dropdown="visible"] .dropdown
+    display block
+
+section[data-section]
+  // min-height 100vh
+  position relative
+
+@import hero
+@import explanation
+@import setup
+@import faq
+@import share
+
+.site-footer
+  background-color #222
+  font-size .7em
+
+  &, a
+    color #eee
+
+  display flex
+  justify-content center
+
+  .links
+    display flex
+
+    *:not(:last-child)
+      margin-right 1em

@@ -1,0 +1,53 @@
+section[data-section="share"]
+  display flex
+  justify-content center
+  align-items center
+  flex-flow column
+
+  padding var(--section-vertical-padding) 12px
+  max-width 100%
+
+  color white
+
+  .accent-background
+    background-image url('~media/peace/concert.jpg')
+    background-size cover
+    background-position center center
+    z-index -1
+    filter blur(3px)
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+
+    &::after
+      content ''
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      background-color var(--brand-accent-purple1)
+      pointer-events none
+      opacity 0.5
+
+
+  .share-buttons
+    display flex
+    align-items center
+
+    .share-button
+      border-radius 50%
+      background-color white
+      color black
+      height 2.5em
+      width 2.5em
+      flex 0 0 auto
+      display flex
+      justify-content center
+      align-items center
+
+      &:not(:last-child)
+        margin-right 1em
+

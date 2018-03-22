@@ -144,9 +144,21 @@ $.module = {
             pretty: false,
             data: {
               NODE_ENV: environment,
+              title: '1.1.1.1 · Cloudflare DNS resolver',
+              description: 'Cloudflare DNS resolver is helping to build a safer and more performant internet.'
+
               // buildHash: git.short()
             }
           }
+        }
+      ]
+    },
+    {
+      test: /\.(png|jpg|gif)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {}
         }
       ]
     },
@@ -181,9 +193,9 @@ const hotReloadEntries = [
 $.entry['site'] = ['./source/pages/index.ts']
 
 $.plugins.push(new HtmlWebpackPlugin({
-  favicon: 'media/favicon.png',
-  filename: `index.html`,
-  template: joinP('source/pages/index.pug')
+  favicon: 'source/media/favicon.png',
+  template: joinP('source/pages/index.pug'),
+  filename: 'index.html'
 }))
 
 export default $
