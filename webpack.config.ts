@@ -135,8 +135,8 @@ $.module = {
         {
           loader: 'html-loader',
           options: {
-            minimize: htmlMinify,
-            attrs: false
+            minimize: htmlMinify
+            // attrs: false
           }
         },
         {
@@ -159,7 +159,9 @@ $.module = {
       use: [
         {
           loader: 'file-loader',
-          options: {}
+          options: {
+            // name: '[path][name].[ext]'
+          }
         }
       ]
     },

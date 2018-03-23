@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@types/clean-webpack-plugin": "^0.1.2",
+    "@types/copy-webpack-plugin": "^4.4.1",
     "@types/html-webpack-plugin": "^2.30.3",
     "@types/i18next": "^8.4.3",
     "@types/i18next-browser-languagedetector": "^2.0.1",
@@ -20,6 +21,7 @@
     "@types/webpack": "^4.1.1",
     "@types/webpack-env": "^1.13.5",
     "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
     "cowsay": "^1.2.1",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
