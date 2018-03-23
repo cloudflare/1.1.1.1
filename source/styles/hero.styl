@@ -3,12 +3,12 @@ section[data-section="hero"]
   justify-content center
   align-items center
   flex-flow column
-  font-family var(--sans-serif-fonts)
+  font-family var(--hero-fonts)
   font-weight 300
   color white
   -webkit-font-smoothing antialiased
   min-height calc(100vh - 5rem)
-  padding var(--section-vertical-padding) 12px
+  padding var(--section-vertical-padding) 1em
   text-align center
   background #eee
   z-index 1
@@ -20,6 +20,10 @@ section[data-section="hero"]
     right 0
     bottom 0
     z-index -1
+
+  .hero-copy > svg
+    height 8rem
+    fill white
 
   h1
     font-size 4em
@@ -100,4 +104,27 @@ section[data-section="hero"]
   &[data-active-slide="5"] > .background-slide:not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(1))
     background-image none !important
 
+section[data-section="hero-continued"]
+  display flex
+  justify-content center
+  align-items center
+  flex-flow column
+  font-family var(--hero-fonts)
+  font-weight 300
+  -webkit-font-smoothing antialiased
+  min-height calc(100vh - 5rem)
+  padding var(--section-vertical-padding) 12px
+  text-align center
+  background #fefefe
 
+
+  .logo
+    display flex
+    justify-content center
+    > svg
+      fill black
+      height 5rem
+
+  h2
+    font-size 2.8rem
+    font-weight 500

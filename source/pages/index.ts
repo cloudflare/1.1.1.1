@@ -2,12 +2,18 @@ import '../styles/base.styl'
 
 import platform from 'platform'
 
+function elementByRef(ref: string): HTMLElement {
+  return <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Hello world! 🚀')
   console.log(platform)
 
+  const deviceLabel = elementByRef('deviceLabel')
+  deviceLabel.textContent = deviceLabel.textContent!.replace('{{device}}', platform.product || 'device')
 
-  const slideshow = <HTMLElement>document.querySelector('[data-ref="slideshow"]')!
+  const slideshow = elementByRef('slideshow')
   const slideCount = slideshow.querySelectorAll('.background-slide').length
 
   window.setInterval(() => {

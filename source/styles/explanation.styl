@@ -1,15 +1,128 @@
+@import "mixins/media-query-variables"
+
 section[data-section="explanation"]
   display flex
   justify-content center
   flex-flow column
   font-size .85em
+  color white
+  background-color #4135D1
+  background-image linear-gradient(160deg, #4135D1, #6435D1)
 
-  padding calc(var(--section-vertical-padding) / 2) 12px
-  width 56em
-  max-width 100%
-  margin 0 auto
+  @media mobileMaxWidthQuery
+    font-size  1.1em
+    line-height 1.6
+
+  .content
+    width 56em
+    max-width 100%
+    margin 0 auto
+    display flex
+
+    .primary
+      padding calc(var(--section-vertical-padding) / 2) 1em
+      flex 1 1 50%
+
+    .secondary
+      flex 1 1 50%
+      position relative
+
+      .top-image, .bottom-image
+        opacity .5
+        position absolute
+        height 50%
+
+      .top-image
+        transform rotate(180deg)
+        top 0
+        right 0
+
+      .bottom-image
+        bottom 0
+        right 0
+
 
   .features
     display grid
     grid-column-gap 3em
     grid-template-columns repeat(3, 1fr)
+
+section[data-section="explanation-continued"]
+  display flex
+  justify-content center
+  flex-flow column
+  min-height 90vh
+
+  .content
+    width 56em
+    max-width 100%
+    text-align center
+    margin 0 auto
+    font-family "Avenir", var(--sans-serif-fonts)
+
+    h1, h2
+      margin 0
+
+    h1
+      font-weight bold
+      font-size 5em
+
+section[data-section="explanation-privacy"]
+  display flex
+  justify-content center
+  flex-flow column
+  background-color #FAFAFA
+
+  @media mobileMaxWidthQuery
+    font-size 1.1em
+    line-height 1.6
+    padding calc(var(--section-vertical-padding) / 2) 1em
+
+  .content
+    width 44em
+    max-width 100%
+    margin 0 auto
+    display flex
+
+    h1
+      text-align center
+
+  .primary
+    flex 0 1 auto
+    height 400px
+    margin-right 2em
+
+  .secondary
+    flex 1 1 50%
+
+section[data-section="explanation-privacy-guarantee"]
+  display flex
+  justify-content center
+  flex-flow column
+  background-color #5534C1
+  color white
+
+  @media mobileMaxWidthQuery
+    font-size 1.1em
+    line-height 1.6
+    padding calc(var(--section-vertical-padding) / 2) 1em
+
+  .content
+    // width 44em
+    // max-width 100%
+    // margin 0 auto
+    display flex
+
+    h1
+      text-align center
+
+  .primary
+    flex 0 1 auto
+    height 300px
+    margin-right 2em
+
+  .secondary
+    flex 1 1 50%
+
+    .copy
+      max-width 40em

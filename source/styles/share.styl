@@ -3,11 +3,23 @@ section[data-section="share"]
   justify-content center
   align-items center
   flex-flow column
-
-  padding var(--section-vertical-padding) 12px
+  overflow hidden
   max-width 100%
-
   color white
+  padding var(--section-vertical-padding) 1em
+
+  @media mobileMaxWidthQuery
+    font-size 1.1em
+    line-height 1.6
+    padding calc(var(--section-vertical-padding) / 2) 1em 2em
+    min-height calc(100vh - 5rem)
+
+    h1
+      line-height 1.2
+
+    h2
+      text-align center
+      line-height 1.4
 
   .accent-background
     background-image url('~media/peace/concert.jpg')

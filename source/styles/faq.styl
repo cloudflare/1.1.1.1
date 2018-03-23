@@ -1,11 +1,24 @@
 section[data-section="faq"]
-  background-color #222
-  color #eee
+  // background-color #222
+  // color #eee
   display flex
   justify-content center
   flex-flow column
   font-size .85em
-
   padding calc(var(--section-vertical-padding) / 2) 30px
-  max-width 100%
-  margin 0 auto
+
+  h1
+    text-align center
+    font-weight 500
+    font-size 3rem
+
+  .content
+    width 33em
+    max-width 100%
+    margin 0 auto
+
+  @media mobileMaxWidthQuery
+    font-size 1.1em
+    line-height 1.6
+    padding calc(var(--section-vertical-padding) / 2) 1em
+

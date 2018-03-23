@@ -9,21 +9,48 @@ section[data-section="setup"]
   max-width 100%
   margin 0 auto
 
-  &::after
-    content ''
+  // &::after
+  //   content ''
+  //   display block
+  //   height 15em
+  //   background #ccc
+  //   border 2px solid #444
+  //   border-radius 3px
+  //   margin-top 1em
+
+  .instructions
+    display none
+
+  &[data-platform="mac-os"] .instructions[data-platform="mac-os"],
+  &[data-platform="linux"] .instructions[data-platform="linux"],
+  &[data-platform="windows"] .instructions[data-platform="windows"],
+  &[data-platform="android"] .instructions[data-platform="android"],
+  &[data-platform="iphone"] .instructions[data-platform="iphone"]
     display block
-    height 15em
-    background #ccc
-    border 2px solid #444
-    border-radius 3px
-    margin-top 1em
 
   .instruction-picker
     display flex
     align-items center
     justify-content center
+    margin-bottom 1em
 
     & > *:not(:last-child)
-      margin-right 1em
+      margin-right .5em
 
+    .choice
+      cursor pointer
+      border-radius 3px
+      padding .3em .6em
 
+      .label
+        margin-left .6em
+
+      &.selected
+        background #000
+        color #fff
+
+  .instruction-video
+    display block
+    width 1100px
+    margin 0 auto
+    max-width 100%

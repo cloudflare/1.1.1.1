@@ -1,0 +1,43 @@
+section(data-section="setup" data-platform="mac-os")
+  h1(data-ref="deviceLabel") Configure your {{device}}
+
+  p
+    | Setting up <strong>1.1.1.1</strong> takes less than 5 minutes and requires no technical skill or special software.
+    | Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.
+
+  .instruction-picker.desktop-only
+    .choice.selected
+      i.fab.fa-apple
+      span.label MacOS
+    .choice
+      i.fab.fa-linux
+      span.label Linux
+    .choice
+      i.fab.fa-windows
+      span.label Windows
+    .choice
+      i.fas.fa-mobile
+      span.label iPhone
+    .choice
+      i.fab.fa-android
+      span.label Android
+
+  .instructions(data-platform="mac-os")
+    ol
+      li Open System Preferences.
+      li Search for “DNS Servers” and select it from the dropdown.
+      li Click the + button to add a DNS Server and enter <strong>1.1.1.1</strong>
+      li Click + again and enter <strong>1.0.0.1</strong> (This is for redundancy.)
+      li Click OK.
+      li Click Apply.
+
+    video.instruction-video(
+      src="source/media/instructions/instructions-mac.mp4"
+      autoplay
+      muted
+      loop)
+
+  .instructions(data-platform="linux")
+  .instructions(data-platform="windows")
+  .instructions(data-platform="iphone")
+  .instructions(data-platform="android")
