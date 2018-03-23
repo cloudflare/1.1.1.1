@@ -40,7 +40,8 @@ $.resolve = {
 }
 
 $.output = {
-  publicPath: '/',
+  // publicPath: '/',
+  publicPath: '',
   path: joinP('build'),
   filename: '[name].js',
   library: '[name]',
