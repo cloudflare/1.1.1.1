@@ -154,13 +154,18 @@ $.module = {
       ]
     },
     {
-      test: /\.(png|jpg|gif)$/,
+      test: /\.(png|jpg|gif|mp4)$/,
       use: [
         {
           loader: 'file-loader',
           options: {}
         }
       ]
+    },
+    {
+      test: /\.svg$/,
+      loader: 'svg-inline-loader',
+      exclude
     },
     {
       test: /\.styl$/,
