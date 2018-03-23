@@ -135,8 +135,8 @@ $.module = {
         {
           loader: 'html-loader',
           options: {
-            minimize: htmlMinify
-            // attrs: false
+            minimize: htmlMinify,
+            attrs: ['img:src', 'video:src']
           }
         },
         {
