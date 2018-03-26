@@ -1,14 +1,15 @@
 import '../styles/base.styl'
 
 import platform from 'platform'
+import { logoBanner } from './console'
 
 function elementByRef(ref: string): HTMLElement {
   return <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('Hello world! 🚀')
-  console.log(platform)
+  console.log(logoBanner)
+  console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
   const deviceLabel = elementByRef('deviceLabel')
   deviceLabel.textContent = deviceLabel.textContent!.replace('{{device}}', platform.product || 'device')
