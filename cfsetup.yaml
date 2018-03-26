@@ -1,0 +1,15 @@
+jessie:
+    build:
+        builddeps:
+            - nodejs=8.9.1-0
+            - git
+            - ssh
+        pre-cache:
+            - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+            - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+            - sudo apt-get update && sudo apt-get install yarn
+        post-cache:
+            - curl https://s3.amazonaws.com/stout-builds/1.3.1/stout-linux > stout
+            - chmod +x stout
+            - yarn install
+            - yarn build
