@@ -3,7 +3,8 @@
 :root
   --serif-fonts Georgia, serif
   --hero-fonts "Helvetica Neue", "Helvetica", sans-serif
-  --sans-serif-fonts "Avenir", "Open Sans", Helvetica, Arial, sans-serif
+  // --sans-serif-fonts "Avenir", "Open Sans", Helvetica, Arial, sans-serif
+  --sans-serif-fonts "Open Sans", Helvetica, Arial, sans-serif
   --monospace-fonts Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace
   --accent-fonts "Roboto Slab", sans-serif
   --text-color #000000
@@ -95,6 +96,65 @@ body
 section[data-section]
   // min-height 100vh
   position relative
+
+[role="button"], .button
+  cursor pointer
+
+.button
+  display inline-block
+  appearance none
+  background none
+  border none
+  padding .6em 2.5em
+  font-weight 600
+  font-family var(--sans-serif-fonts)
+  letter-spacing .2em
+  text-transform uppercase
+  cursor pointer
+  position relative
+  text-decoration none
+  border 2px solid transparent
+  user-select none
+  color black
+  transition transform .1s ease-in-out
+
+  .button-content
+    display inline-block
+    border-bottom 1px solid transparent
+    transition border-bottom-color .1s ease-in-out
+
+  &:hover
+    transform translate3d(0, -1px, 0)
+    outline none
+
+    .button-content
+      border-bottom-color currentColor
+
+  &:focus
+    outline none
+
+  &:not(:hover):focus .button-content
+    border-bottom-style dashed
+
+  &:active
+    transform translate3d(0, 1px, 0)
+
+  &.primary, &.selected
+    background black
+    color white
+
+    &:hover .button-content
+      border-bottom-color white
+
+  &.secondary
+    border-color black
+
+    &:hover .button-content
+      border-bottom-color black
+
+    // &::before
+    //   box-shadow inset 0px 0px 0px 1px rgba(0,0,0,.2)
+
 
 @import hero
 @import explanation

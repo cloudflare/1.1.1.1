@@ -1,26 +1,29 @@
-section(data-section="setup" data-platform="mac-os")
-  h1(data-ref="deviceLabel") Configure your {{device}}
+section#setup-instructions(data-section="setup" data-ref="setup")
+  h1(data-ref="deviceLabel" data-label='Setup on {{device}}')
 
   p
     | Setting up <strong>1.1.1.1</strong> takes less than 5 minutes and requires no technical skill or special software.
     | Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.
 
-  .instruction-picker.desktop-only
-    .choice.selected
+  .instruction-picker.desktop-only(data-ref="instructionPicker")
+    button.button.choice(type="button" data-platform="mac-os")
       i.fab.fa-apple
       span.label MacOS
-    .choice
+    button.button.choice(type="button" data-platform="linux")
       i.fab.fa-linux
       span.label Linux
-    .choice
+    button.button.choice(type="button" data-platform="windows")
       i.fab.fa-windows
       span.label Windows
-    .choice
+    button.button.choice(type="button" data-platform="iphone")
       i.fas.fa-mobile
       span.label iPhone
-    .choice
+    button.button.choice(type="button" data-platform="android")
       i.fab.fa-android
       span.label Android
+    button.button.choice(type="button" data-platform="router")
+      i.fas.fa-sitemap
+      span.label Router (Advanced)
 
   .instructions(data-platform="mac-os")
     ol
@@ -28,8 +31,8 @@ section(data-section="setup" data-platform="mac-os")
       li Search for “DNS Servers” and select it from the dropdown.
       li Click the + button to add a DNS Server and enter <strong>1.1.1.1</strong>
       li Click + again and enter <strong>1.0.0.1</strong> (This is for redundancy.)
-      li Click OK.
-      li Click Apply.
+      li Click “Ok”, then click “Apply”.
+      li You’re all set! Your device now has faster, more private DNS servers 🚀
 
     video.instruction-video(
       src="~media/instructions/instructions-mac.mp4"
@@ -37,7 +40,47 @@ section(data-section="setup" data-platform="mac-os")
       muted
       loop)
 
-  .instructions(data-platform="linux")
-  .instructions(data-platform="windows")
   .instructions(data-platform="iphone")
+    ol
+      li From your iPhone’s home screen, open the <strong>Settings</strong> app.
+      li Tap <strong>“Wi-Fi”</strong>, then tap your preferred network in the list.
+      li Tap the <strong>“DNS”</strong> field, then erase the number in the field.
+      li Enter <strong>1.1.1.1, 1.0.0.1</strong>
+      li Tap the <strong>“Wi-Fi”</strong> button on the top left.
+
+  .instructions(data-platform="linux")
+    ol
+      li From your iPhone's home screen, open the <strong>Settings</strong> app.
+      li Tap <strong>“Wi-Fi”</strong>, then tap your preferred network in the list.
+      li Tap the <strong>“DNS”</strong> field, then erase the number in the field.
+      li Enter <strong>1.1.1.1, 1.0.0.1</strong>
+      li Tap the <strong>“Wi-Fi”</strong> button on the top left.
+      li You’re all set! Your device now has faster, more private DNS servers 🚀
+
+  .instructions(data-platform="windows")
   .instructions(data-platform="android")
+    p:em
+      | Note that Android requires a static IP to use custom DNS servers.
+      | This setup requires additional setup on your router, affecting your network’s strategy for adding new devices to the network.
+      | We recommend configuring your router’s DNS instead.
+      | This will give all devices on your network the full speed and privacy benefits of Cloudflare DNS.
+    ol
+      li From your Android’s app list, open the <strong>Settings</strong> app.
+      li Under the <strong>“Wireless & networks”</strong> section, tap <strong>“Wi-Fi”</strong>,
+      li Long press your preferred network in the list until a context menu appears.
+      li Tap the <strong>“Modify network”</strong>, then tap <strong>“Advanced options”</strong>.
+      li Tap <strong>“Advanced options”</strong>, then tap <strong>“IP Settings”</strong>.
+      li Change <strong>“Dynamic”</strong> to <strong>“Static”</strong>.
+      li Using your router’s configuration, enter your device’s IP address and gateway.
+      li Tap the <strong>“DNS”</strong> field, then erase the number in the field.
+      li In the <strong>“DNS 1”</strong> field, enter <strong>1.1.1.1</strong>
+      li In the <strong>“DNS 2”</strong> field, enter <strong>1.0.0.1</strong> (This is for redundancy.)
+      li Tap </strong>“Save”</strong>.
+      li You’re all set! Your device now has faster, more private DNS servers 🚀
+
+  .instructions(data-platform="router")
+    p
+      | Configuring your router requires some technical knowledge.
+
+    p DNS server 1: <strong>1.1.1.1</strong>
+    p DNS server 2: <strong>1.0.0.1</strong>
