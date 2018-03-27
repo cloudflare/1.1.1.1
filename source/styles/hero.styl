@@ -1,39 +1,59 @@
+@import "mixins/media-query-variables"
+
 section[data-section="hero"]
   display flex
-  justify-content center
-  align-items center
+  // justify-content center
+  // align-items center
   flex-flow column
-  font-family var(--hero-fonts)
+  font-family var(--sans-serif-fonts)
   font-weight 300
-  color white
+  color black
   -webkit-font-smoothing antialiased
   min-height calc(100vh - 5rem)
   padding var(--section-vertical-padding) 1em
-  text-align center
-  background #eee
+  text-align left
+  background #fff
   z-index 1
 
-  .hero-background
-    position absolute
-    left 0
-    top 0
-    right 0
-    bottom 0
-    z-index -1
+  @media desktopMinWidthQuery
+    padding var(--section-vertical-padding) 5em
 
   .hero-copy > svg
-    height 8rem
-    fill white
-
-  h1
-    font-size 4em
-
-  h2
-    font-size 2.5em
-    margin-bottom .5em
+    height 10rem
+    fill black
 
   h3
-    margin-top .5em
+    text-transform uppercase
+
+  h2
+    font-weight 300
+
+
+  .actions
+    .button:not(:last-child)
+      margin-right 2em
+
+    .button
+      font-size 2rem
+
+  // .hero-background
+  //   position absolute
+  //   left 0
+  //   top 0
+  //   right 0
+  //   bottom 0
+  //   z-index -1
+
+
+  // h1
+  //   font-size 4em
+
+  // h2
+  //   font-size 2.5em
+  //   margin-bottom .5em
+
+  // h3
+  //   margin-top .5em
 
 .slideshow
   height 100%
