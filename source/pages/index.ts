@@ -1,6 +1,7 @@
 import '../styles/base.styl'
 
 import platform from 'platform'
+import SweetScroll from 'sweet-scroll'
 import { logoBanner } from './console'
 
 function elementByRef(ref: string): HTMLElement {
@@ -10,6 +11,7 @@ function elementByRef(ref: string): HTMLElement {
 document.addEventListener('DOMContentLoaded', () => {
   console.log(logoBanner)
   console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
+  const scroller = new SweetScroll()
 
   const deviceLabel = elementByRef('deviceLabel')
   deviceLabel.textContent = deviceLabel.textContent!.replace('{{device}}', platform.product || 'device')
