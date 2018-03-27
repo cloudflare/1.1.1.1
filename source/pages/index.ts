@@ -33,8 +33,8 @@ function ref(ref: string): HTMLElement {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // console.log(logoBanner)
-  // console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
+  console.log(logoBanner)
+  console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
   const scroller = new SweetScroll()
 
@@ -73,11 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   chooseInstructions(device.id)
 
-  // const slideCount = $el.slideshow.querySelectorAll('.background-slide').length
+  const slideCount = $el.slideshow.querySelectorAll('.background-slide').length
 
-  // window.setInterval(() => {
-  //   const slideIndex = parseInt($el.slideshow.dataset.activeSlide!, 10)
+  window.setInterval(() => {
+    const slideIndex = parseInt($el.slideshow.dataset.activeSlide!, 10)
 
-  //   $el.slideshow.dataset.activeSlide = (slideIndex > slideCount - 1 ? 1 : slideIndex + 1).toString()
-  // }, 3000)
+    $el.slideshow.dataset.activeSlide = (slideIndex > slideCount - 1 ? 1 : slideIndex + 1).toString()
+  }, 6000)
 })
