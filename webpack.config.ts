@@ -8,6 +8,7 @@ import webpack, {
 } from 'webpack'
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as CleanWebpackPlugin from 'clean-webpack-plugin'
+import * as CopyWebpackPlugin from 'copy-webpack-plugin'
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -62,7 +63,11 @@ $.plugins = [
   new DefinePlugin(bundleDefinitions),
   new ForkTsCheckerWebpackPlugin({
     tsconfig: joinP('source/tsconfig.json')
-  })
+  }),
+  new CopyWebpackPlugin([{
+    to: 'media',
+    from: joinP('source/media')
+  }])
 ]
 
 if (environment === 'development') {
@@ -145,10 +150,8 @@ $.module = {
             pretty: false,
             data: {
               NODE_ENV: environment,
-              title: '1.1.1.1 · Cloudflare DNS resolver',
-              description: 'Cloudflare DNS resolver is helping to build a safer and more performant internet.'
-
-              // buildHash: git.short()
+              title: 'Cloudflare DNS Resolver · 1.1.1.1',
+              description: 'Browse a faster, more private internet.'
             }
           }
         }
