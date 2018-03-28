@@ -21,7 +21,6 @@
   --brand-accent-purple1 #8176b5
   --brand-accent-purple2 #ba77b1
   --brand-accent-blue #408bc9
-
 *
   box-sizing inherit
 
@@ -69,6 +68,14 @@ body
   :root
     --section-vertical-padding 5em
 
+code
+  font-family var(--monospace-fonts)
+
+  &.inline
+    background rgba(0, 0 , 0, .05)
+    display inline-block
+    padding 0 .25em
+
 .light-on-dark
   color white
   text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
@@ -94,18 +101,27 @@ body
     display block
 
 section[data-section]
-  // min-height 100vh
   position relative
 
 [role="button"], .button
   cursor pointer
+
+.inline-button
+  display inline-block
+  appearance none
+  background none
+  border none
+  padding 0
+  cursor pointer
+  font-family inherit
+  font-size inherit
 
 .button
   display inline-block
   appearance none
   background none
   border none
-  padding .6em 2.5em
+  padding .6em 1.5em
   font-weight 600
   font-family var(--sans-serif-fonts)
   letter-spacing .2em
@@ -113,7 +129,7 @@ section[data-section]
   cursor pointer
   position relative
   text-decoration none
-  border 2px solid transparent
+  border 3px solid transparent
   user-select none
   color black
   transition transform .1s ease-in-out
@@ -152,9 +168,36 @@ section[data-section]
     &:hover .button-content
       border-bottom-color black
 
+  &.secondary.inverted
+    color white
+    border-color white
+
+    &:hover .button-content
+      border-bottom-color white
+
     // &::before
     //   box-shadow inset 0px 0px 0px 1px rgba(0,0,0,.2)
 
+.message
+  &.center
+    text-align center
+    .message-content
+      display inline-block
+
+.message-content
+  border-radius 3px
+  background rgba(0,0,0,0.6)
+  color white
+  padding 1rem 1.5rem
+  font-size .8em
+  line-height 1.6
+
+p.collapsed-margins
+  margin 0
+
+ul, ol
+  > li + li
+    margin-top .5em
 
 @import hero
 @import explanation

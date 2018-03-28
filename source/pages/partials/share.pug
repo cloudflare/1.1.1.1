@@ -1,16 +1,41 @@
 section(data-section="share")
   .accent-background
 
-  h1.light-on-dark #1dot1dot1dot1
-  h2.light-on-dark Fast, safe, and secure internet is here.
+  h2.light-on-dark Fast, safe, and private internet is here.
 
   .share-buttons
-    a.share-button(href="" target="_blank")
+    a.button.share-button(
+      target="_blank"
+      href=formatURL({
+        host: 'https://twitter.com/intent/tweet',
+        query: {
+          via: 'cloudflare',
+          text: 'Fast, safe, and private internet is here. Setup Cloudflare’s DNS Resolver in less than 5 minutes',
+          hashtags: '#1dot1dot1dot1',
+          url: 'https://1.1.1.1'
+        }
+      })
+    )
       i.fab.fa-twitter
 
-    a.share-button(href="" target="_blank")
+    a.button.share-button(
+      target="_blank"
+      href=formatURL({
+        host: 'https://www.facebook.com/sharer/sharer.php',
+        query: {
+          u: 'https://1.1.1.1'
+        }
+      }))
       i.fab.fa-facebook
 
-    a.share-button(href="mailto:?subject%3DFaster%20and%20safer%20internet%20in%205%20minutes%2C%20Cloudflare's%201.1.1.1&body%3DCheck%20it%20out!%20https%3A%2F%2F1.1.1.1" target="_blank")
+    a.button.share-button(
+      target="_blank"
+      href=formatURL({
+        host: 'mailto:',
+        query: {
+          via: 'cloudflare',
+          subject: 'Browse a faster, more private internet — Cloudflare DNS Resolver 1.1.1.1',
+          body: '“1.1.1.1” makes internet browsing faster and more private. Check out Cloudflare’s https://1.1.1.1 for more info and how to setup your device in less than 5 minutes!'
+        }
+      }))
       i.fas.fa-envelope
-

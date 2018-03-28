@@ -1,41 +1,44 @@
 section#explanation(data-section="explanation")
   .content
     .primary
-      h1 DNS: Internet’s Directory
+      h1(style="margin-top: 0") DNS: Internet’s Directory
 
       p
-        | Nearly everything on the Internet starts with a DNS request. DNS is the Internet's directory. Click on a link, open an app, send an email and the first thing your device asks the directory: Where can I find this?
-
-
-      p
-        | Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it target you with ads. We think that's gross. If you do too, now there's an alternative...
+        | Nearly everything on the Internet starts with a DNS request. DNS is the Internet's directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory: <strong>Where can I find this?</strong>
 
     .secondary.desktop-only
-      img.top-image(src="~media/dns-graphic-transparent.png")
-      img.bottom-image(src="~media/dns-graphic-transparent.png")
+      img(src="~media/dns-book-closed.png" style="height: 20rem")
+
+  .content
+    .secondary.desktop-only
+      img(src="~media/dns-explanation.png" style="height: 33rem")
+
+    .primary
+      p
+        | Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it target you with ads.
+
+      p We think that's gross. If you do too, now there's an alternative...
+
+      .logo-container
+        h1.hero-copy(alt="1.1.1.1 Cloudflare DNS Resolver")
+          include ../../media/logo.svg
+        h2 Cloudflare DNS Resolver
+
 
 section(data-section="explanation-privacy")
   .content
-    img.primary.desktop-only(src="~media/privacy.png")
+    img.primary.desktop-only(src="~media/safe-ty.png")
     .secondary
-      h1 Privacy First
+      h1 Privacy First. Guaranteed.
+
+      p We’re rethinking the 1985-era DNS protocol. <strong>1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.
+
       p We will never sell your data or use it to target ads. Period.
 
-      p We never log your IP address (the way other companies identify you). And we’re not just saying that. We’ve retained KMPG to audit our systems annually to ensure that we're doing what we say.
+      p We will never log your IP address (the way other companies identify you). And we’re not just saying that. We’ve retained <a href="https://home.kpmg.com/us/en/home.html" target="_blank">KPMG</a> to audit our systems annually to ensure that we're doing what we say.
 
       p Frankly, we don't want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.
 
-section(data-section="explanation-privacy-guarantee")
-  .content
-    img.primary.desktop-only(src="~media/peace/6.png")
-    .secondary
-      .copy
-        h1 A Privacy Guarantee
-
-        p
-          | Beyond that, we’re rethinking the 1985-era DNS protocol. 1.1.1.1 supports encrypted DNS as well as DNS over HTTPS.
-          | Here are the technical details for the geeks in the audience.
-          | Together we can build a privacy first DNS future.
 
 section(data-section="explanation-stats")
   .content
@@ -43,9 +46,9 @@ section(data-section="explanation-stats")
 
     .secondary
       .copy
-        h1 Speed Kills
+        h1 20% faster than anything else
 
-        p We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor DNSPerf ranks 1.1.1.1 the fastest DNS service in the world. As of April 1, 2018, we’re 53% faster than second place, which means we're at least 53% faster than whatever you're using today.
+        p We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor DNSPerf ranks 1.1.1.1 the fastest DNS service in the world.
 
         p Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.
 

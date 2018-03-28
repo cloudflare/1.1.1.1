@@ -6,52 +6,52 @@ section[data-section="explanation"]
   flex-flow column
   font-size .85em
   color white
-  background-color #4135D1
-  background-image linear-gradient(160deg, #4135D1, #6435D1)
+  background-color #292075
+  background-image linear-gradient(160deg, #292075, #502075)
 
   @media mobileMaxWidthQuery
     font-size  1.1em
     line-height 1.6
 
   .content
-    width 56em
+    width 120rem
     max-width 100%
     margin 0 auto
     display flex
+    padding calc(var(--section-vertical-padding) / 2) 1em
 
     .primary
-      padding calc(var(--section-vertical-padding) / 2) 1em
       flex 1 1 50%
 
     .secondary
       flex 1 1 50%
       position relative
+      justify-content center
+      display flex
+      align-items center
 
-      .top-image, .bottom-image
-        opacity .5
-        position absolute
-        height 50%
+  .logo-container
+    margin-top 2em
+    text-align center
 
-      .top-image
-        transform rotate(180deg)
-        top 0
-        right 0
+    .hero-copy
+      margin-bottom 0
+      & > svg
+        height 5rem
+        fill #fff
 
-      .bottom-image
-        bottom 0
-        right 0
-
-
-  .features
-    display grid
-    grid-column-gap 3em
-    grid-template-columns repeat(3, 1fr)
+    h2
+      margin-top 0
+      font-weight 300
 
 section[data-section="explanation-privacy"]
   display flex
   justify-content center
   flex-flow column
-  background-color #FAFAFA
+  background-color #3a154a
+  color white
+  background-image linear-gradient(24deg, #3a154a, #13081d)
+
 
   @media mobileMaxWidthQuery
     font-size 1.1em
@@ -59,13 +59,13 @@ section[data-section="explanation-privacy"]
     padding calc(var(--section-vertical-padding) / 2) 1em
 
   .content
-    width 44em
+    width 100rem
     max-width 100%
     margin 0 auto
     display flex
 
     h1
-      text-align center
+      font-weight 300
 
   .primary
     flex 0 1 auto
@@ -74,39 +74,6 @@ section[data-section="explanation-privacy"]
 
   .secondary
     flex 1 1 50%
-
-section[data-section="explanation-privacy-guarantee"]
-  display flex
-  justify-content center
-  flex-flow column
-  background-color #5534C1
-  color white
-
-  @media mobileMaxWidthQuery
-    font-size 1.1em
-    line-height 1.6
-    padding calc(var(--section-vertical-padding) / 2) 1em
-
-  .content
-    // width 44em
-    // max-width 100%
-    // margin 0 auto
-    display flex
-
-    h1
-      text-align center
-
-  .primary
-    flex 0 1 auto
-    height 300px
-    margin-right 2em
-
-  .secondary
-    flex 1 1 50%
-
-    .copy
-      max-width 40em
-
 
 section[data-section="explanation-stats"]
   display flex
@@ -125,12 +92,9 @@ section[data-section="explanation-stats"]
     @media desktopMinWidthQuery
       align-items center
       margin 0 auto
-    // width 44em
-    // max-width 100%
-    // margin 0 auto
 
     h1
-      text-align center
+      font-weight 300
 
   .primary
     flex 0 1 auto

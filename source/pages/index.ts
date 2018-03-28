@@ -18,6 +18,10 @@ const deviceInfo: { [index: string]: DeviceInfo } = {
     label: 'MacOS',
     id: 'mac-os'
   },
+  'Linux': {
+    label: 'Linux',
+    id: 'linux'
+  },
   'iOS': {
     label: 'iOS',
     id: 'iphone'
@@ -33,10 +37,10 @@ function ref(ref: string): HTMLElement {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // console.log(logoBanner)
-  // console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
+  console.log(logoBanner)
+  console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
-  const scroller = new SweetScroll()
+  const scroller = new SweetScroll() // Initialized for its DOM side effects.
 
   const $el = {
     instructionPicker: ref('instructionPicker'),
@@ -44,14 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     deviceLabel: ref('deviceLabel'),
     slideshow: ref('slideshow'),
     setupSection: ref('setup')
-    // instructionsContent: ref('instructionsContent'),
-    // setupButton: ref('setupButton'),
-    // infoButton: ref('infoButton')
   }
 
-  // $el.infoButton.addEventListener('click', )
-
-  function chooseInstructions (platform: string) {
+   function chooseInstructions (platform: string) {
     $el.instructionChoices.forEach((choice: HTMLElement) => {
       choice.classList.toggle('selected', choice.dataset.platform === platform)
     })
@@ -59,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     $el.setupSection.dataset.platform = platform
     $el.deviceLabel.textContent = $el.deviceLabel.dataset.label!.replace('{{device}}', device.label)
   }
+
+  Object.assign(window, {chooseInstructions})
 
   $el.instructionChoices.forEach((choice: HTMLElement) => {
     choice.addEventListener('click', chooseInstructions.bind(null, choice.dataset.platform))
@@ -73,11 +74,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   chooseInstructions(device.id)
 
-  // const slideCount = $el.slideshow.querySelectorAll('.background-slide').length
+  const slideCount = $el.slideshow.querySelectorAll('.background-slide').length
 
-  // window.setInterval(() => {
-  //   const slideIndex = parseInt($el.slideshow.dataset.activeSlide!, 10)
+  window.setInterval(() => {
+    const slideIndex = parseInt($el.slideshow.dataset.activeSlide!, 10)
 
-  //   $el.slideshow.dataset.activeSlide = (slideIndex > slideCount - 1 ? 1 : slideIndex + 1).toString()
-  // }, 3000)
+    $el.slideshow.dataset.activeSlide = (slideIndex > slideCount - 1 ? 1 : slideIndex + 1).toString()
+  }, 6000)
 })

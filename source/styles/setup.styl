@@ -17,6 +17,7 @@ section[data-section="setup"]
   &[data-platform="windows"] .instructions[data-platform="windows"],
   &[data-platform="android"] .instructions[data-platform="android"],
   &[data-platform="iphone"] .instructions[data-platform="iphone"]
+  &[data-platform="router"] .instructions[data-platform="router"]
     display block
 
   .instruction-picker
@@ -36,6 +37,16 @@ section[data-section="setup"]
 
       .label
         margin-left .6em
+
+      // Background color fix
+      &.selected svg.fa-linux
+        background white
+        border-radius 4px
+        padding 1px
+
+        path
+          fill black
+
 
   .instruction-video
     display block

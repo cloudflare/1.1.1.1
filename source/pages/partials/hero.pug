@@ -14,6 +14,14 @@ section(data-section="hero")
       span.language(data-locale='zh-Hant') 中國傳統的
       span.language(data-locale='ja-jp') 日本語
 
+  .hero-background
+    .slideshow(data-ref="slideshow" data-active-slide="1")
+      .background-slide(data-slide="1")
+      .background-slide(data-slide="2")
+      .background-slide(data-slide="3")
+      .background-slide(data-slide="4")
+      .background-slide(data-slide="5")
+
   h3 Introducing
 
   h1.hero-copy(alt="1.1.1.1 Cloudflare DNS resolver")
@@ -22,23 +30,8 @@ section(data-section="hero")
   h2 You’re 5 minutes away from browsing a faster, more private internet.
 
   .actions
-    a.button.primary(role="button" data-scroll href="#setup-instructions")
-      .button-content Setup
-    a.button.secondary(role="button" data-scroll href="#explanation")
+    a.button.secondary.inverted(role="button" data-scroll href="#setup-instructions")
+      .button-content Get Started
+    .spacer.mobile-only
+    a.button.secondary.inverted(role="button" data-scroll href="#explanation")
       .button-content Info
-
-  //- .hero-background
-    .slideshow(data-ref="slideshow" data-active-slide="1")
-      .background-slide(data-slide="1")
-      .background-slide(data-slide="2")
-      .background-slide(data-slide="3")
-      .background-slide(data-slide="4")
-      .background-slide(data-slide="5")
-
-
-
-    //- h3 Setup in minutes. Completely free, forever.
-
-//- section(data-section="hero-continued")
-    .logo
-      include ../../media/logo.svg
