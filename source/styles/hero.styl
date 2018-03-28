@@ -25,12 +25,25 @@ section[data-section="hero"]
   h3
     text-transform uppercase
 
-  h2
-    font-weight 300
+  @media desktopMinWidthQuery
+    h2
+      font-weight 300
 
   .actions
-    .button:not(:last-child)
-      margin-right 2em
+    display flex
+
+    @media mobileMaxWidthQuery
+      display block
+      width 100%
+      max-width 100%
+      margin-top 1em
+
+      .button:not(:last-child)
+        margin-bottom 1em
+
+    @media desktopMinWidthQuery
+      .button:not(:last-child)
+        margin-right 2em
 
     .button
       font-size 2rem
