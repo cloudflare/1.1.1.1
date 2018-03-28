@@ -1,6 +1,0 @@
-default:
-  root: 'build'
-
-production:
-  bucket: 'every1dns-landing'
-  s3Host: 's3.in.pdx.cfdata.org'
