@@ -9,6 +9,7 @@ import webpack, {
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as CleanWebpackPlugin from 'clean-webpack-plugin'
 import * as CopyWebpackPlugin from 'copy-webpack-plugin'
+import { format as formatURL } from 'url'
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -149,6 +150,7 @@ $.module = {
           options: {
             pretty: false,
             data: {
+              formatURL,
               NODE_ENV: environment,
               title: 'Cloudflare DNS Resolver · 1.1.1.1',
               description: 'Browse a faster, more private internet.'
