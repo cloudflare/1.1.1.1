@@ -68,6 +68,14 @@ body
   :root
     --section-vertical-padding 5em
 
+code
+  font-family var(--monospace-fonts)
+
+  &.inline
+    background rgba(0, 0 , 0, .05)
+    display inline-block
+    padding 0 .25em
+
 .light-on-dark
   color white
   text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
@@ -97,6 +105,16 @@ section[data-section]
 
 [role="button"], .button
   cursor pointer
+
+.inline-button
+  display inline-block
+  appearance none
+  background none
+  border none
+  padding 0
+  cursor pointer
+  font-family inherit
+  font-size inherit
 
 .button
   display inline-block

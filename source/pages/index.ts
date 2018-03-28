@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSection: ref('setup')
   }
 
-  function chooseInstructions (platform: string) {
+   function chooseInstructions (platform: string) {
     $el.instructionChoices.forEach((choice: HTMLElement) => {
       choice.classList.toggle('selected', choice.dataset.platform === platform)
     })
@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
     $el.setupSection.dataset.platform = platform
     $el.deviceLabel.textContent = $el.deviceLabel.dataset.label!.replace('{{device}}', device.label)
   }
+
+  Object.assign(window, {chooseInstructions})
 
   $el.instructionChoices.forEach((choice: HTMLElement) => {
     choice.addEventListener('click', chooseInstructions.bind(null, choice.dataset.platform))
