@@ -1,5 +1,5 @@
 NAME := "every1dns-landing"
-URLPATH := ""
+URLPATH := "/preview"
 
 .PHONY: deploy build clean serve
 
