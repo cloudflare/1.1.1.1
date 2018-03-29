@@ -29,6 +29,10 @@ const deviceInfo: { [index: string]: DeviceInfo } = {
   'Android': {
     label: 'Android',
     id: 'android'
+  },
+  'Router': {
+    label: 'a router',
+    id: 'router'
   }
 }
 
@@ -50,12 +54,24 @@ document.addEventListener('DOMContentLoaded', () => {
     setupSection: ref('setup')
   }
 
-   function chooseInstructions (platform: string) {
+  function chooseInstructions (platformId: string) {
     $el.instructionChoices.forEach((choice: HTMLElement) => {
-      choice.classList.toggle('selected', choice.dataset.platform === platform)
+      choice.classList.toggle('selected', choice.dataset.platform === platformId)
     })
 
-    $el.setupSection.dataset.platform = platform
+    let device: DeviceInfo
+
+    for (let key in deviceInfo) {
+      const entry = deviceInfo[key]
+      if (platformId === entry.id) {
+        device = deviceInfo[key]
+        break
+      }
+    }
+
+    if (!device!) return
+
+    $el.setupSection.dataset.platform = platformId
     $el.deviceLabel.textContent = $el.deviceLabel.dataset.label!.replace('{{device}}', device.label)
   }
 
@@ -70,8 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (platform.os && platform.os.family && deviceInfo.hasOwnProperty(platform.os.family)) {
     device = deviceInfo[platform.os.family]
   }
-
-
   chooseInstructions(device.id)
 
   const slideCount = $el.slideshow.querySelectorAll('.background-slide').length

@@ -1,62 +1,12 @@
 @import "mixins/media-query-variables"
 
-section[data-section="explanation"]
+section[data-section="explanation"],
+section[data-section="explanation-privacy"],
+section[data-section="explanation-stats"]
   display flex
   justify-content center
   flex-flow column
-  font-size .85em
-  color white
-  background-color #292075
-  background-image linear-gradient(160deg, #292075, #502075)
-
-  @media mobileMaxWidthQuery
-    font-size  1.1em
-    line-height 1.6
-
-  .content
-    width 120rem
-    max-width 100%
-    margin 0 auto
-    display flex
-    padding calc(var(--section-vertical-padding) / 2) 1em
-
-    .primary
-      flex 1 1 50%
-
-    .secondary
-      flex 1 1 50%
-      position relative
-      justify-content center
-      display flex
-      align-items center
-
-  .logo-container
-    margin-top 2em
-    text-align center
-
-    .hero-copy
-      margin-bottom 0
-      & > svg
-        height 5rem
-        fill #fff
-
-    h2
-      margin-top 0
-      font-weight 300
-
-section[data-section="explanation-privacy"]
-  display flex
-  justify-content center
-  flex-flow column
-  background-color #3a154a
-  color white
-  background-image linear-gradient(24deg, #3a154a, #13081d)
-
-
-  @media mobileMaxWidthQuery
-    font-size 1.1em
-    line-height 1.6
-    padding calc(var(--section-vertical-padding) / 2) 1em
+  padding calc(var(--section-vertical-padding) / 2) 1em
 
   .content
     width 100rem
@@ -64,47 +14,31 @@ section[data-section="explanation-privacy"]
     margin 0 auto
     display flex
 
-    h1
-      font-weight 300
+    & + .content.with-gutter
+      @media desktopMinWidthQuery
+        margin-top var(--section-vertical-padding)
 
-  .primary
-    flex 0 1 auto
-    height 400px
-    margin-right 2em
+section[data-section="explanation"]
+  color black
+  background-color #fff
 
-  .secondary
-    flex 1 1 50%
+
+section[data-section="explanation-privacy"]
+  background-color #f4f8fb
+  color black
+  flex-flow column
+
+  .with-icon
+    position relative
+
+    .accent-icon
+      font-size 1.6rem
+      color #8a78b6
+      position absolute
+      left -2.5rem
+      top 0.65rem
 
 section[data-section="explanation-stats"]
-  display flex
-  justify-content center
-  flex-flow column
   background-color #000
   color white
-
-  @media mobileMaxWidthQuery
-    font-size 1.1em
-    line-height 1.6
-    padding calc(var(--section-vertical-padding) / 2) 1em
-
-  .content
-    display flex
-    @media desktopMinWidthQuery
-      align-items center
-      margin 0 auto
-
-    h1
-      font-weight 300
-
-  .primary
-    flex 0 1 auto
-    height 200px
-    margin-right 1em
-
-  .secondary
-    flex 1 1 50%
-
-    .copy
-      @media desktopMinWidthQuery
-        max-width 25em
 

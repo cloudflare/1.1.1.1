@@ -89,13 +89,9 @@ section[data-section="hero"]
       background-image url('~media/peace/2.jpg')
 
     &[data-slide="3"]
-      background-image url('~media/peace/3.jpg')
-      filter brightness(60%)
-
-    &[data-slide="4"]
       background-image url('~media/peace/4.jpg')
 
-    &[data-slide="5"]
+    &[data-slide="4"]
       background-image url('~media/peace/5.jpg')
 
   & > .background-slide:nth-child(1)::after
@@ -107,52 +103,21 @@ section[data-section="hero"]
     filter brightness(20%)
 
   & > .background-slide:nth-child(3)::after
-    background var(--brand-accent-green)
-    filter brightness(50%)
-
-  & > .background-slide:nth-child(4)::after
     background var(--brand-accent-blue)
     filter brightness(20%)
 
-  & > .background-slide:nth-child(5)::after
+  & > .background-slide:nth-child(4)::after
     background var(--brand-accent-purple1)
     filter brightness(30%)
 
   &[data-active-slide="1"] > .background-slide:nth-child(1),
   &[data-active-slide="2"] > .background-slide:nth-child(2),
   &[data-active-slide="3"] > .background-slide:nth-child(3),
-  &[data-active-slide="4"] > .background-slide:nth-child(4),
-  &[data-active-slide="5"] > .background-slide:nth-child(5)
+  &[data-active-slide="4"] > .background-slide:nth-child(4)
     opacity 1
 
   &[data-active-slide="1"] > .background-slide:not(:nth-child(5)):not(:nth-child(1)):not(:nth-child(2)),
   &[data-active-slide="2"] > .background-slide:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)),
   &[data-active-slide="3"] > .background-slide:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)),
-  &[data-active-slide="4"] > .background-slide:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5)),
-  &[data-active-slide="5"] > .background-slide:not(:nth-child(4)):not(:nth-child(5)):not(:nth-child(1))
+  &[data-active-slide="4"] > .background-slide:not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(5))
     background-image none !important
-
-section[data-section="hero-continued"]
-  display flex
-  justify-content center
-  align-items center
-  flex-flow column
-  font-family var(--hero-fonts)
-  font-weight 300
-  -webkit-font-smoothing antialiased
-  min-height calc(100vh - 5rem)
-  padding var(--section-vertical-padding) 12px
-  text-align center
-  background #fefefe
-
-
-  .logo
-    display flex
-    justify-content center
-    > svg
-      fill black
-      height 5rem
-
-  h2
-    font-size 2.8rem
-    font-weight 500
