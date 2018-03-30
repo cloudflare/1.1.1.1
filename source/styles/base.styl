@@ -37,6 +37,10 @@ body
   font-size 2em
   margin 0
 
+strong
+  &.subtle
+    font-weight 600
+
 .desktop-only
   @media mobileMaxWidthQuery
     display none !important
@@ -85,6 +89,10 @@ code
   top .5em
   right .5em
   font-size .7em
+  opacity .8
+
+  &:hover
+    opacity 1
 
   @media mobileMaxWidthQuery
     font-size 1.2em
@@ -208,7 +216,14 @@ p.collapsed-margins
   margin 0
 
 ul, ol
+  @media mobileMaxWidthQuery
+    margin-left 0
+    padding-left 1em
+
   > li + li
+    margin-top .5em
+
+  li > ul, li > ol
     margin-top .5em
 
 @import hero
@@ -216,19 +231,3 @@ ul, ol
 @import setup
 @import faq
 @import share
-
-.site-footer
-  // background-color #222
-  font-size .7em
-
-  // &, a
-  //   color #eee
-
-  display flex
-  justify-content center
-
-  .links
-    display flex
-
-    *:not(:last-child)
-      margin-right 1em

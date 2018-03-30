@@ -96,6 +96,9 @@ section[data-section="hero"]
     &[data-slide="4"]
       background-image url('~media/peace/5.jpg')
 
+    // &[data-slide="5"]
+    //   background-image url('~media/peace/6.jpg')
+
   & > .background-slide:nth-child(1)::after
     background var(--brand-accent-orange)
     filter brightness(10%)
@@ -115,7 +118,8 @@ section[data-section="hero"]
   &[data-active-slide="1"] > .background-slide:nth-child(1),
   &[data-active-slide="2"] > .background-slide:nth-child(2),
   &[data-active-slide="3"] > .background-slide:nth-child(3),
-  &[data-active-slide="4"] > .background-slide:nth-child(4)
+  &[data-active-slide="4"] > .background-slide:nth-child(4),
+  &.static-slide > .background-slide
     opacity 1
 
   &[data-active-slide="1"] > .background-slide:not(:nth-child(5)):not(:nth-child(1)):not(:nth-child(2)),

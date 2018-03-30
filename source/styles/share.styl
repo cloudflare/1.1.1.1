@@ -13,27 +13,28 @@ section[data-section="share"]
     font-size 1.1em
     line-height 1.6
     padding calc(var(--section-vertical-padding) / 2) 1em 2em
-    min-height calc(60vh - 5rem)
+    min-height calc(55vh - 5rem)
 
     h1
       line-height 1.2
 
     h2
       text-align center
+      margin 3rem 0
       line-height 1.4
 
   .accent-background
-    background-image url('~media/peace/concert.jpg')
+    background-image url('~media/peace/lava-peace.jpg')
     background-size cover
     background-position center center
     z-index -1
-    filter blur(3px)
+    filter blur(3px) brightness(77%)
     transform translate3d(0,0,0)
     position absolute
-    top 0
-    left 0
-    right 0
-    bottom 0
+    top -.5em
+    left -.5em
+    right -.5em
+    bottom -.5em
 
     &::after
       content ''
@@ -50,6 +51,7 @@ section[data-section="share"]
   .share-buttons
     display flex
     align-items center
+    font-size 2.2rem
 
     .share-button
       border-radius 50%

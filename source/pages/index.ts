@@ -36,6 +36,17 @@ const deviceInfo: { [index: string]: DeviceInfo } = {
   }
 }
 
+function isElementPartiallyInViewport (element: HTMLElement) {
+  const { left, top, height, width } = element.getBoundingClientRect()
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight
+  const windowWidth = window.innerWidth || document.documentElement.clientWidth
+
+  const inViewVertically = top <= windowHeight && top + height >= 0
+  const inViewHorizontally = left <= windowWidth && left + width >= 0
+
+  return inViewVertically && inViewHorizontally
+}
+
 function ref(ref: string): HTMLElement {
   return <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
 }
@@ -51,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     instructionChoices: Array.prototype.slice.call(ref('instructionPicker').querySelectorAll('.choice')),
     deviceLabel: ref('deviceLabel'),
     slideshow: ref('slideshow'),
-    setupSection: ref('setup')
+    setupSection: ref('setup'),
+    statsChart: ref('statsChart')
   }
 
   function chooseInstructions (platformId: string) {
@@ -95,4 +107,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $el.slideshow.dataset.activeSlide = (slideIndex > slideCount - 1 ? 1 : slideIndex + 1).toString()
   }, 6000)
+
+
+  let hasAnimated = false
+
+  function animateChart () {
+    if (hasAnimated || !isElementPartiallyInViewport($el.statsChart)) return
+
+    setTimeout(() => {
+      $el.statsChart.style.opacity = '1'
+    }, 400)
+
+    Array.prototype.forEach.call($el.statsChart.querySelectorAll('.bar-chart'), (barChart: HTMLElement, index: number) => {
+      const innerBar = barChart.querySelector('.bar-chart-fill') as HTMLElement
+
+      innerBar.style.width = '0'
+
+      setTimeout(() => {
+        innerBar.style.width = `${barChart.dataset.total}%`
+      }, 400 + (index * 100))
+    })
+    hasAnimated = true
+  }
+
+  setTimeout(animateChart, 400)
+
+  document.addEventListener('scroll', animateChart)
+
 })

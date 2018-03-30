@@ -6,7 +6,7 @@ section[data-section="explanation-stats"]
   display flex
   justify-content center
   flex-flow column
-  padding calc(var(--section-vertical-padding) / 2) 1em
+  padding .5em 1em calc(var(--section-vertical-padding) / 2)
 
   .content
     width 100rem
@@ -21,6 +21,39 @@ section[data-section="explanation-stats"]
 section[data-section="explanation"]
   color black
   background-color #fff
+
+  .content[data-subsection="dns"]
+    align-items center
+
+    @media desktopMinWidthQuery
+      .secondary
+        margin-right 10rem
+
+        > img
+          height 33rem
+
+    @media mobileMaxWidthQuery
+      flex-flow column
+      .secondary > img
+        height 22rem
+        transform rotate(8deg)
+
+  .content[data-subsection="security"]
+    @media desktopMinWidthQuery
+      .secondary
+        margin-left 5rem
+
+        > img
+          height 33rem
+
+    @media mobileMaxWidthQuery
+      flex-flow column
+      .secondary
+        display flex
+        justify-content center
+        margin 1rem 0
+        & > img
+          height 21rem
 
 
 section[data-section="explanation-privacy"]
@@ -38,7 +71,127 @@ section[data-section="explanation-privacy"]
       left -2.5rem
       top 0.65rem
 
+  .content[data-subsection="privacy"]
+      .secondary
+        & > img
+          height 26rem
+
+        margin-left 2rem
+        margin-right 5rem
+
+    @media mobileMaxWidthQuery
+      .mobile-emphasis
+        font-weight 600
+
+      flex-flow column
+      .secondary
+        display flex
+        justify-content center
+        & > img
+          height 14rem
+
 section[data-section="explanation-stats"]
-  background-color #000
+  background-color #2f302f
   color white
+
+  --bar-color-orange #DB824E
+  --bar-color-purple #8176B5
+  --bar-color-gray #878686
+
+  --bar-gradient-orange-yellow linear-gradient(-45deg, var(--bar-color-orange) 0%, #FFDB6F 100%)
+  --bar-gradient-purple-blue linear-gradient(-45deg, var(--bar-color-purple) 0%, #76C4E2 100%)
+  --bar-gradient-purple-indigo linear-gradient(-46deg, var(--bar-color-purple) 0%, #BA77B1 100%)
+  --bar-chart-cap-width 1rem
+  --animation-time 1s
+
+  @media desktopMinWidthQuery
+    .content
+      align-items center
+      .primary
+        flex 1 0 44%
+
+
+      .chart
+        margin-left 2rem
+
+  @media mobileMaxWidthQuery
+    .content
+      flex-flow column
+
+  .pull-header
+    display block
+    line-height 1
+
+    .headline
+      display inline-block
+      font-size 10rem
+      font-weight 600
+
+    .unit
+      display inline-block
+      font-size 6.5rem
+      font-weight 600
+
+    .label
+      display inline-block
+      font-size 2rem
+      margin-left 1.5rem
+      width 14rem
+
+  .chart
+    position relative
+    width 100%
+    transition opacity var(--animation-time) ease-out
+
+    .bar-chart + .bar-chart
+      margin-top 2.5rem
+
+  .bar-chart
+    background var(--bar-chart-background)
+    height var(--bar-chart-height)
+    border-radius 4rem
+
+    .bar-chart-primary
+      display flex
+      align-items center
+
+    .bar-chart-fill
+      display inline-block
+      background #333
+      height 2rem
+      margin-bottom .3rem
+      border-radius 4rem
+      position relative
+      will-change width
+
+    .bar-chart-label
+      margin-left 1rem
+
+    &[animated] .bar-chart-fill
+      transition width var(--animation-time) ease-out
+
+    &.first
+      .bar-chart-label
+        color var(--bar-color-orange)
+      .bar-chart-fill
+        background var(--bar-gradient-orange-yellow)
+
+    &.second
+      .bar-chart-label
+        color var(--bar-color-purple)
+      .bar-chart-fill
+        background var(--bar-gradient-purple-blue)
+
+    &.third
+      .bar-chart-label
+        color var(--bar-color-purple)
+      .bar-chart-fill
+        background var(--bar-gradient-purple-indigo)
+
+    &.fourth
+      .bar-chart-label
+        color var(--bar-color-gray)
+      .bar-chart-fill
+        background var(--bar-color-gray)
+
 

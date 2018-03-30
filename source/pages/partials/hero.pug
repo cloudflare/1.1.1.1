@@ -15,11 +15,14 @@ section(data-section="hero")
       span.language(data-locale='ja-jp') 日本語
 
   .hero-background
-    .slideshow(data-ref="slideshow" data-active-slide="1")
+    .slideshow.desktop-only(data-ref="slideshow" data-active-slide="1")
       .background-slide(data-slide="1")
       .background-slide(data-slide="2")
       .background-slide(data-slide="3")
       .background-slide(data-slide="4")
+
+    .slideshow.mobile-only.static-slide
+      .background-slide(data-slide="2")
 
   h3 Introducing
 
