@@ -1,4 +1,4 @@
-section(data-section="hero")
+section(data-section="hero" data-ref="hero")
   .language-selector(role="button" data-ref="languageSelector")
     .selector-label
       i.fas.fa-globe
@@ -6,13 +6,13 @@ section(data-section="hero")
       i.fas.fa-caret-down
 
     .dropdown
-      span.language(data-locale='en-US') English
-      span.language(data-locale='es') Español
-      span.language(data-locale='fr') Français
-      span.language(data-locale='de') Deutsch
-      span.language(data-locale='zh-Hans') 简体中文
-      span.language(data-locale='zh-Hant') 中國傳統的
-      span.language(data-locale='ja-jp') 日本語
+      span.language(data-locale="en-US") English
+      span.language(data-locale="es") Español
+      span.language(data-locale="fr") Français
+      span.language(data-locale="de") Deutsch
+      span.language(data-locale="zh-Hans") 简体中文
+      span.language(data-locale="zh-Hant") 中國傳統的
+      span.language(data-locale="ja-jp") 日本語
 
   .hero-background
     .slideshow.desktop-only(data-ref="slideshow" data-active-slide="1")
@@ -24,16 +24,14 @@ section(data-section="hero")
     .slideshow.mobile-only.static-slide
       .background-slide(data-slide="2")
 
-  h3 Introducing
-
   h1.hero-copy(alt="1.1.1.1 DNS resolver")
     include ../../media/logo.svg
 
   h2 You’re two minutes away from browsing a faster, more private internet.
 
   .actions
-    a.button.secondary.inverted(role="button" data-scroll href="#setup-instructions")
-      .button-content Get Started
+    a.button.hero-button.hero-primary(role="button" data-scroll href="#setup-instructions")
+      .button-content(data-label="Set up on your {{device}}") Set up instructions
     .spacer.mobile-only
-    a.button.secondary.inverted(role="button" data-scroll href="#explanation")
-      .button-content Info
+    a.button.hero-button.hero-secondary(role="button" data-scroll href="#explanation")
+      .button-content Learn more

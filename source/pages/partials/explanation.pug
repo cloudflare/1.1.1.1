@@ -14,12 +14,13 @@ section#explanation(data-section="explanation")
 
   .content.with-gutter(data-subsection="security")
     .primary
-      .secondary.mobile-only
-        img(src="~media/dns-explanation.png")
       p
         | Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it target you with ads.
 
       p We think that’s gross. If you do too, now there’s an alternative: <strong>1.1.1.1</strong>
+
+    .secondary
+      img(src="~media/dns-explanation.png")
 
 section(data-section="explanation-privacy")
   .content

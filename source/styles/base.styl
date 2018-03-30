@@ -21,6 +21,7 @@
   --brand-accent-purple1 #8176b5
   --brand-accent-purple2 #ba77b1
   --brand-accent-blue #408bc9
+
 *
   box-sizing inherit
 
@@ -53,22 +54,22 @@ strong
   @media cfDashDesktopMaxWidthQuery
     display none !important
 
-@media (max-width: 56em)
+@media (max-width 56em)
   :root
-    --section-vertical-padding: 3em
+    --section-vertical-padding 3em
 
   body
-    font-size: 1.7em
+    font-size 1.7em
 
-@media (max-width: 48em)
+@media (max-width 48em)
   body
-    font-size: 1.5em
+    font-size 1.5em
 
-@media (max-width: 36em)
+@media (max-width 36em)
   :root
     --section-vertical-padding 2em
 
-@media (min-height: 48em) and (min-width: 42em)
+@media (min-height 48em) and (min-width 42em)
   :root
     --section-vertical-padding 5em
 
@@ -80,26 +81,37 @@ code
     display inline-block
     padding 0 .25em
 
+h1
+  font-weight 500
+
+h2, h3, h4, h5, h6
+  font-weight 400
+
 .light-on-dark
   color white
   text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
 
 .language-selector
   position absolute
-  top .5em
-  right .5em
-  font-size .7em
-  opacity .8
-
-  &:hover
-    opacity 1
+  top 1em
+  right 1em
+  background rgba(0, 0, 0, .4)
+  padding .5em 1.2em
+  border-radius 14em
+  font-size .8em
 
   @media mobileMaxWidthQuery
-    font-size 1.2em
+    font-size 1em
+    top 12px
+    right 12px
 
   .selector-label
     display inline-block
-    & > *:not(:last-child)
+
+    .fa-globe
+      margin-right .25em
+
+    .chosen-language
       margin-right .5em
 
   .dropdown
@@ -110,12 +122,6 @@ code
 
 section[data-section]
   position relative
-
-  h1
-    font-weight 500
-
-  h2
-    font-weight 300
 
   .collapsed-top-margin
     margin-top 0
@@ -137,76 +143,77 @@ section[data-section]
   font-size inherit
 
 .button
-  display inline-block
-  appearance none
-  background none
-  border none
-  padding .6em 1.5em
-  font-weight 600
-  font-family var(--sans-serif-fonts)
-  letter-spacing .2em
-  text-transform uppercase
-  cursor pointer
+  --border-size 2px
   position relative
-  text-decoration none
-  border 3px solid transparent
+  -webkit-tap-highlight-color transparent
   user-select none
-  color black
-  transition transform .1s ease-in-out
+  appearance none
+  display inline-block
+  cursor pointer
+  text-align center
+  text-decoration none
+  font inherit
+  color inherit
+  padding .5em 1.25em
+  box-shadow inset 0 0 0 var(--border-size) var(--border-color)
+  border 0
+  margin 0
+  border-radius 999em
 
-  .button-content
-    display inline-block
-    border-bottom 1px solid transparent
-    transition border-bottom-color .1s ease-in-out
+.button.hero-button
+  --border-size 3px
+  padding .6em 1.5em .65em
 
-  &:hover
-    transform translate3d(0, -1px, 0)
-    outline none
+.button.hero-primary, .button.hero-secondary
 
-    .button-content
-      border-bottom-color currentColor
+  &:focus::after
+    opacity 0
 
-  &:focus
-    outline none
+.button.hero-primary
+  background #fff
+  color #000
 
-  &:not(:hover):focus .button-content
-    border-bottom-style dashed
+.button.hero-secondary
+  background transparent
+  --border-color #fff
 
-  &:active
-    transform translate3d(0, 1px, 0)
+.button:hover
+  box-shadow inset 0 0 0 var(--border-size) var(--border-color), inset 0 0 0 999em rgba(255, 255, 255, .2)
 
-  &.primary, &.selected
-    background black
-    color white
+.button:focus
+  --border-color var(--brand-accent-orange)
+  outline none
 
-    &:hover .button-content
-      border-bottom-color white
+.button:focus::after
+  content ""
+  position absolute
+  z-index 1
+  top calc(-1 * var(--border-size) * 2)
+  right calc(-1 * var(--border-size) * 2)
+  bottom calc(-1 * var(--border-size) * 2)
+  left calc(-1 * var(--border-size) * 2)
+  border-radius 999em
+  box-shadow inset 0 0 0 calc(var(--border-size) * 2) var(--border-color)
+  pointer-events none
+  opacity .5
 
-  &.secondary
-    border-color black
+.button:focus:active::after
+  opacity 0
 
-    &:hover .button-content
-      border-bottom-color black
-
-  &.secondary.inverted
-    color white
-    border-color white
-
-    &:hover .button-content
-      border-bottom-color white
-
-    // &::before
-    //   box-shadow inset 0px 0px 0px 1px rgba(0,0,0,.2)
+.button:hover:active
+  box-shadow inset 0 0 0 999em rgba(0, 0, 0, .1)
 
 .message
+
   &.center
     text-align center
+
     .message-content
       display inline-block
 
 .message-content
   border-radius 3px
-  background rgba(0,0,0,0.6)
+  background rgba(0, 0, 0, .6)
   color white
   padding 1rem 1.5rem
   font-size .8em

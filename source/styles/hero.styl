@@ -6,7 +6,6 @@ section[data-section="hero"]
   align-items center
   flex-flow column
   font-family var(--sans-serif-fonts)
-  font-weight 300
   color white
   -webkit-font-smoothing antialiased
   min-height calc(100vh - 5rem)
@@ -20,36 +19,41 @@ section[data-section="hero"]
     padding var(--section-vertical-padding) 5em
 
   .hero-copy > svg
-    height 10rem
-    fill white
+    display block
+    width 11.5em
+    max-width 70vw
+    fill currentColor
 
-  h3
-    text-transform uppercase
-    font-size 2rem
-    letter-spacing 0.1rem
+  h1
+    margin 0
 
-  @media desktopMinWidthQuery
-    h2
-      font-weight 300
+  h2
+    margin 1.5em auto
+    font-weight 400
+    text-align center
 
   .actions
     display flex
 
     @media mobileMaxWidthQuery
       display block
+      text-align center
       width 100%
       max-width 100%
-      margin-top 1em
 
-      .button:not(:last-child)
-        margin-bottom 1em
+      .button
+        width 14em
+        max-width 100%
+
+        &:not(:last-child)
+          margin-bottom 1em
 
     @media desktopMinWidthQuery
       .button:not(:last-child)
-        margin-right 2em
+        margin-right 1.25em
 
     .button
-      font-size 2rem
+      font-size 1.25em
 
   .hero-background
     position absolute

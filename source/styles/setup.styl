@@ -2,15 +2,23 @@ section[data-section="setup"]
   background #fff
   color #000
 
-  padding calc(var(--section-vertical-padding) / 2) 12px
-  width 56em
+  padding var(--section-vertical-padding) 12px
+  width 64rem
   max-width 100%
   margin 0 auto
 
+  h1
+    font-size 1.75em
+    font-weight 500
+    text-align center
+
   .questions-link
-    font-size 0.8em
+    font-size .8em
     text-align center
     padding-top 1em
+
+    a
+      color inherit
 
   .instructions
     display none
@@ -27,19 +35,48 @@ section[data-section="setup"]
     display flex
     align-items center
     justify-content center
-    margin-bottom 1em
-
-    & > *:not(:last-child)
-      margin-right 1.7rem
+    margin-bottom 3em
+    margin-top -1em
 
     .choice
-      padding .3em .6em
       text-transform none
       letter-spacing initial
-      font-size 1.7rem
+      font-size 1.1em
+      background #eee
 
       .label
-        margin-left .6em
+        font-size .8em
+
+      &[data-platform="router"] .label
+        font-size .6em
+
+      &.selected
+        background linear-gradient(-45deg, #ff9455 0%, #ffbf63 100%)
+        color #fff
+
+      &:not(:first-child):not(:last-child)
+
+        &, &::after
+          border-radius 0
+
+      &:first-child:not(:last-child)
+        padding-left 2em
+
+        &, &::after
+          border-top-right-radius 0
+          border-bottom-right-radius 0
+
+      &:last-child:not(:first-child)
+        padding-right 2em
+
+        &, &::after
+          border-top-left-radius 0
+          border-bottom-left-radius 0
+
+      svg
+        height 1.25em
+        width 1.25em
+        margin-bottom -0.3em
 
       // Background color fix
       &.selected svg.fa-linux

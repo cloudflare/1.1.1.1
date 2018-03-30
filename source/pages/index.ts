@@ -11,11 +11,11 @@ interface DeviceInfo {
 
 const deviceInfo: { [index: string]: DeviceInfo } = {
   'Windows': {
-    label: 'Windows',
+    label: 'PC',
     id: 'windows'
   },
   'OS X': {
-    label: 'MacOS',
+    label: 'Mac',
     id: 'mac-os'
   },
   'Linux': {
@@ -23,15 +23,15 @@ const deviceInfo: { [index: string]: DeviceInfo } = {
     id: 'linux'
   },
   'iOS': {
-    label: 'iOS',
+    label: 'iPhone',
     id: 'iphone'
   },
   'Android': {
-    label: 'Android',
+    label: 'Android phone',
     id: 'android'
   },
   'Router': {
-    label: 'a router',
+    label: 'router',
     id: 'router'
   }
 }
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const scroller = new SweetScroll() // Initialized for its DOM side effects.
 
   const $el = {
+    hero: ref('hero'),
     instructionPicker: ref('instructionPicker'),
     instructionChoices: Array.prototype.slice.call(ref('instructionPicker').querySelectorAll('.choice')),
     deviceLabel: ref('deviceLabel'),
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!device!) return
 
     $el.setupSection.dataset.platform = platformId
+    $el.hero.querySelector('.button.hero-primary .button-content').textContent = $el.hero.querySelector('.button.hero-primary .button-content').dataset.label!.replace('{{device}}', device.label)
     $el.deviceLabel.textContent = $el.deviceLabel.dataset.label!.replace('{{device}}', device.label)
   }
 
