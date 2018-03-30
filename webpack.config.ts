@@ -152,7 +152,7 @@ $.module = {
               formatURL,
               NODE_ENV: environment,
               title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
-              description: 'Browse a faster, more private internet.'
+              description: '✌️✌️ Browse a faster, more private internet.'
             }
           }
         }
