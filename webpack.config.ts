@@ -152,7 +152,7 @@ $.module = {
             data: {
               formatURL,
               NODE_ENV: environment,
-              title: 'Cloudflare DNS Resolver · 1.1.1.1',
+              title: '1.1.1.1 DNS Resolver',
               description: 'Browse a faster, more private internet.'
             }
           }

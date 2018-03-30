@@ -42,7 +42,7 @@ function ref(ref: string): HTMLElement {
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log(logoBanner)
-  console.log(window.btoa('Join Cloudflare and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
+  console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
   const scroller = new SweetScroll() // Initialized for its DOM side effects.
 
