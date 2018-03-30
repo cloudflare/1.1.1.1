@@ -55,7 +55,9 @@ section[data-section="explanation"]
 
 
 section[data-section="explanation-privacy"]
+  border-top 1px solid #c4d7ee
   background-color #f4f8fb
+  background linear-gradient(#e2ebf7, #f4f8fb)
   color black
   flex-flow column
 
@@ -70,12 +72,14 @@ section[data-section="explanation-privacy"]
       top 0.65rem
 
   .content[data-subsection="privacy"]
-      .secondary
-        & > img
-          height 26rem
 
-        margin-left 2rem
-        margin-right 5rem
+    .secondary
+
+      & > img
+        height 26rem
+
+      margin-left 2rem
+      margin-right 5rem
 
     @media mobileMaxWidthQuery
       .mobile-emphasis
@@ -193,5 +197,3 @@ section[data-section="explanation-stats"]
         color var(--bar-color-gray)
       .bar-chart-fill
         background var(--bar-color-gray)
-
-
