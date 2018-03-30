@@ -151,7 +151,7 @@ $.module = {
             data: {
               formatURL,
               NODE_ENV: environment,
-              title: '1.1.1.1 DNS Resolver',
+              title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
               description: 'Browse a faster, more private internet.'
             }
           }
