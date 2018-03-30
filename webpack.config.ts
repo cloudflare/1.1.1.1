@@ -76,7 +76,6 @@ if (environment === 'development') {
 
   $.plugins.push(
     new NamedModulesPlugin(),
-    // new HotModuleReplacementPlugin(),
     new NoEmitOnErrorsPlugin()
   )
 }
@@ -202,7 +201,6 @@ const hotReloadEntries = [
   'webpack/hot/only-dev-server'
 ]
 
-// $.entry['site'] = [...hotReloadEntries, './source/pages/index.ts']
 $.entry['site'] = ['./source/pages/index.ts']
 
 $.plugins.push(new HtmlWebpackPlugin({
