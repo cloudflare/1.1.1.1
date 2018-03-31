@@ -252,7 +252,6 @@ const locales = [
 $.plugins.push(...locales.map((locale) => {
   const mergedDefinitions = defaultsDeep(localeDefinitions[locale.code], localeDefinitions['en-US'])
 
-  console.log('>>>', mergedDefinitions["hero.introducing"])
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
     template: joinP('source/pages/index.pug'),
