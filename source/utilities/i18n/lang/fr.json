@@ -4,7 +4,7 @@
 
   "hero.introducing": "Présentation",
   "hero.description": "Vous êtes à 2 minutes d’un Internet plus rapide et plus privé.",
-  "hero.getStarted": "Get Started",
+  "hero.getStarted": "Commencer",
   "hero.info": "Info",
 
   "explanation.dnsHeader": "DNS: Internet’s Directory",
@@ -25,8 +25,8 @@
 
   "instructions": {
     "header": "Configuration sur {{device}}",
-    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
-    "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "explanation": "La configuration de <strong>1.1.1.1</strong> prend deux minutes et ne nécessite aucune compétence technique ou logiciel spécial. Même si vous êtes un novice en informatique, choisissez votre appareil ci-dessous pour un guide d'installation facile à suivre.",
+    "questions": "Des questions? Visitez notre <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">forum communautaire</a>",
     "mac-os": {
       "steps": [
         {"tag": "li", "content": "Ouvrez les Préférences système."},
@@ -166,12 +166,12 @@
     }
   },
 
-  "share.header": "Share a faster, privacy-first Internet with your friends.",
+  "share.header": "Partagez un Internet plus rapide et plus confidentiel avec vos amis.",
   "share.emailSubject": "✌️✌️ Naviguez sur un Internet plus rapide et plus privé - DNS Resolver Cloudflare 1.1.1.1",
   "share.emailBody": "1.1.1.1 rend la navigation sur Internet plus rapide et plus privée. Consultez la page Cloudflare https://1.1.1.1 pour plus d’informations et pour découvrir comment configurer votre appareil en moins de 2 minutes !",
   "share.tweetBody": "✌️✌️ L'Internet rapide, sûr et privé est là. Configurer la résolution DNS Cloudflare en moins de 2 minutes.",
 
-  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.whosBehindThis": "Qui est derrière ça?",
   "faq.partnership": "<strong>1.1.1.1</strong> est un partenariat entre Cloudflare et APNIC.",
   "faq.network": "Cloudflare gère l’un des plus grands et plus rapides réseaux au monde. APNIC est une organisation à but non lucratif gérant l’allocation d’adresses IP pour les régions Asie-Pacifique et Océanie.",
   "faq.networkContinued": "Cloudflare avait le réseau. APNIC avait l’adresse IP (1.1.1.1). Nous étions motivés pour construire un meilleur Internet. Vous pouvez en savoir plus sur les missions de chaque organisation sur nos publications respectives : <a href=\"https: //blog.cloudflare.com/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"http://blog.apnic.net/\" target=\"_blank\">APNIC Blog</a>.",
