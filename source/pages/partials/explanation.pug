@@ -21,29 +21,24 @@ section(data-section="explanation-privacy")
   .content
     header
       h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.privacyHeader')
-      p!=htmlWebpackPlugin.options.t('explanation.privacyExplanation')
+      h2!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeData')
 
   .content(data-subsection="privacy")
     .secondary.desktop-only
       img(src="/media/shopping-cart.png")
     .primary
-      p.with-icon
-        i.fas.fa-times-circle.accent-icon.desktop-only
-        span!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeData')
-
-      p.with-icon
-        i.fas.fa-times-circle.accent-icon.desktop-only
+      p
         span!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeLogs')
 
       p!=htmlWebpackPlugin.options.t('explanation.privacyConclusion')
 
 section(data-section="explanation-stats")
   .content
+    header
+      h1 Faster than anything else.
+      h2 28% faster, in fact.
+  .content
     .primary
-      h1.collapsed-top-margin.pull-header
-        .headline 28
-        .unit %
-        .label faster than anything else
 
       p!=htmlWebpackPlugin.options.t('explanation.fastestDNS')
 

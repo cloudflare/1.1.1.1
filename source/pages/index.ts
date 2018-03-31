@@ -11,11 +11,11 @@ interface DeviceInfo {
 
 const deviceInfo: { [index: string]: DeviceInfo } = {
   'Windows': {
-    label: 'Windows',
+    label: 'PC',
     id: 'windows'
   },
   'OS X': {
-    label: 'MacOS',
+    label: 'Mac',
     id: 'mac-os'
   },
   'Linux': {
@@ -63,8 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
     deviceLabel: ref('deviceLabel'),
     slideshow: ref('slideshow'),
     setupSection: ref('setup'),
-    statsChart: ref('statsChart')
+    statsChart: ref('statsChart'),
+    languageSelector: ref('languageSelector')
   }
+
+  $el.languageSelector.addEventListener('click', () => {
+    $el.languageSelector.classList.toggle('dropdown-open')
+  })
 
   function chooseInstructions (platformId: string) {
     $el.instructionChoices.forEach((choice: HTMLElement) => {

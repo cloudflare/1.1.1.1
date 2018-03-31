@@ -1,32 +1,20 @@
 section(data-section="hero")
-  .language-selector(role="button" data-ref="languageSelector")
+  .language-selector(
+    tabindex="3"
+    role="button"
+    data-ref="languageSelector")
     .selector-label
       i.fas.fa-globe
-      span.chosen-language!=htmlWebpackPlugin.options.t('language')
+      span.chosen-language!=htmlWebpackPlugin.options.locale.label
       i.fas.fa-caret-down
 
     .dropdown
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'en-US'}
-        data-locale='en-US') English
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'es'}
-        data-locale='es') Español
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'fr'}
-        data-locale='fr') Français
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'de'}
-        data-locale='de') Deutsch
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'zh-Hans'}
-        data-locale='zh-Hans') 简体中文
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'zh-Hant'}
-        data-locale='zh-Hant') 中國傳統的
-      span.language(
-        class={selected: htmlWebpackPlugin.options.localeCode === 'ja-jp'}
-        data-locale='ja-jp') 日本語
+      each locale in htmlWebpackPlugin.options.locales
+        a.language(
+          target="_blank"
+          href="/" + locale.path
+          class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
+          | #{locale.label}
 
   .hero-background
     .slideshow.desktop-only(data-ref="slideshow" data-active-slide="1")
@@ -46,8 +34,16 @@ section(data-section="hero")
   h2!=htmlWebpackPlugin.options.t('hero.description')
 
   .actions
-    a.button.secondary.inverted(role="button" data-scroll href="#setup-instructions")
+    a.button.secondary.inverted(
+      tabindex="1"
+      role="button"
+      data-scroll
+      href="#setup-instructions")
       .button-content!=htmlWebpackPlugin.options.t('hero.getStarted')
     .spacer.mobile-only
-    a.button.secondary.inverted(role="button" data-scroll href="#explanation")
+    a.button.secondary.inverted(
+      tabindex="2"
+      role="button"
+      data-scroll
+      href="#explanation")
       .button-content!=htmlWebpackPlugin.options.t('hero.info')

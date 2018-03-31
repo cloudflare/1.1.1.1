@@ -53,22 +53,22 @@ strong
   @media cfDashDesktopMaxWidthQuery
     display none !important
 
-@media (max-width: 56em)
+@media (max-width 56em)
   :root
-    --section-vertical-padding: 3em
+    --section-vertical-padding 3em
 
   body
-    font-size: 1.7em
+    font-size 1.7em
 
-@media (max-width: 48em)
+@media (max-width 48em)
   body
-    font-size: 1.5em
+    font-size 1.5em
 
-@media (max-width: 36em)
+@media (max-width 36em)
   :root
     --section-vertical-padding 2em
 
-@media (min-height: 48em) and (min-width: 42em)
+@media (min-height 48em) and (min-width 42em)
   :root
     --section-vertical-padding 5em
 
@@ -80,42 +80,47 @@ code
     display inline-block
     padding 0 .25em
 
+h1
+  font-weight 500
+
+h2, h3, h4, h5, h6
+  font-weight 400
+
+header
+  position relative
+  width 100%
+
+  @media desktopMinWidthQuery
+    padding-bottom 1em
+    margin-bottom 2em
+
+  @media mobileMaxWidthQuery
+    padding-bottom .8em
+
+  &::after
+    content ''
+    position absolute
+    background-color rgba(255, 255, 255, 0.10)
+    height .5rem
+    bottom 0
+    left 0
+    right 0
+
+  h1
+    font-size 1.8em
+    margin 0
+
+  h2
+    font-size 1.4em
+    line-height 1
+    margin 0
+
 .light-on-dark
   color white
   text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
 
-.language-selector
-  position absolute
-  top .5em
-  right .5em
-  font-size .7em
-  opacity .8
-
-  &:hover
-    opacity 1
-
-  @media mobileMaxWidthQuery
-    font-size 1.2em
-
-  .selector-label
-    display inline-block
-    & > *:not(:last-child)
-      margin-right .5em
-
-  .dropdown
-    display none
-
-  &[data-dropdown="visible"] .dropdown
-    display block
-
 section[data-section]
   position relative
-
-  h1
-    font-weight 500
-
-  h2
-    font-weight 300
 
   .collapsed-top-margin
     margin-top 0
@@ -153,6 +158,7 @@ section[data-section]
   user-select none
   color black
   transition transform .1s ease-in-out
+  -webkit-tap-highlight-color transparent
 
   .button-content
     display inline-block
@@ -197,6 +203,64 @@ section[data-section]
 
     // &::before
     //   box-shadow inset 0px 0px 0px 1px rgba(0,0,0,.2)
+
+.language-selector
+  position absolute
+  top 1em
+  right 1em
+  padding .5em
+  border-radius 14em
+  font-size .8em
+  opacity .8
+
+  &:hover
+    opacity 1
+
+  @media mobileMaxWidthQuery
+    font-size 1em
+    top 12px
+    right 12px
+
+  .selector-label
+    display flex
+    align-items center
+    justify-content flex-end
+
+    .fa-globe
+      margin-right .5em
+
+    .fa-caret-down
+      margin-right .5em
+
+    .chosen-language
+      margin-right .5em
+
+  .dropdown
+    margin-top .5em
+    flex-flow column
+    text-align left
+    padding .2em 0.8em .2em .8em
+    display none
+
+    background rgba(0,0,0,.5)
+    border-radius 3px
+
+    .language.selected
+      display none
+
+  &:focus
+    outline none
+
+  &.dropdown-open .dropdown
+    display flex
+
+    .language
+      color inherit
+      text-decoration none
+      line-height 1.7
+
+      &:hover
+        text-decoration underline
 
 .message
   &.center

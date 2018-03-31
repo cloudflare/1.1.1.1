@@ -6,17 +6,13 @@ section[data-section="explanation-stats"]
   display flex
   justify-content center
   flex-flow column
-  padding .5em 1em calc(var(--section-vertical-padding) / 2)
+  padding var(--section-vertical-padding) 12px
 
   .content
     width 100rem
     max-width 100%
     margin 0 auto
     display flex
-
-    & + .content.with-gutter
-      @media desktopMinWidthQuery
-        margin-top calc(var(--section-vertical-padding) / 2)
 
 section[data-section="explanation"]
   color black
@@ -26,6 +22,8 @@ section[data-section="explanation"]
     align-items center
 
     @media desktopMinWidthQuery
+      margin-bottom 2em
+
       .secondary
         margin-right 10rem
 
@@ -63,15 +61,9 @@ section[data-section="explanation-privacy"]
   color black
   flex-flow column
 
-  .with-icon
-    position relative
-
-    .accent-icon
-      font-size 1.6rem
-      color #8a78b6
-      position absolute
-      left -2.5rem
-      top 0.65rem
+  header
+    &::after
+      background-color rgba(196, 215, 238, 0.33)
 
   .content[data-subsection="privacy"]
 
@@ -97,6 +89,7 @@ section[data-section="explanation-privacy"]
 section[data-section="explanation-stats"]
   background-color #1d1916
   color white
+  -webkit-font-smoothing antialiased
 
   --bar-color-orange #DB824E
   --bar-color-purple #8176B5
@@ -105,15 +98,21 @@ section[data-section="explanation-stats"]
   --bar-gradient-orange-yellow linear-gradient(-45deg, var(--bar-color-orange) 0%, #FFDB6F 100%)
   --bar-gradient-purple-blue linear-gradient(-45deg, var(--bar-color-purple) 0%, #76C4E2 100%)
   --bar-gradient-purple-indigo linear-gradient(-46deg, var(--bar-color-purple) 0%, #BA77B1 100%)
+
   --bar-chart-cap-width 1rem
   --animation-time 1s
+
+  header
+    &::after
+      background-image var(--bar-gradient-purple-indigo)
+      opacity .3
 
   @media desktopMinWidthQuery
     .content
       align-items center
+
       .primary
         flex 1 0 44%
-
 
       .chart
         margin-left 2rem
@@ -122,25 +121,25 @@ section[data-section="explanation-stats"]
     .content
       flex-flow column
 
-  .pull-header
-    display block
-    line-height 1
+  // .pull-header
+  //   display block
+  //   line-height 1
 
-    .headline
-      display inline-block
-      font-size 10rem
-      font-weight 600
+  //   .headline
+  //     display inline-block
+  //     font-size 10rem
+  //     font-weight 600
 
-    .unit
-      display inline-block
-      font-size 6.5rem
-      font-weight 600
+  //   .unit
+  //     display inline-block
+  //     font-size 6.5rem
+  //     font-weight 600
 
-    .label
-      display inline-block
-      font-size 2rem
-      margin-left 1.5rem
-      width 14rem
+  //   .label
+  //     display inline-block
+  //     font-size 2rem
+  //     margin-left 1.5rem
+  //     width 14rem
 
   .chart
     position relative

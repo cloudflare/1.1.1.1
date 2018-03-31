@@ -43,8 +43,8 @@ $.resolve = {
 }
 
 $.output = {
-  // publicPath: '/',
-  publicPath: '',
+  publicPath: '/',
+  // publicPath: '',
   path: joinP('build'),
   filename: '[name].js',
   library: '[name]',
@@ -200,32 +200,39 @@ $.entry['site'] = ['./source/pages/index.ts']
 
 const locales = [
   {
+    path: '',
     code: 'en-US',
-    path: ''
+    label: 'English'
   },
   {
     path: 'es/',
-    code: 'es'
+    code: 'es',
+    label: 'Español'
   },
   {
     path: 'fr/',
-    code: 'fr'
+    code: 'fr',
+    label: 'Français'
   },
   {
     path: 'de/',
-    code: 'de'
+    code: 'de',
+    label: 'Deutsch'
   },
   {
     path: 'zh-Hans/',
-    code: 'zh-Hans'
+    code: 'zh-Hans',
+    label: '简体中文'
   },
   {
     path: 'zh-Hant/',
-    code: 'zh-Hant'
+    code: 'zh-Hant',
+    label: '中國傳統的'
   },
   {
     path: 'ja-jp/',
-    code: 'ja-jp'
+    code: 'ja-jp',
+    label: '日本語'
   }
 ]
 
@@ -234,8 +241,9 @@ $.plugins.push(...locales.map((locale) => {
     favicon: 'source/media/favicon.png',
     template: joinP('source/pages/index.pug'),
     filename: `${locale.path}index.html`,
-    t: (key: string) => localeDefinitions[locale.code][key],
-    localeCode: locale.code,
+    t: (key: string) => localeDefinitions[locale.code][key] || localeDefinitions['en-US'][key],
+    locale,
+    locales,
     formatURL,
     NODE_ENV: environment,
     title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
