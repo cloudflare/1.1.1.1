@@ -9,6 +9,7 @@ import webpack, {
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as CleanWebpackPlugin from 'clean-webpack-plugin'
 import * as CopyWebpackPlugin from 'copy-webpack-plugin'
+import * as OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import { format as formatURL } from 'url'
 import localeDefinitions from './source/utilities/i18n/lang'
 
@@ -99,9 +100,19 @@ if (environment === 'production') {
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css'
-    })
-    // new UglifyJsPlugin()
+      chunkFilename: '[id].css',
+    }),
+    new UglifyJsPlugin({
+      sourceMap: true,
+      cache: true,
+      parallel: true,
+      uglifyOptions: {
+        output: {
+          comments: false
+        }
+      }
+    }),
+    new OptimizeCSSAssetsPlugin()
   )
 }
 
@@ -204,36 +215,36 @@ const locales = [
     code: 'en-US',
     label: 'English'
   },
-  {
-    path: 'es/',
-    code: 'es',
-    label: 'Español'
-  },
-  {
-    path: 'fr/',
-    code: 'fr',
-    label: 'Français'
-  },
-  {
-    path: 'de/',
-    code: 'de',
-    label: 'Deutsch'
-  },
-  {
-    path: 'zh-Hans/',
-    code: 'zh-Hans',
-    label: '简体中文'
-  },
-  {
-    path: 'zh-Hant/',
-    code: 'zh-Hant',
-    label: '中國傳統的'
-  },
-  {
-    path: 'ja-jp/',
-    code: 'ja-jp',
-    label: '日本語'
-  }
+  // {
+  //   path: 'es/',
+  //   code: 'es',
+  //   label: 'Español'
+  // },
+  // {
+  //   path: 'fr/',
+  //   code: 'fr',
+  //   label: 'Français'
+  // },
+  // {
+  //   path: 'de/',
+  //   code: 'de',
+  //   label: 'Deutsch'
+  // },
+  // {
+  //   path: 'zh-Hans/',
+  //   code: 'zh-Hans',
+  //   label: '简体中文'
+  // },
+  // {
+  //   path: 'zh-Hant/',
+  //   code: 'zh-Hant',
+  //   label: '中國傳統的'
+  // },
+  // {
+  //   path: 'ja-jp/',
+  //   code: 'ja-jp',
+  //   label: '日本語'
+  // }
 ]
 
 $.plugins.push(...locales.map((locale) => {

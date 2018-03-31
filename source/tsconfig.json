@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "experimentalDecorators": true,
-    "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "Node",
     "module": "esnext",
     "target": "es2017",
     "noResolve": false,
-    "outDir": "../es",
     "declaration": true,
     "sourceMap": true,
     "noImplicitAny": true,
