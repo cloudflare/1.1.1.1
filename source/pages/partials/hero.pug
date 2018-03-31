@@ -11,7 +11,6 @@ section(data-section="hero")
     .dropdown
       each locale in htmlWebpackPlugin.options.locales
         a.language(
-          target="_blank"
           href="/" + locale.path
           class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
           | #{locale.label}

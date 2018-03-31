@@ -211,10 +211,17 @@ section[data-section]
   padding .5em
   border-radius 14em
   font-size .8em
-  opacity .8
+  user-select none
 
-  &:hover
-    opacity 1
+  &:focus
+    outline none
+
+  &.dropdown-open
+    .dropdown
+      display flex
+
+    .selector-label
+      opacity 1
 
   @media mobileMaxWidthQuery
     font-size 1em
@@ -225,6 +232,14 @@ section[data-section]
     display flex
     align-items center
     justify-content flex-end
+    opacity .8
+    transition opacity .2s
+
+    &:hover
+      opacity 1
+
+    @media mobileMaxWidthQuery
+      font-size 2rem
 
     .fa-globe
       margin-right .5em
@@ -245,14 +260,8 @@ section[data-section]
     background rgba(0,0,0,.5)
     border-radius 3px
 
-    .language.selected
-      display none
-
-  &:focus
-    outline none
-
-  &.dropdown-open .dropdown
-    display flex
+    // .language.selected
+    //   display none
 
     .language
       color inherit
@@ -261,6 +270,14 @@ section[data-section]
 
       &:hover
         text-decoration underline
+
+    @media mobileMaxWidthQuery
+      background rgba(0,0,0,.9)
+      font-size 2rem
+      padding .2em 0.8em .2em .8em
+
+      .language
+        line-height 2
 
 .message
   &.center
