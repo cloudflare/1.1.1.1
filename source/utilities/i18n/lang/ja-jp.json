@@ -1,27 +1,27 @@
 {
   "hero.introducing": "新登場",
-  "hero.description": "たったの5分で、より速く、よりプライベートなインターネットの閲覧が可能となります。",
+  "hero.description": "たったの2分で、より速く、よりプライベートなインターネットの閲覧が可能となります。",
   "hero.getStarted": "Get Started",
   "hero.info": "Info",
 
-  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsHeader": "DNS：インターネットのディレクトリ",
   "explanation.dnsExplanation": "インターネット上のほとんどすべてがDNSリクエストから始まります。 DNSはインターネットのディレクトリです。 リンクをクリックしたり、アプリを開いたり、電子メールを送信するとき、デバイスは、まずディレクトリに次のことを尋ねます。<strong class=\"subtle\">どこで見つけることができますか？</strong>",
   "explanation.dnsSlowInsecure": "残念ながら通常、DNSは遅い上に安全とは言えません。 お客様のインターネットサービスプロバイダー、そしてインターネットを盗聴している誰もが、たとえ内容が暗号化されていても、あなたが訪問するすべてのサイトとすべてのアプリを見ることができます。気味が悪いことに、一部のDNSプロバイダーは、お客様のインターネット閲覧状況に関するデータを販売したり、そのデータを基に広告を送りつけてきたりします。",
   "explanation.dnsAlternative": "当社はこれらを厄介なことだと考えます。そこで、同様に思われるお客様に新たな方法をご紹介します：<strong>1.1.1.1</strong>",
 
-  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyHeader": "プライバシー優先：保証されています。",
   "explanation.privacyExplanation": "当社は、1983年頃のDNSプロトコルを見直しています。 <strong>1.1.1.1</strong> は暗号化されたDNSだけでなく、HTTPS経由のDNSもサポートしています。",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">当社はお客様のデータを販売することや、データを使って広告のターゲットにすることはありません。</span>",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">当社はあなたのIPアドレスを記録することはありません。</span> (他社がお客様を識別する方法）これを証明するために、当社は KPMG によるシステム監査を毎年行っています。",
   "explanation.privacyConclusion": "率直に申し上げますと、当社はお客様がインターネットで何をしているかを知りたくありません。そこで、技術的な措置を講じてお客様のインターネット上の行動を見ることができないよう制限しました。",
 
-  "explanation.performanceHeader": "Faster than anything else.",
+  "explanation.performanceHeader": "他の何よりも速い。",
   "explanation.performanceSubheader": "28% faster, in fact.",
   "explanation.fastestDNS": "当社は、インターネット最速のDNSディレクトリである1.1.1.1を構築しました。 実際に、独立したDNSモニターであるDNSPerfは、1.1.1.1を世界最速のDNSサービスにランク付けしました。ぜひお確かめください。",
   "explanation.speedContinued": "インターネット上のほとんどのアクティビティはDNSリクエストで始まります。お使いのあらゆるデバイスにおいて最速のDNSディレクトリを選択することにより、オンライン上のほぼ全てのアクティビティを加速することができます。",
 
   "instructions": {
-    "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "questions": "質問ですか<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム/a>をご覧ください",
     "mac-os": {
       "steps": [
         {"tag": "li", "content": "システム環境設定を開いてください。"},
@@ -164,7 +164,7 @@
   "share.header": "Share a faster, privacy-first Internet with your friends.",
   "share.emailSubject": "✌️✌️ CloudflareのDNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
   "share.emailBody": "1.1.1.1は、インターネットの閲覧を、より速く、よりプライベートにします。 詳しい内容と、お使いのデバイスを簡単にセットアップする方法は、Cloudflareのhttps://1.1.1.1でご確認ください！",
-  "share.tweetBody": "✌️✌️ 高速、安全、そしてプライベートなインターネットはここにあります。CloudflareのDNSリゾルバーは設定に5分もかかりません",
+  "share.tweetBody": "✌️✌️ 高速、安全、そしてプライベートなインターネットはここにあります。CloudflareのDNSリゾルバーは設定に2分もかかりません",
 
   "faq.whosBehindThis": "Who’s behind this?",
   "faq.partnership": "<strong>1.1.1.1</strong>は、CloudflareとAPNICのパートナーシップにより誕生しました。",
