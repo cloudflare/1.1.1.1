@@ -12,7 +12,7 @@
   "explanation.privacyHeader": "Privacy First: Guaranteed.",
   "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong>1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We will never sell your data or use it to target ads.</span> Period.",
-  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained an external auditor to audit our systems annually to ensure that we're doing what we say.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained KPMG to audit our systems annually to ensure that we're doing what we say.",
   "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
 
   "explanation.performanceHeader": "Faster than anything else.",
