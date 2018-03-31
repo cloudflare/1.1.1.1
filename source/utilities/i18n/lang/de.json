@@ -12,7 +12,7 @@
   "explanation.privacyHeader": "Privacy First: Guaranteed.",
   "explanation.privacyExplanation": "Wir überdenken das 1985-Ära DNS-Protokoll. <strong>1.1.1.1</strong>  nutzt HTTPS um DNS sowie verschlüsseltes DNS zu unterstützen.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Wir werden niemals Ihre Daten verkaufen oder sie für Werbeanzeigen benutzen.</span>",
-  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Wir werden niemals Ihre IP-Adresse aufzeichnen (wie andere Unternehmen, die Sie dadurch identifizieren). Und wir sagen das nicht nur. Wir haben KPMG  beauftragt, um unsere Systeme jährlich zu prüfen und um zu gewährleisten, dass wir tun, was wir sagen.</span>",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Wir werden niemals Ihre IP-Adresse aufzeichnen</span> (wie andere Unternehmen, die Sie dadurch identifizieren). Und wir sagen das nicht nur. Wir haben KPMG  beauftragt, um unsere Systeme jährlich zu prüfen und um zu gewährleisten, dass wir tun, was wir sagen.",
   "explanation.privacyConclusion": "Ehrlich gesagt, uns interessiert nicht, was Sie im Internet tun-- und es geht uns auch nichts an. Wir haben die technischen Schritte unternommen, um sicherzustellen, daß wir es nicht können.",
 
   "explanation.performanceHeader": "Faster than anything else.",
