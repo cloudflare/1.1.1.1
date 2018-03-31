@@ -1,26 +1,28 @@
 {
   "hero.introducing": "Vorstellung",
-  "hero.description": "Schnelleres und privates Surfen in nur fünf Minuten.",
+  "hero.description": "Schnelleres und privates Surfen in nur zwei Minuten.",
   "hero.getStarted": "Get Started",
   "hero.info": "Info",
 
-  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsHeader": "DNS: Internetverzeichnis",
   "explanation.dnsExplanation": "Fast alles beginnt im Internet mit einer DNS-Anfrage. DNS ist das Verzeichnis des Internet. Wenn Sie auf einen Link klicken, eine App öffnen, oder eine E-Mail senden, fragt Ihr Gerät zuerst das Verzeichnis: <strong class=\"subtle\">Wo kann ich das finden?</strong>",
   "explanation.dnsSlowInsecure": "Unglücklicherweise ist das standardmäßige DNS in der Regel langsam und nicht sicher. Ihr Internet-Provider und alle anderen die Ihre Daten im Internet lesen, können jede Seite oder App sehen, die Sie besuchen oder verwenden,  - auch wenn deren Inhalt verschlüsselt ist. Leider verkaufen einige DNS-Anbieter Daten über Ihre Internet-Aktivitäten oder verwenden Sie, um  Werbeanzeigen auf Sie auszurichten.",
   "explanation.dnsAlternative": "Wir denken, das ist unakzeptabel. Wenn Sie dies auch so empfinden, gibt es jetzt eine Alternative: <strong>1.1.1.1</strong>",
 
-  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyHeader": "Datenschutz zuerst: Garantiert.",
   "explanation.privacyExplanation": "Wir überdenken das 1985-Ära DNS-Protokoll. <strong>1.1.1.1</strong>  nutzt HTTPS um DNS sowie verschlüsseltes DNS zu unterstützen.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Wir werden niemals Ihre Daten verkaufen oder sie für Werbeanzeigen benutzen.</span>",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Wir werden niemals Ihre IP-Adresse aufzeichnen</span> (wie andere Unternehmen, die Sie dadurch identifizieren). Und wir sagen das nicht nur. Wir haben KPMG  beauftragt, um unsere Systeme jährlich zu prüfen und um zu gewährleisten, dass wir tun, was wir sagen.",
   "explanation.privacyConclusion": "Ehrlich gesagt, uns interessiert nicht, was Sie im Internet tun-- und es geht uns auch nichts an. Wir haben die technischen Schritte unternommen, um sicherzustellen, daß wir es nicht können.",
 
-  "explanation.performanceHeader": "Faster than anything else.",
-  "explanation.performanceSubheader": "28% faster, in fact.",
+  "explanation.performanceHeader": "Schneller als alles andere.",
+  "explanation.performanceSubheader": "28% schneller.",
   "explanation.fastestDNS": "Wir haben 1.1.1.1 gebaut, damit es das schnellste DNS-Verzeichnis des Internets ist.  Überzeugen Sie sich selbst. Der unabhängige DNS Monitor DNSPerf stuft 1.1.1.1 als den schnellsten DNS-Dienst in der Welt.",
   "explanation.speedContinued": "Da fast alles was Sie im Internet tun mit einer DNS-Anfrage beginnt, beschleunigt Ihre Wahl für das schnellste DNS-Verzeichnis ziemlich alle Ihre Internet Aktivitäten, egal auf welchem Geräten.",
 
   "instructions": {
+    "header": "Einrichtung auf dem {{device}}",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
     "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [

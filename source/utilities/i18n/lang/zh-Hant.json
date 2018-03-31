@@ -21,6 +21,8 @@
   "explanation.speedContinued": "幾乎網際網路上的一切活動均由一個DNS請求開始，因此在所有設備上選擇使用速度最快的DNS目錄將提高您在網上幾乎所有活動的速度 。",
 
   "instructions": {
+    "header": "在{{device}}上安裝",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
     "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [
