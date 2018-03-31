@@ -3,7 +3,7 @@ section#explanation(data-section="explanation")
     h1.mobile-only.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.dnsHeader')
 
     .secondary
-      img(src="/media/dns-book-closed.png")
+      include ../../media/dns-book-closed.svg
 
     .primary
       h1.desktop-only.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.dnsHeader')
@@ -13,7 +13,8 @@ section#explanation(data-section="explanation")
   .content.with-gutter(data-subsection="security")
     .primary
       .secondary.mobile-only
-        img(src="/media/dns-explanation.png")
+        include ../../media/dns-explanation.svg
+
       p!=htmlWebpackPlugin.options.t('explanation.dnsSlowInsecure')
       p!=htmlWebpackPlugin.options.t('explanation.dnsAlternative')
 
@@ -25,7 +26,8 @@ section(data-section="explanation-privacy")
 
   .content(data-subsection="privacy")
     .secondary.desktop-only
-      img(src="/media/shopping-cart.png")
+      include ../../media/shopping-cart.svg
+
     .primary
       p
         span!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeLogs')
