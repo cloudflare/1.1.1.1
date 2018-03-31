@@ -1,12 +1,14 @@
 section(data-section="faq")
   .content
-    h1.collapsed-top-margin Who’s behind this?
+    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faq.whosBehindThis')
 
-    p <strong>1.1.1.1</strong> is a partnership between Cloudflare and APNIC.
-
-    p Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.
-
-    p Cloudflare had the network. APNIC had the IP address (1.1.1.1). Both of us were motivated by a mission to help build a better Internet. You can read more about each organization’s motivations on our respective posts: <a href="https://blog.cloudflare.com/" target="_blank">Cloudflare Blog</a> / <a href="http://blog.apnic.net/" target="_blank">APNIC Blog</a>.
+    p!=htmlWebpackPlugin.options.t('faq.partnership')
+    p!=htmlWebpackPlugin.options.t('faq.network')
+    p!=htmlWebpackPlugin.options.t('faq.networkContinued')
 
     .logos(style="text-align: center;")
-      img(src="~media/cloudflare-apnic.png" width="370" style="max-width: 100%; margin: 1em 0")
+      img(src="/media/cloudflare-apnic.png" width="370" style="max-width: 100%; margin: 1em 0")
+
+    h1!=htmlWebpackPlugin.options.t('faq.canIintegrate')
+    p!=htmlWebpackPlugin.options.t('faq.integrationInfo')
+    p!=htmlWebpackPlugin.options.t('faq.integrationDocs')

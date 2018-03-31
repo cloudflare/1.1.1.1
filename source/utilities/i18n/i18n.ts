@@ -1,6 +1,6 @@
 import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
-import enUS from './lang/en-US'
+// import enUS from './lang/en-US'
 
 export default i18n
   .use(LanguageDetector)
@@ -12,7 +12,7 @@ export default i18n
     react: {
       wait: true
     },
-    resources: {
-      ...enUS
-    }
+    // resources: {
+    //   ...enUS
+    // }
   })

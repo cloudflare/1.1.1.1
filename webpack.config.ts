@@ -10,6 +10,7 @@ import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as CleanWebpackPlugin from 'clean-webpack-plugin'
 import * as CopyWebpackPlugin from 'copy-webpack-plugin'
 import { format as formatURL } from 'url'
+import localeDefinitions from './source/utilities/i18n/lang'
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -137,23 +138,17 @@ $.module = {
       test: /\.pug$/,
       exclude,
       use: [
+        // {
+        //   loader: 'html-loader',
+        //   options: {
+        //     minimize: htmlMinify,
+        //     attrs: ['img:src', 'video:src']
+        //   }
+        // },
         {
-          loader: 'html-loader',
+          loader: 'pug-loader',
           options: {
-            minimize: htmlMinify,
-            attrs: ['img:src', 'video:src']
-          }
-        },
-        {
-          loader: 'pug-html-loader',
-          options: {
-            pretty: false,
-            data: {
-              formatURL,
-              NODE_ENV: environment,
-              title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
-              description: '✌️✌️ Browse a faster, more private internet.'
-            }
+            pretty: false
           }
         }
       ]
@@ -203,10 +198,49 @@ const hotReloadEntries = [
 
 $.entry['site'] = ['./source/pages/index.ts']
 
-$.plugins.push(new HtmlWebpackPlugin({
-  favicon: 'source/media/favicon.png',
-  template: joinP('source/pages/index.pug'),
-  filename: 'index.html'
+const locales = [
+  {
+    code: 'en-US',
+    path: ''
+  },
+  {
+    path: 'es/',
+    code: 'es'
+  },
+  {
+    path: 'fr/',
+    code: 'fr'
+  },
+  {
+    path: 'de/',
+    code: 'de'
+  },
+  {
+    path: 'zh-Hans/',
+    code: 'zh-Hans'
+  },
+  {
+    path: 'zh-Hant/',
+    code: 'zh-Hant'
+  },
+  {
+    path: 'ja-jp/',
+    code: 'ja-jp'
+  }
+]
+
+$.plugins.push(...locales.map((locale) => {
+  return new HtmlWebpackPlugin({
+    favicon: 'source/media/favicon.png',
+    template: joinP('source/pages/index.pug'),
+    filename: `${locale.path}index.html`,
+    t: (key: string) => localeDefinitions[locale.code][key],
+    localeCode: locale.code,
+    formatURL,
+    NODE_ENV: environment,
+    title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
+    description: '✌️✌️ Browse a faster, more private internet.'
+  })
 }))
 
 export default $

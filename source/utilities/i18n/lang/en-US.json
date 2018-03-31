@@ -1,0 +1,34 @@
+{
+  "language": "English",
+  "hero.introducing": "Introducing",
+  "hero.description": "You’re two minutes away from browsing a faster, more private internet.",
+  "hero.getStarted": "Get Started",
+  "hero.info": "Info",
+
+  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsExplanation": "Nearly everything on the Internet starts with a DNS request. DNS is the Internet’s directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory: <strong class=\"subtle\">Where can I find this?</strong>",
+  "explanation.dnsSlowInsecure": "Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it target you with ads.",
+  "explanation.dnsAlternative": "We think that’s gross. If you do too, now there’s an alternative: <strong>1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong>1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We will never sell your data or use it to target ads.</span> Period.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained an external auditor to audit our systems annually to ensure that we're doing what we say.",
+  "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
+
+  "explanation.fastestDNS": "We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor DNSPerf ranks 1.1.1.1 the fastest DNS service in the world.",
+  "explanation.speedContinued": "Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.",
+
+  "share.header": "Share a faster, privacy-first Internet with your friends.",
+  "share.emailSubject": "✌️✌️ Browse a faster, more private internet — 1.1.1.1 DNS Resolver",
+  "share.emailBody": "“1.1.1.1” makes internet browsing faster and more private. Check out https: //1.1.1.1 for more info and how to setup your device in less than two minutes!",
+  "share.tweetBody": "️✌️ Fast, safe, and private internet is here. Setup the 1.1.1.1 DNS Resolver in less than two minutes.",
+
+  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.partnership": "<strong>1.1.1.1</strong> is a partnership between Cloudflare and APNIC.",
+  "faq.network": "Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.",
+  "faq.networkContinued": "Cloudflare had the network. APNIC had the IP address (1.1.1.1). Both of us were motivated by a mission to help build a better Internet. You can read more about each organization’s motivations on our respective posts: <a href=\"https: //blog.cloudflare.com/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"http://blog.apnic.net/\" target=\"_blank\">APNIC Blog</a>.",
+  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
+  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong>yes!</strong>",
+  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https: //developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
+}
