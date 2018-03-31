@@ -9,7 +9,7 @@ section(data-section="hero")
       i.fas.fa-caret-down
 
     .dropdown
-      each locale in htmlWebpackPlugin.options.locales
+      each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
         a.language(
           href="/" + locale.path
           class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
