@@ -37,13 +37,12 @@ section(data-section="explanation-privacy")
 section(data-section="explanation-stats")
   .content
     header
-      h1 Faster than anything else.
-      h2 28% faster, in fact.
+      h1!=htmlWebpackPlugin.options.t('explanation.performanceHeader')
+      h2!=htmlWebpackPlugin.options.t('explanation.performanceSubheader')
+
   .content
     .primary
-
       p!=htmlWebpackPlugin.options.t('explanation.fastestDNS')
-
       p!=htmlWebpackPlugin.options.t('explanation.speedContinued')
 
     .chart(data-ref="statsChart" style="opacity: 0")

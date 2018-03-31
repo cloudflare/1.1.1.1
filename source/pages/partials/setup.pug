@@ -1,3 +1,11 @@
+mixin render(input)
+  if input.children
+    #{input.tag}
+      each child in input.children
+        +render(child)
+  else if input.content
+    #{input.tag}!=input.content
+
 section#setup-instructions(data-section="setup" data-ref="setup")
   h1.collapsed-top-margin(data-ref="deviceLabel" data-label="Setup on {{device}}")
 
@@ -27,12 +35,8 @@ section#setup-instructions(data-section="setup" data-ref="setup")
 
   .instructions(data-platform="mac-os")
     ol
-      li Open System Preferences.
-      li Search for <strong>DNS Servers</strong> and select it from the dropdown.
-      li Click the <strong>+</strong> button to add a DNS Server and enter <strong>1.1.1.1</strong>
-      li Click <strong>+</strong> again and enter <strong>1.0.0.1</strong> (This is for redundancy.)
-      li Click <strong>Ok</strong>, then click <strong>Apply</strong>.
-      li You’re all set! Your device now has faster, more private DNS servers ✌️✌️
+      each instruction in htmlWebpackPlugin.options.t('instructions')['mac-os'].steps
+        +render(instruction)
 
     //- video.instruction-video(
     //-   src="~media/instructions/instructions-mac.mp4"
@@ -43,94 +47,34 @@ section#setup-instructions(data-section="setup" data-ref="setup")
 
   .instructions(data-platform="iphone")
     ol
-      li From your iPhone’s home screen, open the <strong>Settings</strong> app.
-      li Tap <strong>Wi-Fi</strong>, then tap your preferred network in the list.
-      li Tap <strong>Configure DNS</strong>, then tap <strong>Manual</strong>.
-      li If there are any existing entries, tap the <strong>-</strong> button, and <strong>Delete</strong> next to each one.
-      li Tap the <strong>+ Add Server</strong> button, then type <strong>1.1.1.1</strong>
-      li Tap the <strong>+ Add Server</strong> button again, then type <strong>1.0.0.1</strong>. This is for redundancy.
-      li Tap the <strong>Save</strong> button on the top right.
-      li You’re all set! Your device now has faster, more private DNS servers ✌️✌️
+      each instruction in htmlWebpackPlugin.options.t('instructions').iphone.steps
+        +render(instruction)
 
   .instructions(data-platform="linux")
-    p
-      | While these steps are for Ubuntu, most Linux distributions configure DNS settings through the Network Manager.
-      | Alternatively, your DNS settings can be specified in <code class="inline">/etc/resolv.conf</code>
+    p!=htmlWebpackPlugin.options.t('instructions').linux.notice
 
     ol
-      li Click the Applications <i class="fas fa-th"></i> icon on the left menu bar.
-      li Click <strong>Settings</strong>, then <strong>Network</strong>.
-      li Find your internet connection on the right pane, then click the gear <i class="fas fa-cog"></i> icon.
-      li Click the <strong>IPv4</strong> or <strong>IPv6</strong> tab to view your DNS settings.
-      li Set the “Automatic” toggle on the DNS entry to <strong>Off</strong>.
-      li
-        span Provide the 1.1.1.1 DNS addresses in the DNS entries field:
-        ul
-          li For IPv4: <strong>1.1.1.1,1.0.0.1</strong>
-          li For IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>
-      li Click <strong>Apply</strong>, then restart your browser.
-      li You’re all set! Your device now has faster, more private DNS servers ✌️✌️
+      each instruction in htmlWebpackPlugin.options.t('instructions').linux.steps
+        +render(instruction)
 
   .instructions(data-platform="windows")
     ol
-      li Click on the Start menu, then click on <strong>Control Panel</strong>.
-      li Click on <strong>Network and Internet</strong>.
-      li Click on <strong>Change Adapter Settings</strong>.
-      li Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>.
-      li Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired).
-      li Click <strong>Properties</strong>.
-      li Write down any existing DNS server entries for future reference.
-      li Click <strong>Use The Following DNS Server Addresses</strong>.
-      li
-        span Replace those addresses with the 1.1.1.1 DNS addresses:
-        ul
-          li For IPv4: <strong>1.1.1.1</strong> and/or <strong>1.0.0.1</strong>
-          li For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>
-
-      li Click <strong>OK</strong>, then <strong>Close</strong>.
-      li Restart your browser.
-      li You’re all set! Your device now has faster, more private DNS servers ✌️✌️
+      each instruction in htmlWebpackPlugin.options.t('instructions').windows.steps
+        +render(instruction)
 
   .instructions(data-platform="android")
     .message
-      p.collapsed-margins.message-content
-        | Note that Android requires a static IP to use custom DNS servers.
-        | This setup requires additional setup on your router, affecting your network’s strategy for adding new devices to the network.
-        | We recommend configuring your <button class="inline-button" type="button" onclick="chooseInstructions('router')">router’s DNS</button> instead.
-        | This will give all devices on your network the full speed and privacy benefits of 1.1.1.1 DNS.
+      p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
     ol
-      li From your Android’s app list, open the <strong>Settings</strong> app.
-      li Under the <strong>Wireless & networks</strong> section, tap <strong>Wi-Fi</strong>,
-      li Long press your preferred network in the list until a context menu appears.
-      li Tap the <strong>Modify network</strong>, then tap <strong>Advanced options</strong>.
-      li Tap <strong>Advanced options</strong>, then tap <strong>IP Settings</strong>.
-      li Change <strong>Dynamic</strong> to <strong>Static</strong>.
-      li Using your router’s configuration, enter your device’s IP address and gateway.
-      li Tap the <strong>DNS</strong> field, then erase the number in the field.
-      li In the <strong>DNS 1</strong> field, enter <strong>1.1.1.1</strong>
-      li In the <strong>DNS 2</strong> field, enter <strong>1.0.0.1</strong> (This is for redundancy.)
-      li Tap <strong>Save</strong>.
-
-      li You’re all set! Your device now has faster, more private DNS servers ✌️✌️
+      each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
+        +render(instruction)
 
   .instructions(data-platform="router")
     .message.center
-      p.collapsed-margins.message-content
-        | Your router’s configuration may vary. Consult your manual for more information.
+      p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').router.message
 
     ol
-      li Connect to your preferred wireless network.
-      li Enter your router’s gateway IP address in your browser.
-      li If prompted, fill in your username and password. This information may be labeled on the router.
-      li In your router’s configuration page, locate the <strong>DNS server</strong> settings.
-      li Write down any existing DNS server entries for future reference.
-      li
-        span Replace those addresses with the 1.1.1.1 DNS addresses:
-        ul
-          li For IPv4: <strong>1.1.1.1</strong> and/or <strong>1.0.0.1</strong>
-          li For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>
-      li Save your settings, then restart your browser.
-      li You’re all set! Your device now has faster, more private DNS servers ✌️✌️
+      each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
+        +render(instruction)
 
-  p.questions-link
-    | Questions? Visit our <a href="https://community.cloudflare.com/c/reliability/1111" target="_blank">Community Forum</a>
+  p.questions-link!=htmlWebpackPlugin.options.t('instructions').questions

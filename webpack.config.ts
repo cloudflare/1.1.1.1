@@ -1,4 +1,6 @@
 import { port } from './source/utilities/routes'
+// import * as defaultsDeep from 'lodash.defaultsdeep'
+const defaultsDeep = require('lodash.defaultsdeep')
 import webpack, {
   DefinePlugin,
   NamedModulesPlugin,
@@ -215,44 +217,47 @@ const locales = [
     code: 'en-US',
     label: 'English'
   },
-  // {
-  //   path: 'es/',
-  //   code: 'es',
-  //   label: 'Español'
-  // },
-  // {
-  //   path: 'fr/',
-  //   code: 'fr',
-  //   label: 'Français'
-  // },
-  // {
-  //   path: 'de/',
-  //   code: 'de',
-  //   label: 'Deutsch'
-  // },
-  // {
-  //   path: 'zh-Hans/',
-  //   code: 'zh-Hans',
-  //   label: '简体中文'
-  // },
-  // {
-  //   path: 'zh-Hant/',
-  //   code: 'zh-Hant',
-  //   label: '中國傳統的'
-  // },
-  // {
-  //   path: 'ja-jp/',
-  //   code: 'ja-jp',
-  //   label: '日本語'
-  // }
+  {
+    path: 'es/',
+    code: 'es',
+    label: 'Español'
+  },
+  {
+    path: 'fr/',
+    code: 'fr',
+    label: 'Français'
+  },
+  {
+    path: 'de/',
+    code: 'de',
+    label: 'Deutsch'
+  },
+  {
+    path: 'zh-Hans/',
+    code: 'zh-Hans',
+    label: '简体中文'
+  },
+  {
+    path: 'zh-Hant/',
+    code: 'zh-Hant',
+    label: '中國傳統的'
+  },
+  {
+    path: 'ja-jp/',
+    code: 'ja-jp',
+    label: '日本語'
+  }
 ]
 
 $.plugins.push(...locales.map((locale) => {
+  const mergedDefinitions = defaultsDeep(localeDefinitions[locale.code], localeDefinitions['en-US'])
+
+  console.log('>>>', mergedDefinitions["hero.introducing"])
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
     template: joinP('source/pages/index.pug'),
     filename: `${locale.path}index.html`,
-    t: (key: string) => localeDefinitions[locale.code][key] || localeDefinitions['en-US'][key],
+    t: (key: string) => mergedDefinitions[key],
     locale,
     locales,
     formatURL,
