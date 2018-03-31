@@ -21,6 +21,8 @@
   "explanation.speedContinued": "几乎互联网上的一切活动均由一个 DNS 请求开始，因此在所有设备上选择使用速度最快的 DNS 目录将提高您在网上几乎所有活动的速度。",
 
   "instructions": {
+    "header": "在{{device}}上安装",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
     "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [

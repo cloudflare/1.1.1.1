@@ -28,6 +28,8 @@
   "faq.integrationInfo": "Si usted es un navegador, un sistema operativo, una aplicación, un enrutador o un fabricante de VPN que desea crear un servicio de DNS primero, rápido y moderno, <strong>¡sí!</strong>",
   "faq.integrationDocs": "Mediante el uso de DNS a través de HTTPS (DoH), puede ofrecer seguridad mejorada a sus clientes de forma transparente a la vez que mejora la velocidad de sus dispositivos. Aún mejor, puede hacerlo sin costo, tanto en términos de licencia como de privacidad del cliente. Obtenga más información acerca de 1.1.1.1 y nuestro soporte DNS sobre HTTPS (DoH) en nuestro <a href= \"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Documentos del desarrollador</a>.",
     "instructions": {
+    "header": "Configuración en {{device}}",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
     "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [

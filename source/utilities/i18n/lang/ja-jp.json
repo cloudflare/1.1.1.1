@@ -1,8 +1,8 @@
 {
   "hero.introducing": "新登場",
   "hero.description": "たったの2分で、より速く、よりプライベートなインターネットの閲覧が可能となります。",
-  "hero.getStarted": "Get Started",
-  "hero.info": "Info",
+  "hero.getStarted": "始める",
+  "hero.info": "情報",
 
   "explanation.dnsHeader": "DNS：インターネットのディレクトリ",
   "explanation.dnsExplanation": "インターネット上のほとんどすべてがDNSリクエストから始まります。 DNSはインターネットのディレクトリです。 リンクをクリックしたり、アプリを開いたり、電子メールを送信するとき、デバイスは、まずディレクトリに次のことを尋ねます。<strong class=\"subtle\">どこで見つけることができますか？</strong>",
@@ -16,12 +16,14 @@
   "explanation.privacyConclusion": "率直に申し上げますと、当社はお客様がインターネットで何をしているかを知りたくありません。そこで、技術的な措置を講じてお客様のインターネット上の行動を見ることができないよう制限しました。",
 
   "explanation.performanceHeader": "他の何よりも速い。",
-  "explanation.performanceSubheader": "28% faster, in fact.",
+  "explanation.performanceSubheader": "実際には28％速だよ。",
   "explanation.fastestDNS": "当社は、インターネット最速のDNSディレクトリである1.1.1.1を構築しました。 実際に、独立したDNSモニターであるDNSPerfは、1.1.1.1を世界最速のDNSサービスにランク付けしました。ぜひお確かめください。",
   "explanation.speedContinued": "インターネット上のほとんどのアクティビティはDNSリクエストで始まります。お使いのあらゆるデバイスにおいて最速のDNSディレクトリを選択することにより、オンライン上のほぼ全てのアクティビティを加速することができます。",
 
   "instructions": {
-    "questions": "質問ですか<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム/a>をご覧ください",
+    "header": "{{device}}でのセットアップ",
+    "explanation": "2分で<strong>1.1.1.1</strong>をセットアップします。 下記のデバイスを選択してください。",
+    "questions": "質問ですか<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">コミュニティフォーラム</a>をご覧ください",
     "mac-os": {
       "steps": [
         {"tag": "li", "content": "システム環境設定を開いてください。"},
