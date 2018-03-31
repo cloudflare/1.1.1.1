@@ -23,10 +23,10 @@ doctype html
 
 html(lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
   head
-    title= title
+    title=htmlWebpackPlugin.options.t('title')
     meta(charset="utf-8")
-    meta(property="og:title" content=htmlWebpackPlugin.options.title)
-    meta(name="twitter:title" content=htmlWebpackPlugin.options.title)
+    meta(property="og:title" content=htmlWebpackPlugin.options.t('title'))
+    meta(name="twitter:title" content=htmlWebpackPlugin.options.t('title'))
 
     meta(name="robots" content="noindex")
 
@@ -36,9 +36,9 @@ html(lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
     meta(name="twitter:card" content="summary")
     meta(http-equiv="X-UA-Compatible" content="IE=edge, chrome=1")
 
-    meta(name="description" content=htmlWebpackPlugin.options.description)
-    meta(name="og:description" content=htmlWebpackPlugin.options.description)
-    meta(name="twitter:description" content=htmlWebpackPlugin.options.description)
+    meta(name="description" content=htmlWebpackPlugin.options.t('description'))
+    meta(name="og:description" content=htmlWebpackPlugin.options.t('description'))
+    meta(name="twitter:description" content=htmlWebpackPlugin.options.t('description'))
 
     meta(property="og:url" content="https://1.1.1.1")
     meta(property="og:image" content="https://1.1.1.1/media/card.png")

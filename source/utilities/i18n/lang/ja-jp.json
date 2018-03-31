@@ -1,4 +1,6 @@
 {
+  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
+  "description": "✌️✌️ DNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
   "hero.introducing": "新登場",
   "hero.description": "たったの2分で、より速く、よりプライベートなインターネットの閲覧が可能となります。",
   "hero.getStarted": "始める",
@@ -164,8 +166,8 @@
   },
 
   "share.header": "Share a faster, privacy-first Internet with your friends.",
-  "share.emailSubject": "✌️✌️ CloudflareのDNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
-  "share.emailBody": "1.1.1.1は、インターネットの閲覧を、より速く、よりプライベートにします。 詳しい内容と、お使いのデバイスを簡単にセットアップする方法は、Cloudflareのhttps://1.1.1.1でご確認ください！",
+  "share.emailSubject": "✌️✌️ DNSリゾルバー1.1.1.1でより速く、よりプライベートなインターネットの閲覧を",
+  "share.emailBody": "1.1.1.1は、インターネットの閲覧を、より速く、よりプライベートにします。 詳しい内容と、お使いのデバイスを簡単にセットアップする方法は、https://1.1.1.1でご確認ください！",
   "share.tweetBody": "✌️✌️ 高速、安全、そしてプライベートなインターネットはここにあります。CloudflareのDNSリゾルバーは設定に2分もかかりません",
 
   "faq.whosBehindThis": "Who’s behind this?",

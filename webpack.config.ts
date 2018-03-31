@@ -260,9 +260,7 @@ $.plugins.push(...locales.map((locale) => {
     locale,
     locales,
     formatURL,
-    NODE_ENV: environment,
-    title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
-    description: '✌️✌️ Browse a faster, more private internet.'
+    NODE_ENV: environment
   })
 }))
 
