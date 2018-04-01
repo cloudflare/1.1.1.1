@@ -173,7 +173,7 @@
   "faq.whosBehindThis": "Who’s behind this?",
   "faq.partnership": "<strong>1.1.1.1</strong>は、CloudflareとAPNICのパートナーシップにより誕生しました。",
   "faq.network": "Cloudflareは、世界最大、かつ最速なネットワークのひとつを運営しています。 APNICは、アジア太平洋・オセアニア地域におけるIPアドレスの割り当てを管理する非営利団体です。",
-  "faq.networkContinued": "Cloudflareはネットワークを、 APNICは、IPアドレス（1.1.1.1）を所有していました。 どちらも、より良いインターネットを構築する使命を果たすという意欲を持っていました。詳しくは<a href=\"https://blog.cloudflare.com/\" target=\"_blank\">Cloudflareブログ</a>／<a href=\"http://blog.apnic.net/\" target=\"_blank\">APNICブログ</a>をご覧ください。",
+  "faq.networkContinued": "Cloudflareはネットワークを、 APNICは、IPアドレス（1.1.1.1）を所有していました。 どちらも、より良いインターネットを構築する使命を果たすという意欲を持っていました。詳しくは<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflareブログ</a>／<a href=\"http://blog.apnic.net/\" target=\"_blank\">APNICブログ</a>をご覧ください。",
   "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
   "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
   "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
