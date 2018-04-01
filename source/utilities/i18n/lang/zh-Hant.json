@@ -6,19 +6,19 @@
   "hero.getStarted": "立即使用",
   "hero.info": "了解更多",
 
-  "explanation.dnsHeader": "DNS: 網際網路的目錄",
+  "explanation.dnsHeader": "DNS: 網際網路的目錄。",
   "explanation.dnsExplanation": "幾乎網際網路上的一切都是從一個 DNS 請求開始。DNS 是網際網路的目錄。點擊鏈接，打開應用程式，發送電子郵件時，您的設備所做的第一件事就是詢問目錄： <strong class=\"subtle\">我能在哪裡找到這項內容？</strong>",
   "explanation.dnsSlowInsecure": "不幸的是，默認情況下，DNS 通常速度慢且不安全。您的 ISP，以及其他在網際網路上進行監聽活動者，看得到每個您訪問的網站和使用的應用程式，即便這些內容已經過加密處理。令人感到不安的是，一些 DNS 供應商出售您的網際網路活動數據，或是利用數據對您進行廣告宣傳。",
   "explanation.dnsAlternative": "我們認為這種行為極不道德。如果您也這樣認為，現在有一種替代方案： <strong>1.1.1.1</strong>",
 
-  "explanation.privacyHeader": "保證：隱私優先",
+  "explanation.privacyHeader": "保證：隱私優先。",
   "explanation.privacyExplanation": "我們正在重新考慮 1983 年代的 DNS 協議。<strong>1.1.1.1 </strong>支持經過加密處理的 DNS 以及通過 HTTPS 完成的 DNS。",
-  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">我們絕不會出售您的數據，或是用來定位廣告。</span> 就這麼簡單。",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">我們絕不會出售您的數據，或是用來定位廣告。</span>就這麼簡單。",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">我們絕不會記錄您的 IP 地址</span> (這是其它公司識別您的做法）。而且我們不只是說說而已。我們留用了 KPMG 請其每年審計我們的系統，以確保我們說到做到。",
   "explanation.privacyConclusion": "坦白說，我們並不想知道您在網路上做什麼事，因為這與我們無關，並且我們已經採取了一些技術步驟以確保我們無法那麼做。",
 
-  "explanation.performanceHeader": "快過網路上的其他選擇",
-  "explanation.performanceSubheader": "事實上，快了28%",
+  "explanation.performanceHeader": "快過網路上的其他選擇。",
+  "explanation.performanceSubheader": "事實上，快了28%。",
   "explanation.fastestDNS": "我們已將 1.1.1.1 打造為網際網路最快的 DNS 目錄。這絕不是空口無憑。獨立的 DNS 監測工具 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 將 1.1.1.1 評為全球最快速的 DNS 服務。",
   "explanation.speedContinued": "幾乎網際網路上的一切活動均由一個DNS請求開始，因此在所有設備上選擇使用速度最快的DNS目錄將提高您在網上幾乎所有活動的速度 。",
 
@@ -29,10 +29,10 @@
     "mac-os": {
       "steps": [
         {"tag": "li", "content": "O打開 [系統偏好設置]。"},
-        {"tag": "li", "content": "搜尋<strong> [DNS服務器] </strong>，並從下拉列表中選擇它。"},
-        {"tag": "li", "content": "點擊<strong>+</strong>按鈕，添加一個 DNS 服務器，並進入<strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong>1.0.0.1 </strong>（這是為了實現冗餘。）"},
-        {"tag": "li", "content": "點擊<strong> [確定] </strong>, 然後點擊<strong> [套用] </strong>。"},
+        {"tag": "li", "content": "搜尋 <strong>[DNS服務器]</strong>，並從下拉列表中選擇它。"},
+        {"tag": "li", "content": "點擊 <strong>+</strong> 按鈕，添加一個DNS服務器，並進入<strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong>1.0.0.1</strong>（這是為了實現冗餘）"},
+        {"tag": "li", "content": "點擊 <strong>[確定]</strong>，然後點擊 <strong>[套用]</strong>。"},
         {"tag": "li", "content": "一切就緒！您的設備現在擁有更快、更私密的DNS服務器 ✌️✌️"}
       ]
     },
