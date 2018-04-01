@@ -8,7 +8,7 @@
   "hero.info": "Info",
 
   "explanation.dnsHeader": "DNS: Internet’s Directory",
-  "explanation.dnsExplanation": "Presque tout sur Internet commence par une requête DNS. DNS est l'annuaire d’Internet. Cliquez sur un lien, ouvrez une application, envoyez un e-mail et la première chose que votre appareil fait est de consulter l'annuaire: <strong class=\"subtle\">Où puis-je trouver cela ?</strong>",
+  "explanation.dnsExplanation": "Presque tout sur Internet commence par une requête DNS. DNS est l'annuaire d’Internet. Cliquez sur un lien, ouvrez une application, envoyez un e-mail et la première chose que votre appareil fait est de consulter l'annuaire: <strong class=\"subtle\">Où puis-je trouver cela?</strong>",
   "explanation.dnsSlowInsecure": "Malheureusement, par défaut, le DNS est généralement lent et non sécurisé. Votre fournisseur d’accès Internet, et toute autre personne écoutant sur Internet, peut voir tous les sites que vous visitez et toutes les applications que vous utilisez, même si leur contenu est chiffré. Certains fournisseurs de DNS vendent des données sur votre activité Internet ou l’utilisent pour vous cibler avec des publicités.",
   "explanation.dnsAlternative": "Si vous pensez que c'est contestable, il existe maintenant une alternative: <strong>1.1.1.1</strong>",
 
@@ -34,7 +34,7 @@
         {"tag": "li", "content": "Cliquez sur le bouton <strong>+</strong> pour ajouter un serveur DNS et entrez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Cliquez à nouveau sur <strong>+</strong> et entrez <strong>1.0.0.1</strong> (pour la redondance)."},
         {"tag": "li", "content": "Cliquez sur <strong>Ok</strong>, puis sur <strong>Appliquer</strong>."},
-        {"tag": "li", "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
+        {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
     },
     "windows": {
@@ -105,7 +105,7 @@
             "tag": "li"
           },
           {
-            "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️",
+            "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️",
             "tag": "li"
           }
       ]
@@ -119,7 +119,7 @@
         {"tag": "li", "content": "Appuyez sur le bouton <strong>+ Ajouter un serveur</strong>, puis tapez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Appuyez à nouveau sur le bouton <strong>+ Ajouter un serveur</strong>, puis tapez <strong>1.0.0.1</strong>. Ceci est pour la redondance."},
         {"tag": "li", "content": "Appuyez sur le bouton <strong>Enregistrer</strong> en haut à droite."},
-        {"tag": "li", "content": "Tout est prêt ! Votre appareil utilise désormais des serveurs DNS plus rapides et plus privés ✌️✌️"}
+        {"tag": "li", "content": "Tout est prêt! Votre appareil utilise désormais des serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
     },
     "android": {
@@ -136,7 +136,7 @@
         {"tag": "li", "content": "Dans le champ <strong>DNS 1</strong>, entrez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong>1.0.0.1</strong> (Ceci est pour la redondance.)"},
         {"tag": "li", "content": "Appuyez sur <strong>Enregistrer</strong>."},
-        {"tag": "li", "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
+        {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
     },
     "router": {
@@ -161,14 +161,14 @@
           ]
         },
         {"tag": "li", "content": "Enregistrez vos paramètres, puis redémarrez votre navigateur."},
-        {"tag": "li", "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
+        {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
     }
   },
 
   "share.header": "️✌️✌️ Partagez un Internet plus rapide et plus confidentiel avec vos amis.",
   "share.emailSubject": "✌️✌️ Naviguez sur un Internet plus rapide et plus privé - DNS Resolver Cloudflare 1.1.1.1",
-  "share.emailBody": "1.1.1.1 rend la navigation sur Internet plus rapide et plus privée. Consultez la page Cloudflare https://1.1.1.1 pour plus d’informations et pour découvrir comment configurer votre appareil en moins de 2 minutes !",
+  "share.emailBody": "1.1.1.1 rend la navigation sur Internet plus rapide et plus privée. Consultez la page Cloudflare https://1.1.1.1 pour plus d’informations et pour découvrir comment configurer votre appareil en moins de 2 minutes!",
   "share.tweetBody": "✌️✌️ L'Internet rapide, sûr et privé est là. Configurer la résolution DNS Cloudflare en moins de 2 minutes.",
 
   "faq.whosBehindThis": "Qui est derrière ça?",
