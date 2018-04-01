@@ -29,10 +29,10 @@
     "mac-os": {
       "steps": [
         {"tag": "li", "content": "打开“系统首选项”。"},
-        {"tag": "li", "content": "搜索<strong>“DNS 服务器”</strong>，并从下拉列表中将其选中。"},
+        {"tag": "li", "content": "搜索 <strong>“DNS 服务器”</strong>，并从下拉列表中将其选中。"},
         {"tag": "li", "content": "点击 <strong>+</strong> 按钮以添加 DNS 服务器，然后输入 <strong>1.1.1.1 </strong>"},
         {"tag": "li", "content": "再次点击 <strong>+</strong>，然后输入 <strong>1.0.0.1</strong>（此步骤设置冗余服务器。）"},
-        {"tag": "li", "content": "依次点击<strong>“确定”</strong>和<strong>“应用”</strong>。"},
+        {"tag": "li", "content": "依次点击 <strong>“确定”</strong>和<strong>“应用”</strong>。"},
         {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
       ]
     },
