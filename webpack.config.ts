@@ -157,7 +157,7 @@ const locales = [
   {
     path: 'nl/',
     code: 'nl',
-    label: 'Dutch'
+    label: 'Nederlands'
   },
   {
     path: 'zh-Hans/',
