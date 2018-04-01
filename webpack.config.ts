@@ -155,6 +155,11 @@ const locales = [
     label: 'Deutsch'
   },
   {
+    path: 'nl/',
+    code: 'nl',
+    label: 'Nederlands'
+  },
+  {
     path: 'zh-Hans/',
     code: 'zh-Hans',
     label: '简体中文'

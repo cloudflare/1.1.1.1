@@ -3,28 +3,28 @@
   "description": "✌️✌️ Browse a faster, more private internet.",
   "hero.introducing": "隆重推出",
   "hero.description": "仅需 2 分钟，浏览互联网就可以速度更快、私密性更强。",
-  "hero.getStarted": "Install",
-  "hero.info": "Info",
+  "hero.getStarted": "立即使用",
+  "hero.info": "了解更多",
 
-  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsHeader": "DNS: 互联网的目录",
   "explanation.dnsExplanation": "几乎互联网上的一切活动均由一个 DNS 请求开始。DNS 是互联网的目录。 点击链接、打开应用、发送电子邮件时，设备所要做的第一件事就是询问目录：<strong class=\"subtle\">我能在哪里找到这项内容？</strong>",
   "explanation.dnsSlowInsecure": "不幸的是，默认情况下，DNS 通常缓慢且不安全。 您的 ISP 及其他在互联网上窥听的人都能看到您访问的每个网站和使用的每个应用 - 即使这些内容已加密。 令人感到不安的是，一些 DNS 提供商还会出售您的互联网使用信息或用其向您发送广告。",
   "explanation.dnsAlternative": "我们认为那样做极不道德。如果您也这么想，那么现在有另一个选择，那就是： <strong>1.1.1.1</strong>",
 
-  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyHeader": "保证：隐私优先",
   "explanation.privacyExplanation": "我们在重新考虑 1983 年的 DNS 协议。<strong>1.1.1.1 </strong>即支持加密 DNS ，也支持 DNS over HTTPS。",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">我们任何时候都不会出售您的信息或用其来定位广告。</span> 就这么简单。",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">我们任何时候都不会记录您的 IP 地址</span> （记录 IP 地址正是其他公司识别您的方法），而且我们不只是说说而已。我们仍然留用了毕马威（KPMG)，请其每年对我们的系统进行审计，从而确保我们遵守诺言。",
   "explanation.privacyConclusion": "坦率地说，我们并不想知道您在网上做些什么，因为这不是我们关心的事情，并且我们已经采取了一些技术措施来确保我们无法那么做。",
 
-  "explanation.performanceHeader": "Faster than anything else.",
-  "explanation.performanceSubheader": "28% faster, in fact.",
+  "explanation.performanceHeader": "快过互联网上的其他选择",
+  "explanation.performanceSubheader": "事实上，快了28%",
   "explanation.fastestDNS": "我们已将 1.1.1.1 建成了互联网上最快的 DNS 目录，这绝不是空口无凭。独立 DNS 监测工具 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 将 1.1.1.1 评为全球速度最快的 DNS 服务。",
   "explanation.speedContinued": "几乎互联网上的一切活动均由一个 DNS 请求开始，因此在所有设备上选择使用速度最快的 DNS 目录将提高您在网上几乎所有活动的速度。",
 
   "instructions": {
     "header": "在{{device}}上安装",
-    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
+    "explanation": "设定 <strong>1.1.1.1</strong> 只需要两分钟，不需要任何技术支持或安装特殊软体。选择你的网路装置，依照步骤完成。就算你是电脑新手，也能轻松设定。",
     "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [
@@ -165,16 +165,17 @@
     }
   },
 
-  "share.header": "Share a faster, privacy-first Internet with your friends.",
+  "share.header": "分享更快，更私密的互联网。",
   "share.emailSubject": "✌️✌️ 浏览互联网的速度更快、私密性更强 — Cloudflare DNS 解析器 1.1.1.1",
   "share.emailBody": "1.1.1.1 使互联网浏览速度更快、私密性更强。如需了解更多信息以及如何在仅仅 2 分钟之内设置您的设备，请访问 Cloudflare 的 https://1.1.1.1。",
   "share.tweetBody": "✌️✌️ 快速、安全、私密的互联网来了。设置 Cloudflare DNS 解析器仅需 2 分钟。",
 
-  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.whosBehindThis": "谁在这背后？",
   "faq.partnership": "<strong>1.1.1.1</strong> 是 Cloudflare 和 APNIC 的合作項目。",
   "faq.network": "Cloudflare 运行全球规模最大、速度最快的网络之一。APNIC 是一个非营利组织，管理着亚太和大洋洲地区的 IP 地址分配。",
   "faq.networkContinued": "Cloudflare 有网络，APNIC 有 IP 地址（1.1.1.1）。一个共同的使命激发了我们，那就是建立一个更好的互联网。如欲详细了解我们的宗旨，请访问我们各自的博文：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 博客</a> /<a href=\"http://blog.apnic.net/\" target=\"_blank\">APNIC 博客</a>。",
-  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
-  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
-  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
+  "faq.canIintegrate": "我可以跟 1.1.1.1 整合吗？",
+  "faq.integrationInfo": "如果您是浏览器，操作系统，应用程序，路由器，VPN的制造商，并且想要建立一个更安全，快速和私密的现代化DNS，<strong class=\"subtle\">是的！</strong>",
+  "faq.integrationDocs": "
+通过HTTPS（DoH）使用DNS，您可以提供更透明，进阶的私密连接，并且提高您的设备连接速度。更好的是，您不用负担额外成本 - 不需要使用费用，也不需要您的客户资料。前往 <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">开发文档</a>了解更多有关1.1.1.1以及我们的DNS over HTTPS（DoH）支持。"
 }
