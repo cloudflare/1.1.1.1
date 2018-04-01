@@ -38,17 +38,22 @@ section#setup-instructions(data-section="setup" data-ref="setup")
       each instruction in htmlWebpackPlugin.options.t('instructions')['mac-os'].steps
         +render(instruction)
 
-    //- video.instruction-video(
-    //-   src="~media/instructions/instructions-mac.mp4"
-    //-   controls
-    //-   autoplay
-    //-   muted
-    //-   loop)
+    video.instruction-video(
+      src="~media/instructions/mac-os.mp4"
+      controls
+      muted
+      loop)
 
   .instructions(data-platform="iphone")
     ol
       each instruction in htmlWebpackPlugin.options.t('instructions').iphone.steps
         +render(instruction)
+
+    video.instruction-video(
+      src="~media/instructions/iphone.mp4"
+      controls
+      muted
+      loop)
 
   .instructions(data-platform="linux")
     p!=htmlWebpackPlugin.options.t('instructions').linux.notice
@@ -68,6 +73,12 @@ section#setup-instructions(data-section="setup" data-ref="setup")
     ol
       each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
         +render(instruction)
+
+    video.instruction-video(
+      src="~media/instructions/android.mp4"
+      controls
+      muted
+      loop)
 
   .instructions(data-platform="router")
     .message.center
