@@ -173,7 +173,7 @@
   "faq.whosBehindThis": "誰在這背後？",
   "faq.partnership": "<strong>1.1.1.1</strong>是 Cloudflare 和APNIC 之間的合作項目。",
   "faq.network": "Cloudflare 運行全球規模最大、速度最快的網路之一。 APNIC 是亞太和大洋洲地區的一個非營利組織，管理 IP 地址分配。",
-  "faq.networkContinued": "Cloudflare 具備優質的網路。APNIC 有 IP 地址（1.1.1.1）。一個共同的使命激發了我們，那就是建立一個更好的網際網路。 如欲詳細了解我們的宗旨，請訪問我們各自的部落格：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 部落格</a> / <a href=\"http://blog.apnic.net/\" target=\"_blank\">APNIC 部落格</a>。",
+  "faq.networkContinued": "Cloudflare 具備優質的網路。APNIC 有 IP 地址（1.1.1.1）。一個共同的使命激發了我們，那就是建立一個更好的網際網路。 如欲詳細了解我們的宗旨，請訪問我們各自的部落格：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 部落格</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 部落格</a>。",
   "faq.canIintegrate": "我可以跟 1.1.1.1 整合嗎？",
   "faq.integrationInfo": "如果您是瀏覽器、作業系統、應用程式、路由器、 VPN 的製造商，並且想要建立一個更安全、快速及私密的現代化 DNS, Yes!",
   "faq.integrationDocs": "藉由使用 DNS over HTTPS (DoH)，您可以提供更透明、進階的安全連結，並且提高您的設備連接速度。更好的是，您不用負擔額外成本 - 不需要使用費，也不需要您的客戶資料。前往<url>開發人員文件<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開發人員文件</a>了解更多有關 1.1.1.1 以及我們的 DNS over HTTPS (DoH) 支援。"
