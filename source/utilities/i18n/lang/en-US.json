@@ -154,7 +154,7 @@
               "tag": "ul",
               "children": [
                 {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606: 4700: 4700: : 1111</strong> and <strong>2606: 4700: 4700: : 1001</strong>"}
+                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700:: 1111</strong> and <strong>2606:4700:4700:: 1001</strong>"}
               ]
             }
           ]
