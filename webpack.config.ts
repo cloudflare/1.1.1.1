@@ -218,6 +218,11 @@ $.plugins.push(...locales.map((locale) => {
   })
 }))
 
+$.plugins.push(new HtmlWebpackPlugin({
+  template: 'source/pages/404.html',
+  filename: '404.html'
+}))
+
 $.module = {
   rules: [
     {
