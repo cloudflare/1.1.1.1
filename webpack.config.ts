@@ -162,7 +162,7 @@ const locales = [
   {
     path: 'zh-Hant/',
     code: 'zh-Hant',
-    label: '中國傳統的'
+    label: '正體中文'
   },
   {
     path: 'ja-jp/',
