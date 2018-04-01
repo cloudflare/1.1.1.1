@@ -71,17 +71,8 @@ html(lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
       crossorigin="anonymous")
   body
     main
-      include ./partials/hero.pug
-      include ./partials/explanation.pug
-      include ./partials/setup.pug
-      include ./partials/share.pug
-      include ./partials/faq.pug
-
-      //- footer.site-footer
-        nav.links
-          a(href="https://cloudflare.com" target="_blank") © Cloudflare Inc.
-          a(href="https://www.cloudflare.com/terms/" target="_blank") Terms Of Use
-          a(href="https://www.cloudflare.com/security-policy/" target="_blank") Privacy & Security Policy
-          a(href="https://www.cloudflare.com/abuse/" target="_blank") Trust and Safety
-
-
+      include ./hero.pug
+      include ./explanation.pug
+      include ./setup.pug
+      include ./share.pug
+      include ./faq.pug

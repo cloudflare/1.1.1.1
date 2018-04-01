@@ -36,7 +36,9 @@ interface CustomConfiguration extends webpack.Configuration {
 
 const $: CustomConfiguration = {
   mode: environment,
-  entry: {},
+  entry: {
+    site: ['./source/pages/index.ts']
+  },
   plugins: []
 }
 
@@ -49,8 +51,8 @@ $.output = {
   publicPath: '/',
   // publicPath: '',
   path: joinP('build'),
-  filename: '[name].js',
-  library: '[name]',
+  filename: '[hash].js',
+  library: '[hash]',
   libraryTarget: 'umd'
 }
 
@@ -98,10 +100,10 @@ if (environment === 'production') {
 
   $.plugins.push(
     new SourceMapDevToolPlugin({
-      filename: '[file].map'
+      filename: '[hash].map'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[hash].css',
       chunkFilename: '[id].css',
     }),
     new UglifyJsPlugin({
@@ -130,86 +132,6 @@ if (environment !== 'development') {
     removeComments: false
   }
 }
-
-$.module = {
-  rules: [
-    {
-      test: /\.tsx?$/,
-      exclude,
-      use: [
-        // {loader: 'babel-loader'},
-        {
-          loader: 'ts-loader',
-          options: {
-            transpileOnly: true, // Type checking done via plugin.
-            configFile: joinP('source/tsconfig.json')
-          }
-        }
-      ]
-    },
-    { // Generic Pug templates
-      test: /\.pug$/,
-      exclude,
-      use: [
-        // {
-        //   loader: 'html-loader',
-        //   options: {
-        //     minimize: htmlMinify,
-        //     attrs: ['img:src', 'video:src']
-        //   }
-        // },
-        {
-          loader: 'pug-loader',
-          options: {
-            pretty: false
-          }
-        }
-      ]
-    },
-    {
-      test: /\.(png|jpg|gif|mp4)$/,
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            // name: '[path][name].[ext]'
-          }
-        }
-      ]
-    },
-    {
-      test: /\.svg$/,
-      loader: 'svg-inline-loader',
-      exclude
-    },
-    {
-      test: /\.styl$/,
-      exclude,
-      use: [
-        styleLoader,
-        {
-          loader: 'css-loader',
-          options: {
-            sourceMap: true
-          }
-        },
-        {
-          loader: 'stylus-loader',
-          options: {
-            sourceMap: true
-          }
-        }
-      ]
-    }
-  ]
-}
-
-const hotReloadEntries = [
-  `webpack-dev-server/client?http://0.0.0.0:${port}`,
-  'webpack/hot/only-dev-server'
-]
-
-$.entry['site'] = ['./source/pages/index.ts']
 
 const locales = [
   {
@@ -249,19 +171,105 @@ const locales = [
   }
 ]
 
-$.plugins.push(...locales.map((locale) => {
+// HACK: For many many reasons, Pug. html-loader, and html-webpack-plugin are incompatible.
+
+const pugLoaders = locales.map((locale) => {
   const mergedDefinitions = defaultsDeep(localeDefinitions[locale.code], localeDefinitions['en-US'])
 
+  return {
+    test: /\.pug$/,
+    exclude,
+    include: new RegExp(`${locale.code}\\.pug`),
+    use: [
+      {
+        loader: 'html-loader',
+        options: {
+          minimize: htmlMinify,
+          attrs: ['img:src', 'video:src']
+        }
+      },
+      {
+        loader: 'pug-html-loader',
+        options: {
+          pretty: false,
+          data: {
+            htmlWebpackPlugin: {
+              options: {
+                t: (key: string) => mergedDefinitions[key],
+                locale,
+                locales,
+                formatURL,
+                NODE_ENV: environment
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+})
+
+
+$.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
-    template: joinP('source/pages/index.pug'),
-    filename: `${locale.path}index.html`,
-    t: (key: string) => mergedDefinitions[key],
-    locale,
-    locales,
-    formatURL,
-    NODE_ENV: environment
+    template: joinP(`source/pages/${locale.code}.pug`),
+    filename: `${locale.path}index.html`
   })
 }))
+
+$.module = {
+  rules: [
+    {
+      test: /\.tsx?$/,
+      exclude,
+      use: [
+        {
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true, // Type checking done via plugin.
+            configFile: joinP('source/tsconfig.json')
+          }
+        }
+      ]
+    },
+    ...pugLoaders,
+    {
+      test: /\.(png|jpg|gif|mp4)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            // name: '[path][name].[ext]'
+          }
+        }
+      ]
+    },
+    {
+      test: /\.svg$/,
+      loader: 'svg-inline-loader',
+      exclude
+    },
+    {
+      test: /\.styl$/,
+      exclude,
+      use: [
+        styleLoader,
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: true
+          }
+        },
+        {
+          loader: 'stylus-loader',
+          options: {
+            sourceMap: true
+          }
+        }
+      ]
+    }
+  ]
+}
 
 export default $
