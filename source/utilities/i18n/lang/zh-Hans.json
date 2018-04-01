@@ -3,23 +3,23 @@
   "description": "✌️✌️ Browse a faster, more private internet.",
   "hero.introducing": "隆重推出",
   "hero.description": "仅需 2 分钟，浏览互联网就可以速度更快、私密性更强。",
-  "hero.getStarted": "Install",
-  "hero.info": "Info",
+  "hero.getStarted": "立即使用",
+  "hero.info": "了解更多",
 
-  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsHeader": "DNS: 互联网的目录。",
   "explanation.dnsExplanation": "几乎互联网上的一切活动均由一个 DNS 请求开始。DNS 是互联网的目录。 点击链接、打开应用、发送电子邮件时，设备所要做的第一件事就是询问目录：<strong class=\"subtle\">我能在哪里找到这项内容？</strong>",
   "explanation.dnsSlowInsecure": "不幸的是，默认情况下，DNS 通常缓慢且不安全。 您的 ISP 及其他在互联网上窥听的人都能看到您访问的每个网站和使用的每个应用 - 即使这些内容已加密。 令人感到不安的是，一些 DNS 提供商还会出售您的互联网使用信息或用其向您发送广告。",
   "explanation.dnsAlternative": "我们认为那样做极不道德。如果您也这么想，那么现在有另一个选择，那就是： <strong>1.1.1.1</strong>",
 
-  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyHeader": "保证：隐私优先。",
   "explanation.privacyExplanation": "我们在重新考虑 1983 年的 DNS 协议。<strong>1.1.1.1 </strong>即支持加密 DNS ，也支持 DNS over HTTPS。",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">我们任何时候都不会出售您的信息或用其来定位广告。</span> 就这么简单。",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">我们任何时候都不会记录您的 IP 地址</span> （记录 IP 地址正是其他公司识别您的方法），而且我们不只是说说而已。我们仍然留用了毕马威（KPMG)，请其每年对我们的系统进行审计，从而确保我们遵守诺言。",
   "explanation.privacyConclusion": "坦率地说，我们并不想知道您在网上做些什么，因为这不是我们关心的事情，并且我们已经采取了一些技术措施来确保我们无法那么做。",
 
-  "explanation.performanceHeader": "Faster than anything else.",
-  "explanation.performanceSubheader": "28% faster, in fact.",
-  "explanation.fastestDNS": "我们已将 1.1.1.1 建成了互联网上最快的 DNS 目录，这绝不是空口无凭。独立 DNS 监测工具 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 将 1.1.1.1 评为全球速度最快的 DNS 服务。",
+  "explanation.performanceHeader": "快过互联网上的其他选择。",
+  "explanation.performanceSubheader": "事实上，快了28%。",
+  "explanation.fastestDNS": "我们已将 1.1.1.1 建成了互联网上最快的 DNS 目录，这绝不是空口无凭。独立 DNS 监测工具 DNSPerf 将 1.1.1.1 评为全球速度最快的 DNS 服务。",
   "explanation.speedContinued": "几乎互联网上的一切活动均由一个 DNS 请求开始，因此在所有设备上选择使用速度最快的 DNS 目录将提高您在网上几乎所有活动的速度。",
 
   "instructions": {
