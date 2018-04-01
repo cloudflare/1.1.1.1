@@ -20,7 +20,7 @@
 
   "explanation.performanceHeader": "Faster than anything else.",
   "explanation.performanceSubheader": "28% faster, in fact.",
-  "explanation.fastestDNS": "Nous avons construit 1.1.1.1 pour être le DNS le plus rapide d’Internet. Pour preuve, l'outil de performance DNS indépendant, DNSPerf, liste 1.1.1.1 comme le service DNS le plus rapide au monde.",
+  "explanation.fastestDNS": "Nous avons construit 1.1.1.1 pour être le DNS le plus rapide d’Internet. Pour preuve, l'outil de performance DNS indépendant, <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>, liste 1.1.1.1 comme le service DNS le plus rapide au monde.",
   "explanation.speedContinued": "Puisque presque tout ce que vous faites sur Internet commence par une requête DNS, choisir le DNS le plus rapide sur tous vos appareils accélérera presque tout ce que vous faites en ligne.",
 
   "instructions": {

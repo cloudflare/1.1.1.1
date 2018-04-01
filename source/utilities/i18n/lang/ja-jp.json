@@ -19,7 +19,7 @@
 
   "explanation.performanceHeader": "他の何よりも速い。",
   "explanation.performanceSubheader": "実際には28％速だよ。",
-  "explanation.fastestDNS": "当社は、インターネット最速のDNSディレクトリである1.1.1.1を構築しました。 実際に、独立したDNSモニターであるDNSPerfは、1.1.1.1を世界最速のDNSサービスにランク付けしました。ぜひお確かめください。",
+  "explanation.fastestDNS": "当社は、インターネット最速のDNSディレクトリである1.1.1.1を構築しました。 実際に、独立したDNSモニターである<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>は、1.1.1.1を世界最速のDNSサービスにランク付けしました。ぜひお確かめください。",
   "explanation.speedContinued": "インターネット上のほとんどのアクティビティはDNSリクエストで始まります。お使いのあらゆるデバイスにおいて最速のDNSディレクトリを選択することにより、オンライン上のほぼ全てのアクティビティを加速することができます。",
 
   "instructions": {

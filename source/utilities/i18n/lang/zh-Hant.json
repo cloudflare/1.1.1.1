@@ -19,7 +19,7 @@
 
   "explanation.performanceHeader": "快過網路上的其他選擇",
   "explanation.performanceSubheader": "事實上，快了28%",
-  "explanation.fastestDNS": "我們已將 1.1.1.1 打造為網際網路最快的 DNS 目錄。這絕不是空口無憑。獨立的 DNS 監測工具 DNSPerf 將 1.1.1.1 評為全球最快速的 DNS 服務。",
+  "explanation.fastestDNS": "我們已將 1.1.1.1 打造為網際網路最快的 DNS 目錄。這絕不是空口無憑。獨立的 DNS 監測工具 <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 將 1.1.1.1 評為全球最快速的 DNS 服務。",
   "explanation.speedContinued": "幾乎網際網路上的一切活動均由一個DNS請求開始，因此在所有設備上選擇使用速度最快的DNS目錄將提高您在網上幾乎所有活動的速度 。",
 
   "instructions": {
