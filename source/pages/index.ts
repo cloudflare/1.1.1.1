@@ -51,10 +51,10 @@ function ref(ref: string): HTMLElement {
   return <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log(logoBanner)
-  console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
+console.log(logoBanner)
+console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
+function init () {
   const scroller = new SweetScroll() // Initialized for its DOM side effects.
 
   const $el = {
@@ -145,5 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(animateChart, 400)
 
   document.addEventListener('scroll', animateChart)
+}
 
-})
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init)
+} else {
+  init()
+}
