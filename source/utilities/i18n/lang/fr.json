@@ -12,14 +12,14 @@
   "explanation.dnsSlowInsecure": "Malheureusement, par défaut, le DNS est généralement lent et non sécurisé. Votre fournisseur d’accès Internet, et toute autre personne écoutant sur Internet, peut voir tous les sites que vous visitez et toutes les applications que vous utilisez, même si leur contenu est chiffré. Certains fournisseurs de DNS vendent des données sur votre activité Internet ou l’utilisent pour vous cibler avec des publicités.",
   "explanation.dnsAlternative": "Si vous pensez que c'est contestable, il existe maintenant une alternative: <strong>1.1.1.1</strong>",
 
-  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyHeader": "La vie privée en premier: promis",
   "explanation.privacyExplanation": "Nous repensons le protocole DNS de 1983. <strong>1.1.1.1</strong> supporte le DNS chiffré ainsi que le DNS via HTTPS.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Nous ne vendrons jamais vos données, elles ne seront pas utilisées pour des publicités ciblées.</span> Point.",
-  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (de la façon dont les autres sociétés vous identifient). Et nous ne disons pas cela à la légère. Nous avons retenu KPMG pour vérifier nos systèmes chaque année et s’assurer que nous tenons nos promesses.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Nous n'enregistrerons jamais votre adresse IP</span> (de la façon dont les autres sociétés vous identifient). Et nous ne disons pas cela à la légère. Nous avons retenu KPMG pour vérifier nos systèmes chaque année et s’assurer que nous tenons nos promesses.",
   "explanation.privacyConclusion": "Nous ne voulons pas savoir ce que vous faites sur Internet, ce ne sont pas nos affaires, et nous avons pris les mesures techniques nécessaires pour nous assurer que nous ne le pouvons pas.",
 
-  "explanation.performanceHeader": "Faster than anything else.",
-  "explanation.performanceSubheader": "28% faster, in fact.",
+  "explanation.performanceHeader": "Le DNS le plus rapide.",
+  "explanation.performanceSubheader": "28% plus rapide très exactement.",
   "explanation.fastestDNS": "Nous avons construit 1.1.1.1 pour être le DNS le plus rapide d’Internet. Pour preuve, l'outil de performance DNS indépendant, <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>, liste 1.1.1.1 comme le service DNS le plus rapide au monde.",
   "explanation.speedContinued": "Puisque presque tout ce que vous faites sur Internet commence par une requête DNS, choisir le DNS le plus rapide sur tous vos appareils accélérera presque tout ce que vous faites en ligne.",
 
@@ -34,7 +34,7 @@
         {"tag": "li", "content": "Cliquez sur le bouton <strong>+</strong> pour ajouter un serveur DNS et entrez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Cliquez à nouveau sur <strong>+</strong> et entrez <strong>1.0.0.1</strong> (pour la redondance)."},
         {"tag": "li", "content": "Cliquez sur <strong>Ok</strong>, puis sur <strong>Appliquer</strong>."},
-        {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
+        {"tag": "li", "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
     },
     "windows": {
@@ -166,16 +166,16 @@
     }
   },
 
-  "share.header": "️✌️✌️ Partagez un Internet plus rapide et plus confidentiel avec vos amis.",
+  "share.header": "️✌️✌️ Partagez pour que vos amis profitent d'un Internet plus rapide et plus respectueux de la vie privée",
   "share.emailSubject": "✌️✌️ Naviguez sur un Internet plus rapide et plus privé - DNS Resolver Cloudflare 1.1.1.1",
   "share.emailBody": "1.1.1.1 rend la navigation sur Internet plus rapide et plus privée. Consultez la page Cloudflare https://1.1.1.1 pour plus d’informations et pour découvrir comment configurer votre appareil en moins de 2 minutes!",
   "share.tweetBody": "✌️✌️ L'Internet rapide, sûr et privé est là. Configurer la résolution DNS Cloudflare en moins de 2 minutes.",
 
-  "faq.whosBehindThis": "Qui est derrière ça?",
+  "faq.whosBehindThis": "Qui est derrière ce projet",
   "faq.partnership": "<strong>1.1.1.1</strong> est un partenariat entre Cloudflare et APNIC.",
   "faq.network": "Cloudflare gère l’un des plus grands et plus rapides réseaux au monde. APNIC est une organisation à but non lucratif gérant l’allocation d’adresses IP pour les régions Asie-Pacifique et Océanie.",
   "faq.networkContinued": "Cloudflare avait le réseau. APNIC avait l’adresse IP (1.1.1.1). Nous étions motivés pour construire un meilleur Internet. Vous pouvez en savoir plus sur les missions de chaque organisation sur nos publications respectives: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>.",
-  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
-  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
-  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
+  "faq.canIintegrate": "Puis-je intégrer 1.1.1.1?",
+  "faq.integrationInfo": "Si vous développez un navigateur, un système d'exploitation, une application, un routeur, un VPN qui souhaite intégrer un DNS consciencieux de la vie privée, rapide et moderne: <strong class=\"subtle\">oui!</strong>",
+  "faq.integrationDocs": "En utilisant le DNS sur HTTPS (DoH), vous pouvez offrir une meilleure sécurité à vos utilisateurs tout en accélérant leur expérience. Mieux : vous pouvez le faire gratuitement, que ce soit au sujet des licences et brevets ou bien en respectant la vie privée. Apprenez-en plus sur 1.1.1.1 et notre DNS sur HTTPS (DoH) dans notre documentation pour développeurs. <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
 }
