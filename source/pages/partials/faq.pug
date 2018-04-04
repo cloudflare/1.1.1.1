@@ -6,8 +6,8 @@ section(data-section="faq")
     p!=htmlWebpackPlugin.options.t('faq.network')
     p!=htmlWebpackPlugin.options.t('faq.networkContinued')
 
-    .logos(style="text-align: center; margin-bottom: 4em")
-      img(src="~media/cloudflare-apnic.png" style="max-width: 100%; margin: 1em 0")
+    .logos(style="text-align: center; margin-bottom: 3em")
+      include ../../media/cloudflare-apnic.svg
 
     h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faq.canIintegrate')
     p!=htmlWebpackPlugin.options.t('faq.integrationInfo')
