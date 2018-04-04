@@ -117,7 +117,7 @@
         {
             "children": [
               {"tag": "span", "content": "Vul de 1.1.1.1 DNS addressen in in het DNS veld:"},
-              {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"},
+              {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"}
             ]
         },
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
