@@ -1,0 +1,180 @@
+{
+  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
+  "description": "✌️✌️ Browse a faster, more private internet.",
+  "hero.introducing": "隆重推出",
+  "hero.description": "仅需 2 分钟，浏览互联网就可以速度更快、私密性更强。",
+  "hero.getStarted": "立即使用",
+  "hero.info": "了解更多",
+
+  "explanation.dnsHeader": "DNS: 互联网的目录。",
+  "explanation.dnsExplanation": "几乎互联网上的一切活动均由一个 DNS 请求开始。DNS 是互联网的目录。 点击链接、打开应用、发送电子邮件时，设备所要做的第一件事就是询问目录：<strong class=\"subtle\">我能在哪里找到这项内容？</strong>",
+  "explanation.dnsSlowInsecure": "不幸的是，默认情况下，DNS 通常缓慢且不安全。 您的 ISP 及其他在互联网上窥听的人都能看到您访问的每个网站和使用的每个应用 - 即使这些内容已加密。 令人感到不安的是，一些 DNS 提供商还会出售您的互联网使用信息或用其向您发送广告。",
+  "explanation.dnsAlternative": "我们认为那样做极不道德。如果您也这么想，那么现在有另一个选择，那就是： <strong>1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "保证：隐私优先。",
+  "explanation.privacyExplanation": "我们在重新考虑 1983 年的 DNS 协议。<strong>1.1.1.1 </strong>即支持加密 DNS ，也支持 DNS over HTTPS。",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">我们任何时候都不会出售您的信息或用其来定位广告。</span> 就这么简单。",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">我们任何时候都不会记录您的 IP 地址</span> （记录 IP 地址正是其他公司识别您的方法），而且我们不只是说说而已。我们仍然留用了毕马威（KPMG)，请其每年对我们的系统进行审计，从而确保我们遵守诺言。",
+  "explanation.privacyConclusion": "坦率地说，我们并不想知道您在网上做些什么，因为这不是我们关心的事情，并且我们已经采取了一些技术措施来确保我们无法那么做。",
+
+  "explanation.performanceHeader": "快过互联网上的其他选择。",
+  "explanation.performanceSubheader": "事实上，快了28%。",
+  "explanation.fastestDNS": "我们已将 1.1.1.1 建成了互联网上最快的 DNS 目录，这绝不是空口无凭。独立 DNS 监测工具 DNSPerf 将 1.1.1.1 评为全球速度最快的 DNS 服务。",
+  "explanation.speedContinued": "几乎互联网上的一切活动均由一个 DNS 请求开始，因此在所有设备上选择使用速度最快的 DNS 目录将提高您在网上几乎所有活动的速度。",
+
+  "instructions": {
+    "header": "在{{device}}上安装",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
+    "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "mac-os": {
+      "steps": [
+        {"tag": "li", "content": "打开“系统首选项”。"},
+        {"tag": "li", "content": "搜索 <strong>“DNS 服务器”</strong>，并从下拉列表中将其选中。"},
+        {"tag": "li", "content": "点击 <strong>+</strong> 按钮以添加 DNS 服务器，然后输入 <strong>1.1.1.1 </strong>"},
+        {"tag": "li", "content": "再次点击 <strong>+</strong>，然后输入 <strong>1.0.0.1</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "依次点击 <strong>“确定”</strong>和<strong>“应用”</strong>。"},
+        {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
+      ]
+    },
+    "windows": {
+      "steps": [
+        {"tag": "li", "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."},
+        {"tag": "li", "content": "Click on <strong>Network and Internet</strong>."},
+        {"tag": "li", "content": "Click on <strong>Change Adapter Settings</strong>."},
+        {"tag": "li", "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."},
+        {"tag": "li", "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."},
+        {"tag": "li", "content": "Click <strong>Properties</strong>."},
+        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
+        {"tag": "li", "content": "Click <strong>Use The Following DNS Server Addresses</strong>."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "Click <strong>OK</strong>, then <strong>Close</strong>."},
+        {"tag": "li", "content": "Restart your browser."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
+    "linux": {
+      "notice": "虽然这些步骤针对 Ubuntu，但是大多数 Linux 发行版都可以通过网络管理器配置 DNS 设置。 或者，您可以在<code class=\"inline\">/etc/resolv.conf</code>中指定 DNS 设置。",
+      "steps": [
+          {
+            "content": "点击左侧菜单栏上的应用程序<i class=\"fas fa-th\"></i>图标。",
+            "tag": "li"
+          },
+          {
+            "content": "依次点击<strong>设置</strong>和<strong>网络</strong>。",
+            "tag": "li"
+          },
+          {
+            "content": "在右窗格中找到您的 Internet 连接，然后点击齿轮<i class=\"fas fa-cog\"></i>图标。",
+            "tag": "li"
+          },
+          {
+            "content": "点击 <strong>IPv4</strong> 或 <strong>IPv6</strong> 选项卡来查看您的 DNS 设置。",
+            "tag": "li"
+          },
+          {
+            "content": "将 DNS 条目上的“自动”开关切换至<strong>关闭</strong>。",
+            "tag": "li"
+          },
+          {
+            "children": [
+              {"tag": "span", "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"},
+              {
+                "tag": "ul",
+                "children": [
+                  {"tag": "li", "content": "如果是 IPv4，输入：<strong>1.1.1.1, 1.0.0.1</strong>"},
+                  {"tag": "li", "content": "如果是 IPv6，输入：<strong>2606:4700:4700::1111, 2606:4700:4700::1001</strong>"}
+                ]
+              }
+            ]
+          },
+          {
+            "content": "点击<strong>应用</strong>，然后重新启动浏览器。",
+            "tag": "li"
+          },
+          {
+            "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️",
+            "tag": "li"
+          }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {"tag": "li", "content": "从您的 iPhone 主屏幕打开<strong>设置</strong>应用。"},
+        {"tag": "li", "content": "点击<strong>“WiFi”</strong>，然后在列表中点击您的首选网络。"},
+        {"tag": "li", "content": "依次点击<strong>“配置 DNS“</strong>和<strong>“手动”</strong>。"},
+        {"tag": "li", "content": "如果已有条目存在，点击 <strong>-</strong> 按钮及其相邻的<strong>删除</strong>。"},
+        {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入<strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入 <strong>1.0.0.1 </strong>。（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "点击右上角的<strong>“保存”</strong>按钮。"},
+        {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
+      ]
+    },
+    "android": {
+      "message": "请注意，Android 需要一个静态 IP 方可使用自定义 DNS 服务器。 此设置需要在路由器上进行其他设置，这会影响到将新设备添加到网络时的网络策略。 我们建议您配置 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">路由器的 DNS</button>。这会使您网络上的所有设备拥有 Cloudflare DNS 的快捷速度和隐私保护。",
+      "steps": [
+        {"tag": "li", "content": "从 Android 的应用列表中，打开<strong>设置</strong>应用。"},
+        {"tag": "li", "content": "在<strong>“无线和网络”</strong>部分点击<strong>“WiFi”</strong>。"},
+        {"tag": "li", "content": "长按列表中您的首选网络，直至出现一个上下文菜单。"},
+        {"tag": "li", "content": "依次点击<strong>“修改网络”</strong>和<strong>“高级选项”</strong>。"},
+        {"tag": "li", "content": "依次点击<strong>“高级选项”</strong>和<strong>“IP 设置”</strong>。"},
+        {"tag": "li", "content": "将<strong>“动态”</strong>更改为<strong>“静态”</strong>。"},
+        {"tag": "li", "content": "通过路由器配置，输入设备的 IP 地址和网关。"},
+        {"tag": "li", "content": "点击<strong>DNS”</strong>字段，然后删除其中的数字。"},
+        {"tag": "li", "content": "在<strong>DNS 1</strong>字段中输入 <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong>1.0.0.1</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "点击<strong>“保存”</strong>。"},
+        {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
+      ]
+    },
+    "router": {
+      "message": "您的路由器配置可能会有所不同。详情请参阅手册。",
+      "steps": [
+        {"tag": "li", "content": "连接到您的首选无线网络。"},
+        {"tag": "li", "content": "在浏览器中输入路由器的网关 IP 地址。"},
+        {"tag": "li", "content": "如果出现提示，输入您的用户名和密码。这些信息可能会标注在路由器上。"},
+        {"tag": "li", "content": "在路由器配置页面，找到 <strong>DNS 服务器</strong>设置。"},
+        {"tag": "li", "content": "记下现有的 DNS 服务器条目，以备日后参考。"},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "如果是 IPv4，输入：<strong>1.1.1.1</strong> 和/或 <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "如果是 IPv6，输入：<strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "保存设置，然后重新启动浏览器。"},
+        {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
+      ]
+    }
+  },
+
+  "share.header": "Share a faster, privacy-first Internet with your friends.",
+  "share.emailSubject": "✌️✌️ 浏览互联网的速度更快、私密性更强 — Cloudflare DNS 解析器 1.1.1.1",
+  "share.emailBody": "1.1.1.1 使互联网浏览速度更快、私密性更强。如需了解更多信息以及如何在仅仅 2 分钟之内设置您的设备，请访问 Cloudflare 的 https://1.1.1.1。",
+  "share.tweetBody": "✌️✌️ 快速、安全、私密的互联网来了。设置 Cloudflare DNS 解析器仅需 2 分钟。",
+
+  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.partnership": "<strong>1.1.1.1</strong> 是 Cloudflare 和 APNIC 的合作項目。",
+  "faq.network": "Cloudflare 运行全球规模最大、速度最快的网络之一。APNIC 是一个非营利组织，管理着亚太和大洋洲地区的 IP 地址分配。",
+  "faq.networkContinued": "Cloudflare 有网络，APNIC 有 IP 地址（1.1.1.1）。一个共同的使命激发了我们，那就是建立一个更好的互联网。如欲详细了解我们的宗旨，请访问我们各自的博文：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 博客</a> /<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 博客</a>。",
+  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
+  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
+  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
+}

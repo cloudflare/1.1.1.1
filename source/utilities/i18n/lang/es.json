@@ -1,0 +1,177 @@
+{
+  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
+  "description": "️✌️✌️ El acceso a Internet rápido, seguro y privado ha llegado.",
+
+  "hero.introducing": "Introduciendo",
+  "hero.description": "Estás a 2 minutos de navegar por un Internet más rápido y privado.",
+  "hero.getStarted": "Empezar",
+  "hero.info": "Información",
+  "explanation.dnsHeader": "DNS: Directorio de Internet",
+  "explanation.dnsExplanation": "Casi todo en Internet comienza con una petición DNS. DNS es el directorio de Internet. Haz clic en un enlace, abre una aplicación, envía un correo electrónico y lo primero que hace el dispositivo es preguntarle al directorio: <strong>¿Dónde puedo encontrarlo? </strong>",
+  "explanation.dnsSlowInsecure": "Desafortunadamente, DNS suele ser lento e inseguro por defecto. Tu proveedor de servicio de Internet, y cualquier otra persona que esté en Internet, puede ver cada sitio que visitas y cada aplicación que utilices —incluso si tu contenido está encriptado. Es espeluznante que algunos proveedores de DNS vendan datos sobre tu actividad en Internet o los usen con el objetivo de mostrarte anuncios.",
+  "explanation.dnsAlternative": "Creemos que eso es intolerable. Si tu también lo crees, ahora tienes una alternativa: <strong>1.1.1.1</strong>",
+  "explanation.privacyHeader": "Privacidad Primero: Garantizado.",
+  "explanation.privacyExplanation": "Estamos repensando el protocolo DNS de la era de 1983. </strong>1.1.1.1<strong> es compatible con el encriptado DNS así como DNS a través de HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Nunca venderemos tus datos ni los utilizaremos para mostrarte anuncios.</span> Punto.",
+  "explanation.privacyGuaranteeLogs": "Nunca vamos a registrar tu dirección IP (así es como otras empresas te identifican). Y no lo decimos por decir. Hemos retenido un auditor externo contratado para que audite nuestros sistemas una vez al año y así asegurarnos de que estamos haciendo lo que decimos.",
+  "explanation.privacyConclusion": "Francamente, no queremos saber lo que haces en Internet —no es asunto nuestro— y hemos tomado las medidas técnicas necesarias para asegurarnos de que no podamos.",
+  "explanation.performanceHeader": "Más rápido que cualquier otra cosa.",
+  "explanation.performanceSubheader": "28% más rápido, de hecho.",
+  "explanation.fastestDNS": "Hemos diseñado 1.1.1.1 para que sea el directorio de DNS más rápido de Internet. No sólo lo decimos nosotros. El monitor de DNS independiente <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> ha calificado a 1.1.1.1 como el servicio DNS más rápido del mundo.",
+  "explanation.speedContinued": "Dado que casi todo lo que haces en Internet comienza con una petición DNS, elegir el directorio de DNS más rápido para todos tus dispositivos acelerará casi todo lo que haces en línea.",
+  "share.header": "️✌️✌️ El acceso a Internet rápido, seguro y privado ha llegado.",
+  "share.emailSubject": "✌️✌️ Navega por un Internet más rápido y privado con el DNS Resolver de Cloudflare 1.1.1.1",
+  "share.emailBody": "“1.1.1.1” hace que la navegación por Internet sea más rápida y privada. Hecha un vistazo al https://1.1.1.1 de Cloudflare para obtener más información y averiguar cómo configurar tu dispositivo en menos de 2 minutos.",
+  "share.tweetBody": "✌️✌️ El acceso a Internet rápido, seguro y privado ha llegado. Configura el DNS Resolver de Cloudflare en menos de 2 minutos",
+  "faq.whosBehindThis": "¿Quién está detrás de esto?",
+  "faq.partnership": "<strong>“1.1.1.1”</strong> hace que la navegación por Internet sea más rápida y privada. Hecha un vistazo al https://1.1.1.1 de Cloudflare para obtener más información y averiguar cómo configurar tu dispositivo en menos de 2 minutos.",
+  "faq.network": "Cloudflare administra una de las redes más rápidas y grandes del mundo. APNIC es una organización sin fines de lucro encargada de gestionar la asignación de direcciones IP en las regiones de Asia Pacífico y Oceanía.",
+  "faq.networkContinued": "Cloudflare tenía la red. APNIC tenía la dirección IP (1.1.1.1). A ambos nos motivaba la misión de ayudar a construir una mejor Internet. Puedes leer más acerca de las motivaciones de cada organización en nuestros respectivos blogs: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Blog de Cloudflare</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">Blog de APNIC</a>.",
+  "faq.canIintegrate": "¿Puedo integrar con 1.1.1.1?",
+  "faq.integrationInfo": "Si usted es un navegador, un sistema operativo, una aplicación, un enrutador o un fabricante de VPN que desea crear un servicio de DNS primero, rápido y moderno, <strong>¡sí!</strong>",
+  "faq.integrationDocs": "Mediante el uso de DNS a través de HTTPS (DoH), puede ofrecer seguridad mejorada a sus clientes de forma transparente a la vez que mejora la velocidad de sus dispositivos. Aún mejor, puede hacerlo sin costo, tanto en términos de licencia como de privacidad del cliente. Obtenga más información acerca de 1.1.1.1 y nuestro soporte DNS sobre HTTPS (DoH) en nuestro <a href= \"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Documentos del desarrollador</a>.",
+    "instructions": {
+    "header": "Configuración en {{device}}",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
+    "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "mac-os": {
+      "steps": [
+        {"tag": "li", "content": "Abre Preferencias del Sistema."},
+        {"tag": "li", "content": "Busca <strong>Servidores DNS</strong> y selecciónalo en el menú desplegable."},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> para añadir un servidor DNS y escribe <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong>1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Haz clic en <strong>Ok</strong> y a continuación haz clic en <strong>Aplicar</strong>."},
+        {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
+      ]
+    },
+    "windows": {
+      "steps": [
+        {"tag": "li", "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."},
+        {"tag": "li", "content": "Click on <strong>Network and Internet</strong>."},
+        {"tag": "li", "content": "Click on <strong>Change Adapter Settings</strong>."},
+        {"tag": "li", "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."},
+        {"tag": "li", "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."},
+        {"tag": "li", "content": "Click <strong>Properties</strong>."},
+        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
+        {"tag": "li", "content": "Click <strong>Use The Following DNS Server Addresses</strong>."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "Click <strong>OK</strong>, then <strong>Close</strong>."},
+        {"tag": "li", "content": "Restart your browser."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
+    "linux": {
+      "notice": "Si bien estos pasos son para Ubuntu, la mayoría de las distribuciones de Linux configuran los ajustes de DNS a través del Administrador de Red. Por otra parte, los ajustes de DNS se pueden especificar en <code class=\"inline\">/etc/resolv.conf</code>",
+      "steps": [
+          {
+            "content": "Haz clic en el icono de Aplicaciones <i class=\"fas fa-th\"></i> en la barra de menú de la izquierda.",
+            "tag": "li"
+          },
+          {
+            "content": "Haz clic en <strong>Ajustes</strong> y a continuación en <strong>Red</strong>.",
+            "tag": "li"
+          },
+          {
+            "content": "Encuentra tu conexión a Internet en el panel derecho y a continuación haz clic en el icono de engranaje <i class=\"fas fa-cog\"></i>.",
+            "tag": "li"
+          },
+          {
+            "content": "Haz clic en las pestañas <strong>IPv4</strong> o <strong>IPv6</strong> para ver los ajustes de DNS.",
+            "tag": "li"
+          },
+          {
+            "content": "Ajusta el conmutador “automático” en la entrada DNS y pónlo en <strong>Apagado</strong>.",
+            "tag": "li"
+          },
+          {
+            "children": [
+              {"tag": "span", "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"},
+              {
+                "tag": "ul",
+                "children": [
+                  {"tag": "li", "content": "Para IPv4: <strong>1.1.1.1, 1.0.0.1</strong>"},
+                  {"tag": "li", "content": "Para IPv6: <strong>2606:4700:4700::1111, 2606:4700:4700::1001</strong>"}
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Haz clic en <strong>Aplicar</strong> y a continuación reinicia tu navegador.",
+            "tag": "li"
+          },
+          {
+            "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️",
+            "tag": "li"
+          }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {"tag": "li", "content": "Desde la pantalla de tu iPhone, abre la aplicación de <strong>Configuración</strong> app."},
+        {"tag": "li", "content": "Toca <strong>Wi-Fi</strong> y a continuación elije tu red preferida de la lista."},
+        {"tag": "li", "content": "Toca <strong>Configuración DNS</strong> y a continuación toca <strong>Manual</strong>."},
+        {"tag": "li", "content": "Si ya existen entradas, toca <strong>-</strong> y en <strong>Borrar</strong> al lado de cada una."},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> y a continuación escribe <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong>1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Toca <strong>Guardar</strong> en la parte superior derecha."},
+        {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
+      ]
+    },
+    "android": {
+      "message": "Ten en cuenta que Android requiere una dirección IP estática para utilizar servidores DNS personalizados. Esta configuración requiere ajustes adicionales en el router, lo que afecta a la estrategia de la red para añadir nuevos dispositivos a la red. Recomendamos configurar <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">el DNS de tu router </button>. Esto le proporcionará a todos los dispositivos de tu red la velocidad y privacidad completas de 1.1.1.1.",
+      "steps": [
+        {"tag": "li", "content": "A partir de la lista de aplicaciones de Android, abra la aplicación <strong>Ajustes</strong>."},
+        {"tag": "li", "content": "Bajo la sección <strong>Conexiones inalámbricas y redes</strong>, presiona <strong>Wi-Fi</strong>,"},
+        {"tag": "li", "content": "Manten presionado tu red preferida de la lista hasta que aparezca un menú contextual."},
+        {"tag": "li", "content": "Toca <strong>Modificar la red</strong> y a continuación en <strong>Opciones avanzadas</strong>."},
+        {"tag": "li", "content": "Toca <strong>Opciones avanzadas</strong> y a continuación en <strong>Configuración IP</strong>."},
+        {"tag": "li", "content": "Cambia <strong>dinámico</strong> a <strong>estático</strong>."},
+        {"tag": "li", "content": "Use la configuración de tu router para introducir la dirección IP del dispositivo y la puerta de enlace."},
+        {"tag": "li", "content": "Toca el campo <strong>DNS</strong> y a continuación borra el número del campo."},
+        {"tag": "li", "content": "En el campo <strong>DNS 1</strong>, escribe <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 2</strong>, escribe <strong>1.0.0.1</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 3</strong>, escribe <strong>2606:4700:4700::1111</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 4</strong>, escribe <strong>2606:4700:4700::1001</strong>"},
+        {"tag": "li", "content": "Toca <strong>Guardar</strong>."},
+        {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
+      ]
+    },
+    "router": {
+      "message": "La configuración de tu router puede variar. Consulta tu manual para obtener más información.",
+      "steps": [
+        {"tag": "li", "content": "Conéctate a tu red inalámbrica preferida."},
+        {"tag": "li", "content": "Escribe la dirección IP de la puerta de enlace de tu router en tu navegador."},
+        {"tag": "li", "content": "Si se te solicita, escribe tu nombre de usuario y contraseña. Puede que esta información esté escrita en una etiqueta en el router."},
+        {"tag": "li", "content": "En la página de configuración de tu router, localiza los ajustes del <strong>servidor DNS</strong>."},
+        {"tag": "li", "content": "Anota cualquier entrada que haya de servidores DNS existentes para futura referencia."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "Para IPv4: <strong>1.1.1.1</strong> y <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "Para IPv6: <strong>2606:4700:4700::1111</strong> y <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "Guarda la configuración y a continuación reinicie el navegador."},
+        {"tag": "li", "content": "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
+      ]
+    }
+  }
+}

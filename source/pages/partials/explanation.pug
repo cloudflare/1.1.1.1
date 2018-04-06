@@ -1,58 +1,49 @@
 section#explanation(data-section="explanation")
   .content(data-subsection="dns")
-    h1.mobile-only.collapsed-top-margin DNS: Internet’s Directory
+    h1.mobile-only.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.dnsHeader')
 
     .secondary
-      img(src="~media/dns-book-closed.png")
+      include ../../media/dns-book-closed.svg
 
     .primary
-      h1.desktop-only.collapsed-top-margin DNS: Internet’s Directory
+      h1.desktop-only.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.dnsHeader')
 
-      p
-        | Nearly everything on the Internet starts with a DNS request. DNS is the Internet’s directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory:
-        | <strong class="subtle">Where can I find this?</strong>
+      p!=htmlWebpackPlugin.options.t('explanation.dnsExplanation')
 
   .content.with-gutter(data-subsection="security")
     .primary
       .secondary.mobile-only
-        img(src="~media/dns-explanation.png")
-      p
-        | Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it target you with ads.
+        include ../../media/dns-explanation.svg
 
-      p We think that’s gross. If you do too, now there’s an alternative: <strong>1.1.1.1</strong>
+      p!=htmlWebpackPlugin.options.t('explanation.dnsSlowInsecure')
+      p!=htmlWebpackPlugin.options.t('explanation.dnsAlternative')
 
 section(data-section="explanation-privacy")
   .content
     header
-      h1.collapsed-top-margin Privacy First: Guaranteed.
-      p We’re rethinking the 1983-era DNS protocol. <strong>1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.
+      h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('explanation.privacyHeader')
+      h2!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeData')
 
   .content(data-subsection="privacy")
     .secondary.desktop-only
-      img(src="~media/shopping-cart.png")
+      include ../../media/shopping-cart.svg
+
     .primary
-      p.with-icon
-        i.fas.fa-times-circle.accent-icon.desktop-only
-        | <span class="mobile-emphasis">We will never sell your data or use it to target ads.</span> Period.
+      p
+        span!=htmlWebpackPlugin.options.t('explanation.privacyGuaranteeLogs')
 
-      p.with-icon
-        i.fas.fa-times-circle.accent-icon.desktop-only
-        | <span class="mobile-emphasis">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained an external auditor to audit our systems annually to ensure that we're doing what we say.
-
-      p Frankly, we don't want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.
-
+      p!=htmlWebpackPlugin.options.t('explanation.privacyConclusion')
 
 section(data-section="explanation-stats")
   .content
+    header
+      h1!=htmlWebpackPlugin.options.t('explanation.performanceHeader')
+      h2!=htmlWebpackPlugin.options.t('explanation.performanceSubheader')
+
+  .content
     .primary
-      h1.collapsed-top-margin.pull-header
-        .headline 28
-        .unit %
-        .label faster than anything else
-
-      p We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor DNSPerf ranks 1.1.1.1 the fastest DNS service in the world.
-
-      p Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.
+      p!=htmlWebpackPlugin.options.t('explanation.fastestDNS')
+      p!=htmlWebpackPlugin.options.t('explanation.speedContinued')
 
     .chart(data-ref="statsChart" style="opacity: 0")
       .bar-chart.first(animated data-total="14.8")

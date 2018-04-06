@@ -1,18 +1,14 @@
 section(data-section="faq")
   .content
-    h1.collapsed-top-margin Who’s behind this?
+    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faq.whosBehindThis')
 
-    p <strong>1.1.1.1</strong> is a partnership between Cloudflare and APNIC.
+    p!=htmlWebpackPlugin.options.t('faq.partnership')
+    p!=htmlWebpackPlugin.options.t('faq.network')
+    p!=htmlWebpackPlugin.options.t('faq.networkContinued')
 
-    p Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.
+    .logos(style="text-align: center; margin-bottom: 3em")
+      include ../../media/cloudflare-apnic.svg
 
-    p Cloudflare had the network. APNIC had the IP address (1.1.1.1). Both of us were motivated by a mission to help build a better Internet. You can read more about each organization’s motivations on our respective posts: <a href="https://blog.cloudflare.com/" target="_blank">Cloudflare Blog</a> / <a href="http://blog.apnic.net/" target="_blank">APNIC Blog</a>.
-
-    .logos(style="text-align: center;")
-      img(src="~media/cloudflare-apnic.png" width="370" style="max-width: 100%; margin: 1em 0")
-
-    h1 Can I integrate with 1.1.1.1?
-
-    p If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, yes!
-
-    p By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and your user’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href="https://developers.cloudflare.com/1.1.1.1/dns-over-https/">Developer Docs</a>.
+    h1.collapsed-top-margin!=htmlWebpackPlugin.options.t('faq.canIintegrate')
+    p!=htmlWebpackPlugin.options.t('faq.integrationInfo')
+    p!=htmlWebpackPlugin.options.t('faq.integrationDocs')

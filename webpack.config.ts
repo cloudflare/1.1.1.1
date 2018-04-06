@@ -1,4 +1,6 @@
 import { port } from './source/utilities/routes'
+// import * as defaultsDeep from 'lodash.defaultsdeep'
+const defaultsDeep = require('lodash.defaultsdeep')
 import webpack, {
   DefinePlugin,
   NamedModulesPlugin,
@@ -9,7 +11,9 @@ import webpack, {
 import * as HtmlWebpackPlugin from 'html-webpack-plugin'
 import * as CleanWebpackPlugin from 'clean-webpack-plugin'
 import * as CopyWebpackPlugin from 'copy-webpack-plugin'
+import * as OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import { format as formatURL } from 'url'
+import localeDefinitions from './source/utilities/i18n/lang'
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -32,7 +36,9 @@ interface CustomConfiguration extends webpack.Configuration {
 
 const $: CustomConfiguration = {
   mode: environment,
-  entry: {},
+  entry: {
+    site: ['./source/pages/index.ts']
+  },
   plugins: []
 }
 
@@ -42,11 +48,11 @@ $.resolve = {
 }
 
 $.output = {
-  // publicPath: '/',
-  publicPath: '',
+  publicPath: '/',
+  // publicPath: '',
   path: joinP('build'),
-  filename: '[name].js',
-  library: '[name]',
+  filename: '[hash].js',
+  library: '[hash]',
   libraryTarget: 'umd'
 }
 
@@ -94,13 +100,23 @@ if (environment === 'production') {
 
   $.plugins.push(
     new SourceMapDevToolPlugin({
-      filename: '[file].map'
+      filename: '[hash].map'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    })
-    // new UglifyJsPlugin()
+      filename: '[hash].css',
+      chunkFilename: '[id].css',
+    }),
+    new UglifyJsPlugin({
+      sourceMap: true,
+      cache: true,
+      parallel: true,
+      uglifyOptions: {
+        output: {
+          comments: false
+        }
+      }
+    }),
+    new OptimizeCSSAssetsPlugin()
   )
 }
 
@@ -117,13 +133,107 @@ if (environment !== 'development') {
   }
 }
 
+const locales = [
+  {
+    path: '',
+    code: 'en-US',
+    label: 'English'
+  },
+  {
+    path: 'es/',
+    code: 'es',
+    label: 'Español'
+  },
+  {
+    path: 'fr/',
+    code: 'fr',
+    label: 'Français'
+  },
+  {
+    path: 'de/',
+    code: 'de',
+    label: 'Deutsch'
+  },
+  {
+    path: 'nl/',
+    code: 'nl',
+    label: 'Nederlands'
+  },
+  {
+    path: 'zh-Hans/',
+    code: 'zh-Hans',
+    label: '简体中文'
+  },
+  {
+    path: 'zh-Hant/',
+    code: 'zh-Hant',
+    label: '繁體中文'
+  },
+  {
+    path: 'ja-jp/',
+    code: 'ja-jp',
+    label: '日本語'
+  }
+]
+
+// HACK: For many many reasons, Pug. html-loader, and html-webpack-plugin are incompatible.
+
+const pugLoaders = locales.map((locale) => {
+  const mergedDefinitions = defaultsDeep(localeDefinitions[locale.code], localeDefinitions['en-US'])
+
+  return {
+    test: /\.pug$/,
+    exclude,
+    include: new RegExp(`${locale.code}\\.pug`),
+    use: [
+      {
+        loader: 'html-loader',
+        options: {
+          minimize: htmlMinify,
+          attrs: ['img:src', 'video:src']
+        }
+      },
+      {
+        loader: 'pug-html-loader',
+        options: {
+          pretty: false,
+          data: {
+            htmlWebpackPlugin: {
+              options: {
+                t: (key: string) => mergedDefinitions[key],
+                locale,
+                locales,
+                formatURL,
+                NODE_ENV: environment
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+})
+
+
+$.plugins.push(...locales.map((locale) => {
+  return new HtmlWebpackPlugin({
+    favicon: 'source/media/favicon.png',
+    template: joinP(`source/pages/${locale.code}.pug`),
+    filename: `${locale.path}index.html`
+  })
+}))
+
+$.plugins.push(new HtmlWebpackPlugin({
+  template: 'source/pages/404.html',
+  filename: '404.html'
+}))
+
 $.module = {
   rules: [
     {
       test: /\.tsx?$/,
       exclude,
       use: [
-        // {loader: 'babel-loader'},
         {
           loader: 'ts-loader',
           options: {
@@ -133,31 +243,7 @@ $.module = {
         }
       ]
     },
-    { // Generic Pug templates
-      test: /\.pug$/,
-      exclude,
-      use: [
-        {
-          loader: 'html-loader',
-          options: {
-            minimize: htmlMinify,
-            attrs: ['img:src', 'video:src']
-          }
-        },
-        {
-          loader: 'pug-html-loader',
-          options: {
-            pretty: false,
-            data: {
-              formatURL,
-              NODE_ENV: environment,
-              title: '1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver',
-              description: '✌️✌️ Browse a faster, more private internet.'
-            }
-          }
-        }
-      ]
-    },
+    ...pugLoaders,
     {
       test: /\.(png|jpg|gif|mp4)$/,
       use: [
@@ -195,18 +281,5 @@ $.module = {
     }
   ]
 }
-
-const hotReloadEntries = [
-  `webpack-dev-server/client?http://0.0.0.0:${port}`,
-  'webpack/hot/only-dev-server'
-]
-
-$.entry['site'] = ['./source/pages/index.ts']
-
-$.plugins.push(new HtmlWebpackPlugin({
-  favicon: 'source/media/favicon.png',
-  template: joinP('source/pages/index.pug'),
-  filename: 'index.html'
-}))
 
 export default $

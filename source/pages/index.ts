@@ -11,11 +11,11 @@ interface DeviceInfo {
 
 const deviceInfo: { [index: string]: DeviceInfo } = {
   'Windows': {
-    label: 'Windows',
+    label: 'PC',
     id: 'windows'
   },
   'OS X': {
-    label: 'MacOS',
+    label: 'Mac',
     id: 'mac-os'
   },
   'Linux': {
@@ -51,10 +51,10 @@ function ref(ref: string): HTMLElement {
   return <HTMLElement>document.querySelector(`[data-ref="${ref}"]`)!
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log(logoBanner)
-  console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
+console.log(logoBanner)
+console.log(window.btoa('Join us and help build a better Internet https://cloudflare.com/careers?utm=1.1.1.1-DNS'))
 
+function init () {
   const scroller = new SweetScroll() // Initialized for its DOM side effects.
 
   const $el = {
@@ -63,8 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
     deviceLabel: ref('deviceLabel'),
     slideshow: ref('slideshow'),
     setupSection: ref('setup'),
-    statsChart: ref('statsChart')
+    statsChart: ref('statsChart'),
+    languageSelector: ref('languageSelector')
   }
+
+  $el.languageSelector.addEventListener('click', () => {
+  })
+
+  document.addEventListener('click', (event) => {
+    if (event.target === $el.languageSelector || $el.languageSelector.contains(<Node>event.target)) {
+      $el.languageSelector.classList.toggle('dropdown-open')
+    } else {
+      $el.languageSelector.classList.toggle('dropdown-open', false)
+    }
+  })
 
   function chooseInstructions (platformId: string) {
     $el.instructionChoices.forEach((choice: HTMLElement) => {
@@ -133,5 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(animateChart, 400)
 
   document.addEventListener('scroll', animateChart)
+}
 
-})
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init)
+} else {
+  init()
+}

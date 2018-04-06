@@ -1,6 +1,3 @@
-NAME := "every1dns-landing"
-URLPATH := "/preview"
-
 .PHONY: deploy build clean serve
 
 V ?= 1 # When V is 1, print commands and build progress.
@@ -10,7 +7,7 @@ build:
 	$Q yarn run build
 
 deploy: build
-	$Q aws s3 --endpoint-url https://s3.cfdata.org/ sync --acl public-read --delete build s3://$(NAME)$(URLPATH)
+	$Q aws s3 --endpoint-url https://s3.cfdata.org/ sync --acl public-read build s3://every1dns-landing
 
 # clean up generated files, to allow regeneration
 clean:

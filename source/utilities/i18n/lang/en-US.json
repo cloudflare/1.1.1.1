@@ -1,0 +1,180 @@
+{
+  "title": "1.1.1.1 — the Internet’s Fastest, Privacy-First DNS Resolver",
+  "description": "✌️✌️ Browse a faster, more private internet.",
+  "hero.introducing": "Introducing",
+  "hero.description": "You’re two minutes away from browsing a faster, more private internet.",
+  "hero.getStarted": "Install",
+  "hero.info": "Info",
+
+  "explanation.dnsHeader": "DNS: Internet’s Directory",
+  "explanation.dnsExplanation": "Nearly everything on the Internet starts with a DNS request. DNS is the Internet’s directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory: <strong class=\"subtle\">Where can I find this?</strong>",
+  "explanation.dnsSlowInsecure": "Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it target you with ads.",
+  "explanation.dnsAlternative": "We think that’s gross. If you do too, now there’s an alternative: <strong>1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "Privacy First: Guaranteed.",
+  "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong>1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We will never sell your data or use it to target ads.</span> Period.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained KPMG to audit our systems annually to ensure that we're doing what we say.",
+  "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
+
+  "explanation.performanceHeader": "Faster than anything else.",
+  "explanation.performanceSubheader": "28% faster, in fact.",
+  "explanation.fastestDNS": "We’ve built 1.1.1.1 to be the Internet’s fastest DNS directory. Don’t take our word for it. The independent DNS monitor <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> ranks 1.1.1.1 the fastest DNS service in the world.",
+  "explanation.speedContinued": "Since nearly everything you do on the Internet starts with a DNS request, choosing the fastest DNS directory across all your devices will accelerate almost everything you do online.",
+
+  "instructions": {
+    "header": "Setup on {{device}}",
+    "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
+    "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "mac-os": {
+      "steps": [
+        {"tag": "li", "content": "Open System Preferences."},
+        {"tag": "li", "content": "Search for <strong>DNS Servers</strong> and select it from the dropdown."},
+        {"tag": "li", "content": "Click the <strong>+</strong> button to add a DNS Server and enter <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong>1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Click <strong>Ok</strong>, then click <strong>Apply</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
+    "windows": {
+      "steps": [
+        {"tag": "li", "content": "Click on the Start menu, then click on <strong>Control Panel</strong>."},
+        {"tag": "li", "content": "Click on <strong>Network and Internet</strong>."},
+        {"tag": "li", "content": "Click on <strong>Change Adapter Settings</strong>."},
+        {"tag": "li", "content": "Right click on the Wi-Fi network you are connected to, then click <strong>Properties</strong>."},
+        {"tag": "li", "content": "Select <strong>Internet Protocol Version 4</strong> (or Version 6 if desired)."},
+        {"tag": "li", "content": "Click <strong>Properties</strong>."},
+        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
+        {"tag": "li", "content": "Click <strong>Use The Following DNS Server Addresses</strong>."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "Click <strong>OK</strong>, then <strong>Close</strong>."},
+        {"tag": "li", "content": "Restart your browser."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
+    "linux": {
+      "notice": "While these steps are for Ubuntu, most Linux distributions configure DNS settings through the Network Manager. Alternatively, your DNS settings can be specified in <code class=\"inline\">/etc/resolv.conf</code>",
+      "steps": [
+          {
+            "content": "Click the Applications <i class=\"fas fa-th\"></i> icon on the left menu bar.",
+            "tag": "li"
+          },
+          {
+            "content": "Click <strong>Settings</strong>, then <strong>Network</strong>.",
+            "tag": "li"
+          },
+          {
+            "content": "Find your internet connection on the right pane, then click the gear <i class=\"fas fa-cog\"></i> icon.",
+            "tag": "li"
+          },
+          {
+            "content": "Click the <strong>IPv4</strong> or <strong>IPv6</strong> tab to view your DNS settings.",
+            "tag": "li"
+          },
+          {
+            "content": "Set the “Automatic” toggle on the DNS entry to <strong>Off</strong>.",
+            "tag": "li"
+          },
+          {
+            "children": [
+              {"tag": "span", "content": "Provide the 1.1.1.1 DNS addresses in the DNS entries field:"},
+              {
+                "tag": "ul",
+                "children": [
+                  {"tag": "li", "content": "<strong>1.0.0.1</strong>"},
+                  {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"}
+                ]
+              }
+            ]
+          },
+          {
+            "content": "Click <strong>Apply</strong>, then restart your browser.",
+            "tag": "li"
+          },
+          {
+            "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️",
+            "tag": "li"
+          }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {"tag": "li", "content": "From your iPhone’s home screen, open the <strong>Settings</strong> app."},
+        {"tag": "li", "content": "Tap <strong>Wi-Fi</strong>, then tap your preferred network in the list."},
+        {"tag": "li", "content": "Tap <strong>Configure DNS</strong>, then tap <strong>Manual</strong>."},
+        {"tag": "li", "content": "If there are any existing entries, tap the <strong>-</strong> button, and <strong>Delete</strong> next to each one."},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button, then type <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong>1.0.0.1</strong>. This is for redundancy."},
+        {"tag": "li", "content": "Tap the <strong>Save</strong> button on the top right."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
+    "android": {
+      "message": "Note that Android requires a static IP to use custom DNS servers. This setup requires additional setup on your router, affecting your network’s strategy for adding new devices to the network. We recommend configuring your <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">router’s DNS</button> instead. This will give all devices on your network the full speed and privacy benefits of 1.1.1.1 DNS.",
+      "steps": [
+        {"tag": "li", "content": "From your Android’s app list, open the <strong>Settings</strong> app."},
+        {"tag": "li", "content": "Under the <strong>Wireless & networks</strong> section, tap <strong>Wi-Fi</strong>,"},
+        {"tag": "li", "content": "Long press your preferred network in the list until a context menu appears."},
+        {"tag": "li", "content": "Tap the <strong>Modify network</strong>, then tap <strong>Advanced options</strong>."},
+        {"tag": "li", "content": "Tap <strong>Advanced options</strong>, then tap <strong>IP Settings</strong>."},
+        {"tag": "li", "content": "Change <strong>Dynamic</strong> to <strong>Static</strong>."},
+        {"tag": "li", "content": "Using your router’s configuration, enter your device’s IP address and gateway."},
+        {"tag": "li", "content": "Tap the <strong>DNS</strong> field, then erase the number in the field."},
+        {"tag": "li", "content": "In the <strong>DNS 1</strong> field, enter <strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong>1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Tap <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
+    "router": {
+      "message": "Your router’s configuration may vary. Consult your manual for more information.",
+      "steps": [
+        {"tag": "li", "content": "Connect to your preferred wireless network."},
+        {"tag": "li", "content": "Enter your router’s gateway IP address in your browser."},
+        {"tag": "li", "content": "If prompted, fill in your username and password. This information may be labeled on the router."},
+        {"tag": "li", "content": "In your router’s configuration page, locate the <strong>DNS server</strong> settings."},
+        {"tag": "li", "content": "Write down any existing DNS server entries for future reference."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Replace those addresses with the 1.1.1.1 DNS addresses:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "Save your settings, then restart your browser."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    }
+  },
+
+  "share.header": "✌️✌️ Share a faster, privacy-first Internet with your friends.",
+  "share.emailSubject": "✌️✌️ Browse a faster, more private internet — 1.1.1.1 DNS Resolver",
+  "share.emailBody": "“1.1.1.1” makes internet browsing faster and more private. Check out https://1.1.1.1 for more info and how to setup your device in less than two minutes!",
+  "share.tweetBody": "✌️✌️ Fast, safe, and private internet is here. Setup the 1.1.1.1 DNS Resolver in less than two minutes.",
+
+  "faq.whosBehindThis": "Who’s behind this?",
+  "faq.partnership": "<strong>1.1.1.1</strong> is a partnership between Cloudflare and APNIC.",
+  "faq.network": "Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.",
+  "faq.networkContinued": "Cloudflare had the network. APNIC had the IP address (1.1.1.1). Both of us were motivated by a mission to help build a better Internet. You can read more about each organization’s motivations on our respective posts: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>.",
+  "faq.canIintegrate": "Can I integrate with 1.1.1.1?",
+  "faq.integrationInfo": "If you are a browser, operating system, app, router, or VPN manufacturer who wants to build in a privacy-first, fast, modern DNS service, <strong class=\"subtle\">yes!</strong>",
+  "faq.integrationDocs": "By using DNS over HTTPS (DoH) you can transparently offer enhanced security to your customers while improving the speed of your devices. Even better, you can do it at no cost, both in terms of licensing and customer’s privacy. Learn more about 1.1.1.1 and our DNS over HTTPS (DoH) support in our <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs</a>."
+}

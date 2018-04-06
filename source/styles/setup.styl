@@ -2,8 +2,11 @@ section[data-section="setup"]
   background #fff
   color #000
 
+  a
+    color inherit
+
   padding calc(var(--section-vertical-padding) / 2) 12px
-  width 56em
+  width 64rem
   max-width 100%
   margin 0 auto
 
@@ -33,13 +36,16 @@ section[data-section="setup"]
       margin-right 1.7rem
 
     .choice
+      display flex
+      flex-flow column
+      align-items center
       padding .3em .6em
       text-transform none
       letter-spacing initial
       font-size 1.7rem
 
-      .label
-        margin-left .6em
+      // .label
+      //   margin-left .6em
 
       // Background color fix
       &.selected svg.fa-linux

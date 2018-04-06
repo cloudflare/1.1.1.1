@@ -1,15 +1,15 @@
 section(data-section="share")
   .accent-background
 
-  h2.light-on-dark Share a faster, privacy-first Internet with your friends.
+  h2.light-on-dark!=htmlWebpackPlugin.options.t('share.header')
 
   .share-buttons
     a.button.share-button(
       target="_blank"
-      href=formatURL({
+      href=htmlWebpackPlugin.options.formatURL({
         host: 'https://twitter.com/intent/tweet',
         query: {
-          text: '✌️✌️ Fast, safe, and private internet is here. Setup the 1.1.1.1 DNS Resolver in less than two minutes.',
+          text: htmlWebpackPlugin.options.t('share.tweetBody'),
           hashtags: '1dot1dot1dot1',
           url: 'https://1.1.1.1'
         }
@@ -19,7 +19,7 @@ section(data-section="share")
 
     a.button.share-button(
       target="_blank"
-      href=formatURL({
+      href=htmlWebpackPlugin.options.formatURL({
         host: 'https://www.facebook.com/sharer/sharer.php',
         query: {
           u: 'https://1.1.1.1'
@@ -29,11 +29,11 @@ section(data-section="share")
 
     a.button.share-button(
       target="_blank"
-      href=formatURL({
+      href=htmlWebpackPlugin.options.formatURL({
         host: 'mailto:',
         query: {
-          subject: '✌️✌️ Browse a faster, more private internet — 1.1.1.1 DNS Resolver',
-          body: '“1.1.1.1” makes internet browsing faster and more private. Check out https://1.1.1.1 for more info and how to setup your device in less than two minutes!'
+          subject: htmlWebpackPlugin.options.t('share.emailSubject'),
+          body: htmlWebpackPlugin.options.t('share.emailBody')
         }
       }))
       i.fas.fa-envelope

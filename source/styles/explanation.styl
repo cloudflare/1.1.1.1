@@ -6,17 +6,13 @@ section[data-section="explanation-stats"]
   display flex
   justify-content center
   flex-flow column
-  padding .5em 1em calc(var(--section-vertical-padding) / 2)
+  padding var(--section-vertical-padding) 12px
 
   .content
     width 100rem
     max-width 100%
     margin 0 auto
     display flex
-
-    & + .content.with-gutter
-      @media desktopMinWidthQuery
-        margin-top calc(var(--section-vertical-padding) / 2)
 
 section[data-section="explanation"]
   color black
@@ -26,15 +22,17 @@ section[data-section="explanation"]
     align-items center
 
     @media desktopMinWidthQuery
+      margin-bottom 2em
+
       .secondary
         margin-right 10rem
 
-        > img
+        > svg
           height 33rem
 
     @media mobileMaxWidthQuery
       flex-flow column
-      .secondary > img
+      .secondary > svg
         height 22rem
         transform rotate(8deg)
 
@@ -43,7 +41,7 @@ section[data-section="explanation"]
       .secondary
         margin-left 5rem
 
-        > img
+        > svg
           height 33rem
 
     @media mobileMaxWidthQuery
@@ -52,32 +50,30 @@ section[data-section="explanation"]
         display flex
         justify-content center
         margin 1rem 0
-        & > img
+        & > svg
           height 21rem
 
 
 section[data-section="explanation-privacy"]
+  border-top 1px solid #c4d7ee
   background-color #f4f8fb
+  background linear-gradient(#e2ebf7, #f4f8fb)
   color black
   flex-flow column
 
-  .with-icon
-    position relative
-
-    .accent-icon
-      font-size 1.6rem
-      color #8a78b6
-      position absolute
-      left -2.5rem
-      top 0.65rem
+  header
+    &::after
+      background-color rgba(196, 215, 238, 0.33)
 
   .content[data-subsection="privacy"]
-      .secondary
-        & > img
-          height 26rem
 
-        margin-left 2rem
-        margin-right 5rem
+    .secondary
+
+      & > svg
+        height 26rem
+
+      margin-left 2rem
+      margin-right 5rem
 
     @media mobileMaxWidthQuery
       .mobile-emphasis
@@ -87,29 +83,39 @@ section[data-section="explanation-privacy"]
       .secondary
         display flex
         justify-content center
-        & > img
+        & > svg
           height 14rem
 
 section[data-section="explanation-stats"]
-  background-color #2f302f
+  background-color #1d1916
   color white
+  -webkit-font-smoothing antialiased
 
   --bar-color-orange #DB824E
   --bar-color-purple #8176B5
-  --bar-color-gray #878686
+  --bar-color-gray #b3b3b3
 
   --bar-gradient-orange-yellow linear-gradient(-45deg, var(--bar-color-orange) 0%, #FFDB6F 100%)
   --bar-gradient-purple-blue linear-gradient(-45deg, var(--bar-color-purple) 0%, #76C4E2 100%)
   --bar-gradient-purple-indigo linear-gradient(-46deg, var(--bar-color-purple) 0%, #BA77B1 100%)
+
   --bar-chart-cap-width 1rem
   --animation-time 1s
+
+  a
+    color white
+
+  header
+    &::after
+      background-image var(--bar-gradient-purple-indigo)
+      opacity .3
 
   @media desktopMinWidthQuery
     .content
       align-items center
+
       .primary
         flex 1 0 44%
-
 
       .chart
         margin-left 2rem
@@ -117,26 +123,6 @@ section[data-section="explanation-stats"]
   @media mobileMaxWidthQuery
     .content
       flex-flow column
-
-  .pull-header
-    display block
-    line-height 1
-
-    .headline
-      display inline-block
-      font-size 10rem
-      font-weight 600
-
-    .unit
-      display inline-block
-      font-size 6.5rem
-      font-weight 600
-
-    .label
-      display inline-block
-      font-size 2rem
-      margin-left 1.5rem
-      width 14rem
 
   .chart
     position relative
@@ -160,7 +146,6 @@ section[data-section="explanation-stats"]
       background #333
       height 2rem
       margin-bottom .3rem
-      border-radius 4rem
       position relative
       will-change width
 
@@ -193,5 +178,3 @@ section[data-section="explanation-stats"]
         color var(--bar-color-gray)
       .bar-chart-fill
         background var(--bar-color-gray)
-
-
