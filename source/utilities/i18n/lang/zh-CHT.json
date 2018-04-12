@@ -1,0 +1,255 @@
+{
+  "title" : "1.1.1.1 - 互聯網上速度最快，隱私權，首先DNS解析器",
+  "description" : "✌️✌️瀏覽更快，更私人網絡。",
+  "hero.introducing" : "介紹",
+  "hero.description" : "你兩分鐘的路程從瀏覽更快，更私人網絡。",
+  "hero.getStarted" : "安裝",
+  "hero.info" : "信息",
+  "explanation.dnsHeader" : "DNS：互聯網目錄",
+  "explanation.dnsExplanation" : "幾乎在互聯網上的一切開始於一個DNS請求。 DNS是互聯網的目錄。 點擊一個鏈接，打開一個應用程序，發送電子郵件和您的設備做的第一件事就是問目錄：<strong class=\"subtle\">我在哪裡可以找到呢？</strong>",
+  "explanation.dnsSlowInsecure" : "不幸的是，默認情況下，DNS通常是緩慢和不安全。 您的ISP，和其他任何人在互聯網上收聽，可以看到每一個你訪問的網站和每次使用應用程序 - 即使他們的內容被加密。 毛骨悚然，一些DNS提供商銷售數據有關互聯網活動或使用與廣告定位你。",
+  "explanation.dnsAlternative" : "我們認為這是毛。 如果你也這樣做，現在有一種替代方案：<strong>1.1.1.1</strong>",
+  "explanation.privacyHeader" : "隱私一：保證。",
+  "explanation.privacyExplanation" : "我們正在重新考慮1983年時代的DNS協議。 <strong>1.1.1.1</strong>支持通過HTTPS加密的DNS，以及DNS。",
+  "explanation.privacyGuaranteeData" : "<span class=\"mobile-emphasis\">我們絕不會出售您的數據，或者用它來定位廣告。</span>時期。",
+  "explanation.privacyGuaranteeLogs" : "<span class=\"mobile-emphasis\">我們絕不會記錄您的IP地址</span>（的方式與其它公司確定你）。 而且我們不只是說說而已。 我們保留了畢馬威會計師事務所每年審計我們的系統，以確保我們在做什麼，我們說的。",
+  "explanation.privacyConclusion" : "坦率地說，我們並不想知道你在做什麼上網，這不關我們的業務，我們已經採取了技術措施來確保我們不能。",
+  "explanation.performanceHeader" : "比什麼都更快。",
+  "explanation.performanceSubheader" : "快28％，實際上。",
+  "explanation.fastestDNS" : "我們已經建立了1.1.1.1是互聯網上最快的DNS目錄。 不要把我們的話。 獨立DNS監視器<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>居1.1.1.1在世界上最快的DNS服務。",
+  "explanation.speedContinued" : "因為幾乎你在網上做的一切有一個DNS請求開始，選擇所有的最快的DNS目錄中的設備將加速幾乎你在網上做的一切。",
+  "instructions" : {
+    "header" : "在{{device}}設置",
+    "explanation" : "設置<strong>1.1.1.1</strong>需要兩分鐘，不需要任何技術技能或特殊的軟件。 即使你是一個電腦新手，請在下方選擇您的設備易於遵循的安裝指南。",
+    "questions" : "有問題嗎？ 請訪問我們的<a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">社區論壇</a>",
+    "mac-os" : {
+      "steps" : [ {
+        "tag" : "裡",
+        "content" : "打開系統偏好設置。"
+      }, {
+        "tag" : "裡",
+        "content" : "搜索<strong>DNS服務器</strong>，並從下拉列表中選擇它。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>+</strong>按鈕，添加一個DNS服務器，並進入<strong>1.1.1.1</strong>"
+      }, {
+        "tag" : "裡",
+        "content" : "再次單擊<strong>+</strong>並進入<strong>1.0.0.1</strong>（這是冗餘的。）"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>好</strong>，然後單擊<strong>應用</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "你準備好了！ 您的設備現在有更快，更私人的DNS服務器✌️✌️"
+      } ]
+    },
+    "windows" : {
+      "steps" : [ {
+        "tag" : "裡",
+        "content" : "單擊開始菜單，然後點擊<strong>控制面板</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>網絡和Internet</strong>上。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>更改適配器設置</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "右擊你連接到Wi-Fi網絡上，然後單擊屬性<strong></strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "選擇<strong>因特網協議版本4</strong>（或者如果需要版本6）。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>屬性</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "記下以備將來參考任何現有的DNS服務器條目。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>使用下面的DNS服務器地址</strong>。"
+      }, {
+        "tag" : "裡",
+        "children" : [ {
+          "tag" : "跨度",
+          "content" : "替換為1.1.1.1 DNS地址，這些地址："
+        }, {
+          "tag" : "UL",
+          "children" : [ {
+            "tag" : "裡",
+            "content" : "對於IPv4：<strong>1.1.1.1</strong>和<strong>1.0.0.1</strong>"
+          }, {
+            "tag" : "裡",
+            "content" : "對於IPv6：<strong>2606：4700：4700 :: 1111</strong>和<strong>2606：4700：4700 :: 1001</strong>"
+          } ]
+        } ]
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>OK</strong>，然後<strong>關​​閉</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "重新啟動瀏覽器。"
+      }, {
+        "tag" : "裡",
+        "content" : "你準備好了！ 您的設備現在有更快，更私人的DNS服務器✌️✌️"
+      } ]
+    },
+    "linux" : {
+      "notice" : "雖然這些步驟對於Ubuntu的，大多數Linux發行版配置通過網絡管理器的DNS設置。 或者，您的DNS設置可以在<code class=\"inline\">/etc/resolv.conf中</code>指定",
+      "steps" : [ {
+        "content" : "點擊左側菜單欄上的應用程序<i class=\"fas fa-th\"></i>圖標。",
+        "tag" : "裡"
+      }, {
+        "content" : "點擊<strong>設置</strong>，然後<strong>網絡</strong>。",
+        "tag" : "裡"
+      }, {
+        "content" : "發現在右窗格中您的Internet連接，然後點擊齒輪<i class=\"fas fa-cog\"></i>圖標。",
+        "tag" : "裡"
+      }, {
+        "content" : "點擊<strong>的IPv4</strong>或<strong>IPv6的</strong>標籤來查看您的DNS設置。",
+        "tag" : "裡"
+      }, {
+        "content" : "坐落在DNS條目中的“自動”切換到<strong>關​​</strong>。",
+        "tag" : "裡"
+      }, {
+        "children" : [ {
+          "tag" : "跨度",
+          "content" : "提供的DNS條目場1.1.1.1 DNS地址："
+        }, {
+          "tag" : "UL",
+          "children" : [ {
+            "tag" : "裡",
+            "content" : "<strong>1.0.0.1</strong>"
+          }, {
+            "tag" : "裡",
+            "content" : "對於IPv6：<strong>2606：4700：4700 :: 1111,2606：4700：4700 :: 1001</strong>"
+          } ]
+        } ]
+      }, {
+        "content" : "點擊<strong>應用</strong>，然後重新啟動瀏覽器。",
+        "tag" : "裡"
+      }, {
+        "content" : "你準備好了！ 您的設備現在有更快，更私人的DNS服務器✌️✌️",
+        "tag" : "裡"
+      } ]
+    },
+    "iphone" : {
+      "steps" : [ {
+        "tag" : "裡",
+        "content" : "從你的iPhone的主屏幕，打開<strong>設置</strong>應用。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>的Wi-Fi</strong>，然後輕按您的首選網絡列表中。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>配置DNS</strong>，然後點擊<strong>手冊</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "如果有任何現有條目，點擊<strong> - </strong>按鈕，<strong>刪除旁每一個</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>+添加服務器</strong>按鈕，然後鍵入<strong>1.1.1.1</strong>"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>+又添加服務器</strong>按鈕，然後鍵入<strong>1.0.0.1</strong>。 這是冗餘。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊右上角的<strong>保存</strong>按鈕。"
+      }, {
+        "tag" : "裡",
+        "content" : "你準備好了！ 您的設備現在有更快，更私人的DNS服務器✌️✌️"
+      } ]
+    },
+    "android" : {
+      "message" : "請注意，Android需要一個靜態IP使用自定義DNS服務器。 此設置需要在路由器上額外的設置，影響到增加新的設備連接到網絡您的網絡策略。 我們建議配置您的<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">路由器的DNS</button>代替。 這會給你的網絡上的所有設備1.1.1.1 DNS的全速和隱私利益。",
+      "steps" : [ {
+        "tag" : "裡",
+        "content" : "從你的Android的應用程序列表，打開<strong>設置</strong>應用。"
+      }, {
+        "tag" : "裡",
+        "content" : "根據<strong>無線和網絡</strong>區域，請點擊<strong>的Wi-Fi</strong>，"
+      }, {
+        "tag" : "裡",
+        "content" : "長按，直到出現一個上下文菜單列表中選擇您的首選網絡。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>修改網絡</strong>，然後點擊<strong>高級選項</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>高級選項</strong>，然後點擊<strong>IP設置</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "更改<strong>動態</strong>到<strong>靜態</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "使用你的路由器的配置，輸入設備的IP地址和網關。"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>DNS</strong>場，然後刪除該領域的數量。"
+      }, {
+        "tag" : "裡",
+        "content" : "在<strong>DNS 1</strong>字段中輸入<strong>1.1.1.1</strong>"
+      }, {
+        "tag" : "裡",
+        "content" : "在<strong>DNS 2</strong>字段，輸入<strong>1.0.0.1</strong>（這是為冗餘。）"
+      }, {
+        "tag" : "裡",
+        "content" : "點擊<strong>保存</strong>。"
+      }, {
+        "tag" : "裡",
+        "content" : "你準備好了！ 您的設備現在有更快，更私人的DNS服務器✌️✌️"
+      } ]
+    },
+    "router" : {
+      "message" : "你的路由器的配置可能會有所不同。 請諮詢您的手冊，了解更多信息。",
+      "steps" : [ {
+        "tag" : "裡",
+        "content" : "連接到您的首選無線網絡。"
+      }, {
+        "tag" : "裡",
+        "content" : "在瀏覽器中輸入路由器的網關IP地址。"
+      }, {
+        "tag" : "裡",
+        "content" : "如果系統提示，填寫用戶名和密碼。 這些信息可以在路由器上進行標註。"
+      }, {
+        "tag" : "裡",
+        "content" : "在路由器配置頁面中，找到<strong>DNS服務器</strong>設置。"
+      }, {
+        "tag" : "裡",
+        "content" : "記下以備將來參考任何現有的DNS服務器條目。"
+      }, {
+        "tag" : "裡",
+        "children" : [ {
+          "tag" : "跨度",
+          "content" : "替換為1.1.1.1 DNS地址，這些地址："
+        }, {
+          "tag" : "UL",
+          "children" : [ {
+            "tag" : "裡",
+            "content" : "對於IPv4：<strong>1.1.1.1</strong>和<strong>1.0.0.1</strong>"
+          }, {
+            "tag" : "裡",
+            "content" : "對於IPv6：<strong>2606：4700：4700 :: 1111</strong>和<strong>2606：4700：4700 :: 1001</strong>"
+          } ]
+        } ]
+      }, {
+        "tag" : "裡",
+        "content" : "保存設置，然後重新啟動瀏覽器。"
+      }, {
+        "tag" : "裡",
+        "content" : "你準備好了！ 您的設備現在有更快，更私人的DNS服務器✌️✌️"
+      } ]
+    }
+  },
+  "share.header" : "✌️✌️分享更快，隱私首個互聯網與您的朋友。",
+  "share.emailSubject" : "✌️✌️瀏覽更快，更私密互連網 - 1.1.1.1 DNS解析器",
+  "share.emailBody" : "“1.1.1.1”，使互聯網瀏覽更快，更私密。 退房https://1.1.1.1更多的信息，以及如何設置你的設備在不到兩分鐘！",
+  "share.tweetBody" : "✌️✌️快速，安全，私有的互聯網是在這裡。 設置在1.1.1.1 DNS解析程序，在不到兩分鐘。",
+  "faq.whosBehindThis" : "誰是這背後？",
+  "faq.partnership" : "<strong>1.1.1.1</strong>是CloudFlare的和APNIC之間的夥伴關係。",
+  "faq.network" : "CloudFlare的運行是世界上規模最大，速度最快的網絡之一。 APNIC是亞太和大洋洲地區的一個非營利組織，管理IP地址分配。",
+  "faq.networkContinued" : "CloudFlare的有網絡。 APNIC有IP地址（1.1.1.1）。 我們都被一個使命激勵，以幫助建立一個更好的互聯網。 你可以閱讀更多關於每個組織的動機對我們各自的崗位：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">CloudFlare官方博客</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC博客</a>。",
+  "faq.canIintegrate" : "我可以用1.1.1.1集成？",
+  "faq.integrationInfo" : "如果你是誰想要建立一個隱私至上，快捷，現代化的DNS服務，<strong class=\"subtle\">是一個瀏覽器，操作系統，應用程序，路由器或VPN製造商！</strong>",
+  "faq.integrationDocs" : "通過使用DNS通過HTTPS（DOH），同時提高你的設備的速度，你可以透明地提供增強的安全性，以你的客戶。 更妙的是，你可以不花錢做了，無論是在許可和客戶的隱私條款。 了解更多關於1.1.1.1和我們的DNS在我們<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">開發者文檔</a>HTTPS（DOH）的支持。"
+}
