@@ -32,6 +32,8 @@
           {"tag": "li", "content": "Procure por <strong>DNS Servers</strong> e selecione isso do dropdown."},
           {"tag": "li", "content": "Clique no botão de <strong>+</strong> para adicionar um servidor DNS e digite <strong>1.1.1.1</strong>"},
           {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong>1.0.0.1</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong>2606:4700:4700::1111</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong>2606:4700:4700::1001</strong> (Esse é para redundância.)"},
           {"tag": "li", "content": "Clique <strong>Ok</strong>, e então clique em <strong>Apply</strong>."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
@@ -117,6 +119,8 @@
           {"tag": "li", "content": "Se tiver algumas entradas existentes, toque no botão de <strong>-</strong>, e <strong>Apagar</strong> em cada uma delas."},
           {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong>, e então digite <strong>1.1.1.1</strong>"},
           {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong>1.0.0.1</strong>. Esse é para redundância."},
+          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong>2606:4700:4700::1111</strong>. Esse é para redundância."},
+          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong>2606:4700:4700::1001</strong>. Esse é para redundância."},
           {"tag": "li", "content": "Toque no botão de <strong>Salvar</strong> no topo-direito."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
@@ -134,6 +138,8 @@
           {"tag": "li", "content": "Toque no campo <strong>DNS</strong> e apague o número existente."},
           {"tag": "li", "content": "No campo <strong>DNS 1</strong>, digite <strong>1.1.1.1</strong>"},
           {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong>1.0.0.1</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong>2606:4700:4700::1111</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong>2606:4700:4700::1001</strong> (Esse é para redundância.)"},
           {"tag": "li", "content": "Toque em <strong>Salvar</strong>."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]

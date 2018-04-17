@@ -32,6 +32,8 @@
         {"tag": "li", "content": "Search for <strong>DNS Servers</strong> and select it from the dropdown."},
         {"tag": "li", "content": "Click the <strong>+</strong> button to add a DNS Server and enter <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong>1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong>2606:4700:4700::1111</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong>2606:4700:4700::1001</strong> (This is for redundancy.)"},
         {"tag": "li", "content": "Click <strong>Ok</strong>, then click <strong>Apply</strong>."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
@@ -117,6 +119,8 @@
         {"tag": "li", "content": "If there are any existing entries, tap the <strong>-</strong> button, and <strong>Delete</strong> next to each one."},
         {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button, then type <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong>1.0.0.1</strong>. This is for redundancy."},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong>2606:4700:4700::1111</strong>. This is for redundancy."},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong>2606:4700:4700::1001</strong>. This is for redundancy."},
         {"tag": "li", "content": "Tap the <strong>Save</strong> button on the top right."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
@@ -134,6 +138,8 @@
         {"tag": "li", "content": "Tap the <strong>DNS</strong> field, then erase the number in the field."},
         {"tag": "li", "content": "In the <strong>DNS 1</strong> field, enter <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong>1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong>2606:4700:4700::1111</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong>2606:4700:4700::1001</strong> (This is for redundancy.)"},
         {"tag": "li", "content": "Tap <strong>Save</strong>."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]

@@ -40,6 +40,8 @@
         {"tag": "li", "content": "Busca <strong>Servidores DNS</strong> y selecciónalo en el menú desplegable."},
         {"tag": "li", "content": "Haz clic en <strong>+</strong> para añadir un servidor DNS y escribe <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong>1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong>2606:4700:4700::1111</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong>2606:4700:4700::1001</strong> (esto es por redundancia)."},
         {"tag": "li", "content": "Haz clic en <strong>Ok</strong> y a continuación haz clic en <strong>Aplicar</strong>."},
         {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
       ]
@@ -125,6 +127,8 @@
         {"tag": "li", "content": "Si ya existen entradas, toca <strong>-</strong> y en <strong>Borrar</strong> al lado de cada una."},
         {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> y a continuación escribe <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong>1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong>2606:4700:4700::1111</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong>2606:4700:4700::1001</strong> (esto es por redundancia)."},
         {"tag": "li", "content": "Toca <strong>Guardar</strong> en la parte superior derecha."},
         {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
       ]

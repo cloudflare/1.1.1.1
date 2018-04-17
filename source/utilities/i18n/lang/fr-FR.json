@@ -33,6 +33,8 @@
         {"tag": "li", "content": "Recherchez <strong>Serveurs DNS</strong> et sélectionnez-le dans la liste déroulante."},
         {"tag": "li", "content": "Cliquez sur le bouton <strong>+</strong> pour ajouter un serveur DNS et entrez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Cliquez à nouveau sur <strong>+</strong> et entrez <strong>1.0.0.1</strong> (pour la redondance)."},
+        {"tag": "li", "content": "Cliquez à nouveau sur <strong>+</strong> et entrez <strong>2606:4700:4700::1111</strong> (pour la redondance)."},
+        {"tag": "li", "content": "Cliquez à nouveau sur <strong>+</strong> et entrez <strong>2606:4700:4700::1001</strong> (pour la redondance)."},
         {"tag": "li", "content": "Cliquez sur <strong>Ok</strong>, puis sur <strong>Appliquer</strong>."},
         {"tag": "li", "content": "Tout est prêt ! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
@@ -118,6 +120,8 @@
         {"tag": "li", "content": "S’il existe des entrées existantes, appuyez sur le bouton <strong>-</strong> et sur <strong>Supprimer</strong> à côté de chacune."},
         {"tag": "li", "content": "Appuyez sur le bouton <strong>+ Ajouter un serveur</strong>, puis tapez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Appuyez à nouveau sur le bouton <strong>+ Ajouter un serveur</strong>, puis tapez <strong>1.0.0.1</strong>. Ceci est pour la redondance."},
+        {"tag": "li", "content": "Appuyez à nouveau sur le bouton <strong>+ Ajouter un serveur</strong>, puis tapez <strong>2606:4700:4700::1111</strong>. Ceci est pour la redondance."},
+        {"tag": "li", "content": "Appuyez à nouveau sur le bouton <strong>+ Ajouter un serveur</strong>, puis tapez <strong>2606:4700:4700::1001</strong>. Ceci est pour la redondance."},
         {"tag": "li", "content": "Appuyez sur le bouton <strong>Enregistrer</strong> en haut à droite."},
         {"tag": "li", "content": "Tout est prêt! Votre appareil utilise désormais des serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]
@@ -135,6 +139,8 @@
         {"tag": "li", "content": "Cliquez sur le champ <strong>DNS</strong>, puis effacez le numéro dans le champ."},
         {"tag": "li", "content": "Dans le champ <strong>DNS 1</strong>, entrez <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong>1.0.0.1</strong> (Ceci est pour la redondance.)"},
+        {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong>2606:4700:4700::1111</strong> (Ceci est pour la redondance.)"},
+        {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong>2606:4700:4700::1001</strong> (Ceci est pour la redondance.)"},
         {"tag": "li", "content": "Appuyez sur <strong>Enregistrer</strong>."},
         {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]

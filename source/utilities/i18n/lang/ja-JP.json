@@ -32,6 +32,8 @@
         {"tag": "li", "content": "<strong>「DNSサーバ」</strong>を検索し、次にドロップダウンから選択してください。"},
         {"tag": "li", "content": "DNSサーバーを追加する<strong> + </strong>ボタンをクリックし、<strong>1.1.1.1 </strong>を入力してください。"},
         {"tag": "li", "content": "再び<strong> + </strong>をクリックして、<strong>1.0.0.1</strong>を入力します（これは、冗長性を確保するためです。）"},
+        {"tag": "li", "content": "再び<strong> + </strong>をクリックして、<strong>2606:4700:4700::1111</strong>を入力します（これは、冗長性を確保するためです。）"},
+        {"tag": "li", "content": "再び<strong> + </strong>をクリックして、<strong>2606:4700:4700::1001</strong>を入力します（これは、冗長性を確保するためです。）"},
         {"tag": "li", "content": "<strong>「OK」</strong>をクリックし、<strong>「適用」</strong>をクリックしてください。"},
         {"tag": "li", "content": "これで完了です！ お使いのデバイスは、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
       ]
@@ -115,8 +117,10 @@
         {"tag": "li", "content": "<strong>「Wi-Fi」</strong>をタップし、リストからお好みのネットワークをタップします。"},
         {"tag": "li", "content": "<strong>「DNSを構成」</strong>をタップして、次に<strong>「手動」</strong>をタップします。"},
         {"tag": "li", "content": "既存のエントリーがある場合、<strong>- </strong>ボタンをタップし、各エントリーの横にある<strong>「削除」 </strong>をタップします。"},
-        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンをタップし、次に、<strong>1.1.1.1, 1.0.0.1 </strong>を入力します。"},
+        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンをタップし、次に、<strong>1.1.1.1 </strong>を入力します。"},
         {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンを再度タップし、次に、<strong>1.0.0.1 </strong>を入力します。これは、冗長性を確保するためです。"},
+        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンを再度タップし、次に、<strong>2606:4700:4700::1111 </strong>を入力します。これは、冗長性を確保するためです。"},
+        {"tag": "li", "content": "<strong>+サーバを追加</strong>ボタンを再度タップし、次に、<strong>2606:4700:4700::1001 </strong>を入力します。これは、冗長性を確保するためです。"},
         {"tag": "li", "content": "右上の<strong>「保存」</strong>ボタンをタップします。"},
         {"tag": "li", "content": "これで完了です！ お使いのデバイスは、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
       ]
@@ -134,6 +138,8 @@
         {"tag": "li", "content": "<strong>「DNS」</strong>フィールドをタップして、フィールドの数値を消去します。"},
         {"tag": "li", "content": "<strong>「DNS 1」</strong>フィールドで、<strong>1.1.1.1 </strong>を入力します。"},
         {"tag": "li", "content": "<strong>「DNS 2」</strong>フィールドで、<strong>1.0.0.1</strong>を入力してください。（これは、冗長性を確保するためです。）"},
+        {"tag": "li", "content": "<strong>「DNS 2」</strong>フィールドで、<strong>2606:4700:4700::1111</strong>を入力してください。（これは、冗長性を確保するためです。）"},
+        {"tag": "li", "content": "<strong>「DNS 2」</strong>フィールドで、<strong>2606:4700:4700::1001</strong>を入力してください。（これは、冗長性を確保するためです。）"},
         {"tag": "li", "content": "<strong>「保存」</strong>をタップします。"},
         {"tag": "li", "content": "これで完了です！お使いのデバイスはこれで、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
       ]
@@ -153,8 +159,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "IPv4の場合：<strong>1.1.1.1</strong>および／または<strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "IPv6の場合：<strong>2606:4700:4700::1111</strong>および／または<strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "IPv4の場合：<strong>1.1.1.1</strong>および<strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6の場合：<strong>2606:4700:4700::1111</strong>および<strong>2606:4700:4700::1001</strong>"}
               ]
             }
           ]

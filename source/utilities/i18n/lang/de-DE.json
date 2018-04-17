@@ -32,6 +32,8 @@
         {"tag": "li", "content": "Suchen Sie nach <strong>DNS Servers</strong> und wählen Sie aus der Dropdown-Liste."},
         {"tag": "li", "content": "Klicken Sie auf die <strong>+</strong> Taste, um einen DNS-Server hinzuzufügen, und geben Sie <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Klicken Sie <strong>+</strong> wieder und geben Sie <strong>1.0.0.1</strong> (Dies ist für Redundanz.)"},
+        {"tag": "li", "content": "Klicken Sie <strong>+</strong> wieder und geben Sie <strong>2606:4700:4700::1111</strong> (Dies ist für Redundanz.)"},
+        {"tag": "li", "content": "Klicken Sie <strong>+</strong> wieder und geben Sie <strong>2606:4700:4700::1001</strong> (Dies ist für Redundanz.)"},
         {"tag": "li", "content": "Klicken Sie <strong>Ok</strong>, klicken Sie dann auf <strong>Anwenden</strong>."},
         {"tag": "li", "content": "Sie sind fertig! Ihr Gerät hat jetzt einen schnelleren, privaten DNS-Server ✌️✌️"}
       ]
@@ -117,6 +119,8 @@
         {"tag": "li", "content": "Wenn irgendwelche Einträge vorhanden sind, klicken Sie auf die <strong>-</strong> Taste und <strong>Delete</strong> Taste neben jedem Eintrag."},
         {"tag": "li", "content": "Klicken Sie <strong>+ Server hinzufügen</strong> und geben Sie <strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "Klicken Sie erneut auf <strong>+ Server hinzufügen</strong> und geben Sie dann <strong>1.0.0.1</strong> ein. Dies ist für die Redundanz."},
+        {"tag": "li", "content": "Klicken Sie erneut auf <strong>+ Server hinzufügen</strong> und geben Sie dann <strong>2606:4700:4700::1111</strong> ein. Dies ist für die Redundanz."},
+        {"tag": "li", "content": "Klicken Sie erneut auf <strong>+ Server hinzufügen</strong> und geben Sie dann <strong>2606:4700:4700::1001</strong> ein. Dies ist für die Redundanz."},
         {"tag": "li", "content": "Klicken Sie auf <strong>Speichern</strong> oben rechts auf der Seite."},
         {"tag": "li", "content": "Sie sind fertig! Ihr Gerät hat jetzt einen schnelleren, privaten DNS-Server ✌️✌️"}
       ]

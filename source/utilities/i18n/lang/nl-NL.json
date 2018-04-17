@@ -32,6 +32,8 @@
         {"tag": "li", "content": "Zoek naar <strong>DNS Servers</strong> en selecteer dit in het keuzemenu."},
         {"tag": "li", "content": "Klik op de <strong>+</strong> knop om een DNS server toe te voegen, en vul <strong>1.1.1.1</strong> in"},
         {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong>1.0.0.1</strong> in (dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong>2606:4700:4700::1111</strong> in (dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong>2606:4700:4700::1001</strong> in (dit is voor extra zekerheid.)"},
         {"tag": "li", "content": "Klik op <strong>Ok</strong>, en dan op <strong>Pas Toe</strong>."},
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
       ]
@@ -118,6 +120,7 @@
             "children": [
               {"tag": "span", "content": "Vul de 1.1.1.1 DNS addressen in in het DNS veld:"},
               {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"}
+              {"tag": "li", "content": "<strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"}
             ]
         },
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
@@ -135,6 +138,8 @@
         {"tag": "li", "content": "Vul je IP-adres en Gateway in aan de hand van je router instellingen."},
         {"tag": "li", "content": "In het <strong>DNS 1</strong> veld, voer <strong>1.1.1.1</strong> in"},
         {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong>1.0.0.1</strong> in (Dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong>2606:4700:4700::1111</strong> in (Dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong>2606:4700:4700::1001</strong> in (Dit is voor extra zekerheid.)"},
         {"tag": "li", "content": "Tik <strong>Opslaan</strong>. aan"},
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
       ]

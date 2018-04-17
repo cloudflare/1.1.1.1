@@ -32,6 +32,8 @@
         {"tag": "li", "content": "搜尋 <strong>[DNS服務器]</strong>，並從下拉列表中選擇它。"},
         {"tag": "li", "content": "點擊 <strong>+</strong> 按鈕，添加一個DNS服務器，並進入<strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong>1.0.0.1</strong>（這是為了實現冗餘）"},
+        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong>2606:4700:4700::1111</strong>（這是為了實現冗餘）"},
+        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong>2606:4700:4700::1001</strong>（這是為了實現冗餘）"},
         {"tag": "li", "content": "點擊 <strong>[確定]</strong>，然後點擊 <strong>[套用]</strong>。"},
         {"tag": "li", "content": "一切就緒！您的設備現在擁有更快、更私密的DNS服務器 ✌️✌️"}
       ]
@@ -117,6 +119,8 @@
         {"tag": "li", "content": "如果有任何現有條目，點擊每個條目旁邊的<strong>- </strong>按鈕，並點擊<strong> [刪除] </strong>。"},
         {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong>1.0.0.1</strong>。這是為了實現冗餘。"},
+        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong>2606:4700:4700::1111</strong>。這是為了實現冗餘。"},
+        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong>2606:4700:4700::1001</strong>。這是為了實現冗餘。"},
         {"tag": "li", "content": "點擊右上角的<strong>“保存”</strong>按鈕。"},
         {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
       ]
@@ -134,6 +138,8 @@
         {"tag": "li", "content": "點擊<strong> [DNS] </strong> 領域，然後刪除該領域的數量。"},
         {"tag": "li", "content": "在<strong> [DNS 1] </strong> 領域中，輸入<strong>1.1.1.1</strong>"},
         {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong>1.0.0.1</strong>（這是為了實現冗餘。）"},
+        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong>2606:4700:4700::1111</strong>（這是為了實現冗餘。）"},
+        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong>2606:4700:4700::1001</strong>（這是為了實現冗餘。）"},
         {"tag": "li", "content": "點擊<strong> [保存] </strong>。"},
         {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
       ]
