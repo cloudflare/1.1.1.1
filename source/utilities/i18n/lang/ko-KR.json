@@ -9,10 +9,10 @@
   "explanation.dnsHeader": "DNS: 인터넷의 주소록",
   "explanation.dnsExplanation": "인터넷의 거의 모든것은 DNS 요청으로 시작 합니다. DNS는 인터넷의 주소록입니다. 링크를 클릭하거나, 앱을 열거나, 전자우편을 보낼 때 여러분의 컴퓨터가 하는 가장 첫번째 일은 DNS 주소록에게 물어 보는 것입니다: <strong class=\"subtle\">서버는 어디에 있나요?</strong>",
   "explanation.dnsSlowInsecure": "하지만 DNS는 기본적으로 느리고 안전하지 못합니다. DNS 요청을 받는 여러분의 ISP나 인터넷상의 서버는 그 내용이 암호화되어 있어도 여러분이 방문하는 사이트나 사용하는 앱 이름을 볼 수 있습니다. 또한 일부 DNS 제공 업체는 여러분의 인터넷 활동에 관한 데이터를 판매 하거나 광고 타겟팅용으로 사용하고 있습니다.",
-  "explanation.dnsAlternative": "우리는 이것이 옳지 않다고 생각합니다. 여러분도 그렇게 생각한다면, 이제 다른 것을 사용합시다: <strong>1.1.1.1</strong>",
+  "explanation.dnsAlternative": "우리는 이것이 옳지 않다고 생각합니다. 여러분도 그렇게 생각한다면, 이제 다른 것을 사용합시다: <strong class=\"code\">1.1.1.1</strong>",
 
   "explanation.privacyHeader": "프라이버시 우선: 보장합니다.",
-  "explanation.privacyExplanation": "우리는 1983년에 만들어진 DNS 프로토콜을 다시 생각해 보고 있습니다. <strong>1.1.1.1</strong>은 암호화된 DNS와 HTTPS상의 DNS 전송 모두를 지원합니다.",
+  "explanation.privacyExplanation": "우리는 1983년에 만들어진 DNS 프로토콜을 다시 생각해 보고 있습니다. <strong class=\"code\">1.1.1.1</strong>은 암호화된 DNS와 HTTPS상의 DNS 전송 모두를 지원합니다.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">우리는 여러분의 데이터를 판매하거나 광고 타겟팅용으로 사용하지 않습니다.</span>",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">우리는 (다른 회사들이 개인 정보를 남기는 방법인) 여러분의 IP 주소를 기록하지 않습니다</span>. 단지 선언하는 것 뿐 아니라, 우리의 약속을 지키는 것을 보여드리기 위해 매년 KPMG가 시스템 감사를 할 것입니다.",
   "explanation.privacyConclusion": "솔직히 말하면 우리는 여러분이 인터넷에서 무엇을 하고 있는지 알고 싶지 않으며 - 그건 우리의 관심사가 아닙니다 - 그렇게 할 수 없도록 기술적인 조치를 취하고 있습니다.",
@@ -30,8 +30,10 @@
       "steps": [
         {"tag": "li", "content": "시스템 환경설정을 엽니다."},
         {"tag": "li", "content": "검색창에서 <strong>DNS 서버</strong>를 찾아 선택 합니다."},
-        {"tag": "li", "content": "DNS 서버를 추가하기 위해 <strong>+</strong> 단추를 눌러 <strong>1.1.1.1</strong>을 입력합니다"},
-        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong>1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
+        {"tag": "li", "content": "DNS 서버를 추가하기 위해 <strong>+</strong> 단추를 눌러 <strong class=\"code\">1.1.1.1</strong>을 입력합니다"},
+        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
+        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
+        {"tag": "li", "content": "<strong>+</strong>를 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>을 입력합니다(이것은 여분의 설정을 위해서입니다)."},
         {"tag": "li", "content": "<strong>Ok</strong>와 <strong>승인</strong>을 누릅니다."},
         {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다 ✌️✌️"}
       ]
@@ -53,8 +55,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "IPv4: <strong>1.1.1.1</strong>과 <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "IPv6: <strong>2606:4700:4700::1111</strong>과 <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -93,8 +95,8 @@
               {
                 "tag": "ul",
                 "children": [
-                  {"tag": "li", "content": "IPv4: <strong>1.1.1.1</strong>과 <strong>1.0.0.1</strong>"},
-                  {"tag": "li", "content": "IPv6: <strong>2606:4700:4700::1111</strong>과 <strong>2606:4700:4700::1001</strong>"}
+                  {"tag": "li", "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"},
+                  {"tag": "li", "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"}
                 ]
               }
             ]
@@ -115,8 +117,10 @@
         {"tag": "li", "content": "<strong>Wi-Fi</strong>을 누르고 목록에서 사용하는 네트워크 이름을 누릅니다."},
         {"tag": "li", "content": "<strong>DNS 구성</strong>을 누르고 <strong>수동</strong>을 누릅니다."},
         {"tag": "li", "content": "기존 목록이 있다면 <strong>-</strong> 단추를 누르고 오른쪽의 <strong>삭제</strong>를 눌러 지웁니다."},
-        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 누르고 <strong>1.1.1.1</strong>을 입력합니다"},
-        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong>1.0.0.1</strong>. 이것은 여분의 설정을 위한 것입니다."},
+        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다"},
+        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">1.0.0.1</strong>. 이것은 여분의 설정을 위한 것입니다."},
+        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>. 이것은 여분의 설정을 위한 것입니다."},
+        {"tag": "li", "content": "<strong>+ 서버 추가</strong> 단추를 다시 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>. 이것은 여분의 설정을 위한 것입니다."},
         {"tag": "li", "content": "우측 상단의 <strong>저장</strong> 단추를 누릅니다."},
         {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
       ]
@@ -132,8 +136,10 @@
         {"tag": "li", "content": "<strong>DHCP</strong>를 <strong>고정</strong>으로 변경합니다."},
         {"tag": "li", "content": "공유기 설정 정보를 이용하여 이 장치의 IP주소와 게이트웨이를 입력합니다."},
         {"tag": "li", "content": "<strong>DNS</strong>필드의 기존 값을 지웁니다."},
-        {"tag": "li", "content": "<strong>DNS 1</strong>필드를 누르고 <strong>1.1.1.1</strong>을 입력합니다."},
-        {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong>1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
+        {"tag": "li", "content": "<strong>DNS 1</strong>필드를 누르고 <strong class=\"code\">1.1.1.1</strong>을 입력합니다."},
+        {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
+        {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong class=\"code\">2606:4700:4700::1111</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
+        {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong class=\"code\">2606:4700:4700::1001</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
         {"tag": "li", "content": "<strong>저장</strong>을 누릅니다."},
         {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
       ]
@@ -153,8 +159,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "IPv4: <strong>1.1.1.1</strong>과 <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "IPv6: <strong>2606:4700:4700::1111</strong>과 <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "IPv4: <strong class=\"code\">1.1.1.1</strong>과 <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6: <strong class=\"code\">2606:4700:4700::1111</strong>과 <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -171,7 +177,7 @@
   "share.tweetBody": "✌️✌️ 빠르고, 안전한 인터넷이 여기 있습니다. 2분이면 1.1.1.1 DNS 리졸버를 설정할 수 있습니다.",
 
   "faq.whosBehindThis": "누가 만들었나요?",
-  "faq.partnership": "<strong>1.1.1.1</strong>은 Cloudflare와 APNIC의 제휴로 만들어졌습니다.",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>은 Cloudflare와 APNIC의 제휴로 만들어졌습니다.",
   "faq.network": "Cloudflare는 전 세계에서 가장 크고 빠른 네트워크 중 하나를 운영하고 있습니다. APNIC은 아시아 태평양과 오세아니아 지역의 IP 주소 할당을 관리하는 비영리 조직입니다.",
   "faq.networkContinued": "Cloudflare에게는 네트워크가 있었고 APNIC에게는 IP 주소(1.1.1.1)가 있었습니다. 두 조직은 더 나은 인터넷을 만드는 것을 돕고자 하는 미션에 이끌렸습니다. 각자의 동기에 대해서는 각각의 글에서 더 자세히 알아볼 수 있습니다: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 블로그</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 블로그</a>.",
   "faq.canIintegrate": "1.1.1.1을 내 시스템에 통합할 수 있나요?",

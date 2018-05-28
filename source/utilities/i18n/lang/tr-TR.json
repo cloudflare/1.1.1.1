@@ -1,0 +1,185 @@
+{
+  "title": "1.1.1.1 — İnternetin En Hızlı ve Güvenli DNS Çözümleyicisi",
+  "description": "✌️✌️  Daha hızlı ve güvenli bir İnternet'i dolaşın.",
+  "hero.introducing": "Sizin için",
+  "hero.description": "Daha hızlı ve güvenli bir İnternetten sadece iki dakika uzaktasınız.",
+  "hero.getStarted": "Kullanmaya başla",
+  "hero.info": "Daha fazla bilgi",
+
+  "explanation.dnsHeader": "DNS: İnternetin Adres Defteri",
+  "explanation.dnsExplanation": "İnternet üzerinde neredeyse herşey bir DNS sorgusuyla başlar. DNS, İnternetin adres defteri gibidir. Bir bağlantıya tıklarsanız, telefonunuzda bir uygulamayı başlatırsanız veya bir eposta gönderirseniz cihazınızın yapacağı ilk şey DNS defterine <strong class=\"subtle\">bunu nerede bulabilirim?</strong> sorusunu sormaktır.",
+  "explanation.dnsSlowInsecure": "Ne yazık ki, kendiliğine bırakırsanız DNS yavaş ve güvensizdir. İnternet bağlantınız şifreli olsa bile, İnternet servis sağlayicınız ve İnternette sizi dinleyen herhangi biri kullandığınız İnternet sitelerini veya appleri görebilir. Bunun üstüne, DNS sağlayıcınız sizin İnternette ziyaret ettiğiniz sitelerin listesini başkalarına satabilir.",
+  "explanation.dnsAlternative": "Biz bunun yanlış olduğunu düşünüyoruz. Bize katılıyorsanız, şimdi bir alternatifiniz var: <strong>1.1.1.1</strong>",
+
+  "explanation.privacyHeader": "Gizlilik ve güvenliğiniz garantimiz altında.",
+  "explanation.privacyExplanation": "1983 yılından beri değişmemiş DNS sistemini yeniden yaratıyoruz. <strong>1.1.1.1</strong> şifreli DNS ve HTTPS üzerinden DNS teknolojilerini kullanır.",
+  "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Bilgilerini asla satmayız veya size reklam göstermek için kullanmayız.</span> Açık ve net.",
+  "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">IP adresinizi asla kaydetmeyiz</span> (diğerleri sizi bu şekilde gözler). Sizin giziliğinizi sadece sözde bırakmıyoruz, size ispatlamak için her sene KPMG tarafından denetim altında tutuluyoruz.",
+  "explanation.privacyConclusion": "Açıkçası, sizin İnternette ne yaptığınızı bilmek bile istemiyoruz. Bunun hiç olmaması için teknik adımları alıyoruz.",
+
+  "explanation.performanceHeader": "Çok daha hızlı.",
+  "explanation.performanceSubheader": "Az buz değil, diğerlerinden %28 daha hızlı.",
+  "explanation.fastestDNS": "1.1.1.1'i İnternetteki en hızlı DNS sağlayıcısı yaptık. Bağımsız DNS listesi <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> 1.1.1.1'i en hizlı servis olarak gösteriyor.",
+  "explanation.speedContinued": "İnternetteki neredeyse herşey DNS sorgusuyla başladığı için en hızlı DNS servisini seçerek İnternet hızınızı arttırabilirsiniz.",
+
+  "instructions": {
+    "header": "{{device}} ile kullanmaya başla",
+    "explanation": "<strong>1.1.1.1'i</strong> kullanmaya başlamak sadece iki dakika alır ve teknik  bilgi gerektirmez. Bilgisayar kullanmaya yeni başladıysanız bile, aşağıdan cihazınızı seçin ve adım adım ne yapmanız gerektiğini öğrenin.",
+    "questions": "Sorunuz mu var? <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Kullanıcı forumumuzu</a> ziyaret edin.",
+    "mac-os": {
+      "steps": [
+        {"tag": "li", "content": "Ayarlar'ı açın."},
+        {"tag": "li", "content": "Arama kutusundan <strong>DNS</strong>'i arayın ve menüden seçin."},
+        {"tag": "li", "content": "<strong>+</strong> (artı)'ya tıklayın ve enter <strong>1.1.1.1</strong>'i girin."},
+        {"tag": "li", "content": "Tekrar <strong>+</strong>'ya basın ve <strong>1.0.0.1</strong>'i girin (yedek olarak.)"},
+        {"tag": "li", "content": "Tekrar <strong>+</strong>'ya basın ve <strong class=\"code\">2606:4700:4700::1111</strong>'i girin (yedek olarak.)"},
+        {"tag": "li", "content": "Tekrar <strong>+</strong>'ya basın ve <strong class=\"code\">2606:4700:4700::1001</strong>'i girin (yedek olarak.)"},
+
+        {"tag": "li", "content": "<strong>Tamam</strong>'a basın, ve <strong>Uygula</strong>yın."},
+        {"tag": "li", "content": "Bu kadar! Şimdi cihazınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️"}
+      ]
+    },
+    "windows": {
+      "steps": [
+        {"tag": "li", "content": "Başlangıç menüsünden <strong>Ayarlar'a tıklayın</strong>."},
+        {"tag": "li", "content": "<strong>Ağ ve İnternet</strong>'e tıklayın."},
+        {"tag": "li", "content": "Click on <strong>Bağdaştırıcı</strong>."},
+        {"tag": "li", "content": "Bağlı olduğunuz ağa sağ-tıklayın ve <strong>Özellikler</strong>'i seçin."},
+        {"tag": "li", "content": "<strong>İnternet Protokolü Sürüm 4</strong> (ve sürüm 6)'yı seçin."},
+        {"tag": "li", "content": "<strong>Özellikler</strong>'i seçin."},
+        {"tag": "li", "content": "Bulunan DNS adreslerini not alın."},
+        {"tag": "li", "content": "<strong>Aşağidakı DNS sunucu adreslerini kullan</strong>'ı seçin."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Buradaki adresleri 1.1.1.1 DNS adresleriyle değiştirin:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "IPv4 için: <strong>1.1.1.1</strong> ve <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6 için: <strong>2606:4700:4700::1111</strong> ve <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "<strong>Tamam</strong>, ve <strong>Kapat</strong>'a tıklayın."},
+        {"tag": "li", "content": "İnternet taraycınızı yeniden başlatın."},
+        {"tag": "li", "content": "Bu kadar! Şimdi cihazınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️"}
+      ]
+    },
+    "linux": {
+      "notice": "Aşağıdaki adımlar Ubuntu için olsa da bir çok Linux dağıtımında DNS ayarları Ağ bağlantıları menüsünden değiştirilebilir. Isterseniz, DNS ayarlarınızı <code class=\"inline\">/etc/resolv.conf</code> üzerinde değiştirebilirsiniz.",
+      "steps": [
+          {
+            "content": "Uygulamalar <i class=\"fas fa-th\"></i>'e tıklayın.",
+            "tag": "li"
+          },
+          {
+            "content": "<strong>Ayarlar</strong>, sonra <strong>Ağ bağlantılari</strong>ni seçin.",
+            "tag": "li"
+          },
+          {
+            "content": "Sağ taraftaki menüden İnternet bağlantınızı seçin, ve çark <i class=\"fas fa-cog\"></i> dügmesine tıklayın.",
+            "tag": "li"
+          },
+          {
+            "content": "<strong>IPv4 Ayarları</strong> ve <strong>IPv6 Ayarları</strong> kısımlarına tıklayın.",
+            "tag": "li"
+          },
+          {
+            "content": "Yöntem menüsününden <strong>kapalı</strong>'yı seçin.",
+            "tag": "li"
+          },
+          {
+            "children": [
+              {"tag": "span", "content": "Buradaki adresleri 1.1.1.1 DNS adreslerine değiştirin:"},
+              {
+                "tag": "ul",
+                "children": [
+                  {"tag": "li", "content": "<strong>1.1.1.1, 1.0.0.1</strong>"},
+                  {"tag": "li", "content": "IPv6 için: <strong>2606:4700:4700::1111, 2606:4700:4700::1001</strong>"}
+                ]
+              }
+            ]
+          },
+          {
+            "content": "<strong>Uygula</strong>'ya basın ve tarayıcınını yeniden başlatın.",
+            "tag": "li"
+          },
+          {
+            "content": "Bu kadar! Şimdi cihazınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️",
+            "tag": "li"
+          }
+      ]
+    },
+    "iphone": {
+      "steps": [
+        {"tag": "li", "content": "iPhone'unuzun ana ekranından, <strong>Ayarlar</strong> app'ini açın."},
+        {"tag": "li", "content": "<strong>Wi-Fi</strong>'a basın, ve Wi-Fi ağınızı seçin."},
+        {"tag": "li", "content": "<strong>DNS'i ayarla</strong>'ya basın, ve <strong>Elle</strong>'yi seçin."},
+        {"tag": "li", "content": "Eğer daha önceden burada ayarlar varsa, <strong>-</strong>'ya basarak adresleri silin."},
+        {"tag": "li", "content": "<strong>+ Sununcu ekle</strong>'ye basın ve <strong>1.1.1.1</strong> girin."},
+        {"tag": "li", "content": "<strong>+ Sununcu ekle</strong>'ye basın ve <strong>1.0.0.1</strong> girin (yedek olarak)."},
+        {"tag": "li", "content": "<strong>+ Sununcu ekle</strong>'ye basın ve <strong class=\"code\">2606:4700:4700::1111</strong> girin. (Yedek olarak)."},
+        {"tag": "li", "content": "<strong>+ Sununcu ekle</strong>'ye basın ve <strong class=\"code\">2606:4700:4700::1001</strong> girin. (Yedek olarak)."},
+        {"tag": "li", "content": "Sağ üst köşedeki <strong>Kaydet</strong>'e basın."},
+        {"tag": "li", "content": "Bu kadar! Şimdi cihazınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️"}
+      ]
+    },
+    "android": {
+      "message": "Android üzerinde DNS adresinizi değiştirmek için ağınızda statik IP adresi kullanmanız gerekmektedir. Bu ayar, İnternet router'ınız üzerinde bazı ayarları değiştirmenizi gerektrimektedir. Bu nedenle, <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">router</button>'ınız üzerinde DNS ayarlarınızı değiştirmenizi tavsiye ederiz.",
+      "steps": [
+        {"tag": "li", "content": "Android app'lerinizden <strong>ayarlar</strong>ı seçin."},
+        {"tag": "li", "content": "<strong>Kablosuz ve ağlar</strong> kısmından, <strong>Wi-Fi</strong>'ı seçin,"},
+        {"tag": "li", "content": "İnternet ağınıza uzun basın."},
+        {"tag": "li", "content": "<strong>Ağı değiştir</strong>'i seçin ve <strong>Gelişmiş seçenekler</strong>'e basın."},
+        {"tag": "li", "content": "<strong>IP ayarlarını</strong> seçin."},
+        {"tag": "li", "content": "Ayarı<strong>Statik</strong>'e değiştirin."},
+        {"tag": "li", "content": "Router'ınızın ayarlarından, cihazınızın IP adresini ve geçit adresini girin."},
+        {"tag": "li", "content": "<strong>DNS</strong> kısmındaki değerı silin."},
+        {"tag": "li", "content": "<strong>DNS 1</strong> kısmına, <strong>1.1.1.1</strong> girin."},
+        {"tag": "li", "content": "<strong>DNS 2</strong> kısmına, <strong>1.0.0.1</strong> girin. (Yedek olarak.)"},
+        {"tag": "li", "content": "<strong>Kaydet</strong>'e basın."},
+        {"tag": "li", "content": "Bu kadar! Şimdi cihazınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️"}
+      ]
+    },
+    "router": {
+      "message": "Router'ınızın ayarlari buradan değişik olabilir. Lütfen cıhazınızın kullanıcı el kitabından yardım alın.",
+      "steps": [
+        {"tag": "li", "content": "Internet ağınıza bağlanın."},
+        {"tag": "li", "content": "Routerınızın geçit adresini ziyaret edin."},
+        {"tag": "li", "content": "Kullanıcı adı ve şifreinizi girin. Kullanıcı adı ve şifre router'ınızın arkasında yazılı olabilir."},
+        {"tag": "li", "content": "Router ayarlarınızdan <strong>DNS</strong> ayarlarını seçin."},
+        {"tag": "li", "content": "Burada bulunan DNS ayarlarını not alın."},
+        {
+          "tag": "li",
+          "children": [
+            {"tag": "span", "content": "Bulunan DNS adreslerini aşağıdaki adreslerle değiştirin:"},
+            {
+              "tag": "ul",
+              "children": [
+                {"tag": "li", "content": "IPv4 için: <strong>1.1.1.1</strong> ve <strong>1.0.0.1</strong>"},
+                {"tag": "li", "content": "IPv6 için: <strong>2606:4700:4700::1111</strong> ve <strong>2606:4700:4700::1001</strong>"}
+              ]
+            }
+          ]
+        },
+        {"tag": "li", "content": "Ayarlarınızı kaydedin."},
+        {"tag": "li", "content": "Bu kadar! Şimdi cihazlarınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️"}
+      ]
+    }
+  },
+
+  "share.header": "✌️✌️ Güvenli ve gizli bir İnternet'i arkadaşlarınızla paylaşın.",
+  "share.emailSubject": "✌️✌️  Daha hızlı ve güvenli bir İnternet — 1.1.1.1 DNS Çözümleyicisi",
+  "share.emailBody": "“1.1.1.1” internette dolaşmayı daha hızlı ve güvenli yapar. https://1.1.1.1'i ziyaret ederek daha fazla bilgi alın ve and iki dakika içerisinde cihazınızda kullanmaya başlayın!",
+  "share.tweetBody": "✌️✌️ Hızlı, güvenli, ve gizli bir İnternet burada. 1.1.1.1 DNS Çözümleyicisini iki dakikada kullanmaya başlayın.",
+
+  "faq.whosBehindThis": "Bunun arkasında kim var?",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> Cloudflare and APNIC arasında bir ortaklıktır.",
+  "faq.network": "Cloudflare dünyanın en geniş ve en hızlı ağlarından birini işletir. APNIC kar amacı gütmeyen, Avustralya ve Asya Pasifik bölgelerinin IP adreslerini işleten bir kuruluştur.",
+  "faq.networkContinued": "Cloudflare ağı, APNIC ise IP adresini (1.1.1.1) data iyi bir intenet inşa etmek için bir araya getirdi. İki kuruluşun düşüncelerini blog'larında okuyabilirsiniz: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blogu</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blogu</a>.",
+  "faq.canIintegrate": "1.1.1.1 ile entegre edebilir miyim?",
+  "faq.integrationInfo": "Eger bir web tarayıcısı, işletim sistemi, app, router veya VPN yapıyorsanız ve gizli, hızlı ve modern bir DNS servisi kullanmak istiyorsanız, <strong class=\"subtle\">evet!</strong>",
+  "faq.integrationDocs": "HTTPS üzerinden DNS (DoH) kullanarak kullanıcılarılarınıza gelişmiş güvenlilik sunabiliriniz. Daha iyisi, 1.1.1.1 tamamiyla bedavadır ve  <a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">Gizlilik</a> açısından hiç bir şeyi geride bırakmazsınız. 1.1.1.1'in HTTPS üzerinden DNS (DoH) desteğini <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">geliştirici belgelerimizde</a> görüntüleyebilirsiniz."
+}

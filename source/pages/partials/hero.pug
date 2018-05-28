@@ -4,9 +4,9 @@ section(data-section="hero")
     role="button"
     data-ref="languageSelector")
     .selector-label
-      i.fas.fa-globe
+      include ../../media/globe.svg
       span.chosen-language!=htmlWebpackPlugin.options.locale.label
-      i.fas.fa-caret-down
+      include ../../media/caret.svg
 
     .dropdown
       each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)

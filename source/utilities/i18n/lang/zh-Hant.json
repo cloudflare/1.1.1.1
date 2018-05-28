@@ -9,7 +9,7 @@
   "explanation.dnsHeader": "DNS: 網際網路的目錄。",
   "explanation.dnsExplanation": "幾乎網際網路上的一切都是從一個 DNS 請求開始。DNS 是網際網路的目錄。點擊鏈接，打開應用程式，發送電子郵件時，您的設備所做的第一件事就是詢問目錄： <strong class=\"subtle\">我能在哪裡找到這項內容？</strong>",
   "explanation.dnsSlowInsecure": "不幸的是，默認情況下，DNS 通常速度慢且不安全。您的 ISP，以及其他在網際網路上進行監聽活動者，看得到每個您訪問的網站和使用的應用程式，即便這些內容已經過加密處理。令人感到不安的是，一些 DNS 供應商出售您的網際網路活動數據，或是利用數據對您進行廣告宣傳。",
-  "explanation.dnsAlternative": "我們認為這種行為極不道德。如果您也這樣認為，現在有一種替代方案： <strong>1.1.1.1</strong>",
+  "explanation.dnsAlternative": "我們認為這種行為極不道德。如果您也這樣認為，現在有一種替代方案： <strong class=\"code\">1.1.1.1</strong>",
 
   "explanation.privacyHeader": "保證：隱私優先。",
   "explanation.privacyExplanation": "我們正在重新考慮 1983 年代的 DNS 協議。<strong>1.1.1.1 </strong>支持經過加密處理的 DNS 以及通過 HTTPS 完成的 DNS。",
@@ -30,8 +30,10 @@
       "steps": [
         {"tag": "li", "content": "O打開 [系統偏好設置]。"},
         {"tag": "li", "content": "搜尋 <strong>[DNS服務器]</strong>，並從下拉列表中選擇它。"},
-        {"tag": "li", "content": "點擊 <strong>+</strong> 按鈕，添加一個DNS服務器，並進入<strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong>1.0.0.1</strong>（這是為了實現冗餘）"},
+        {"tag": "li", "content": "點擊 <strong>+</strong> 按鈕，添加一個DNS服務器，並進入<strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘）"},
+        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">2606:4700:4700::1111</strong>（這是為了實現冗餘）"},
+        {"tag": "li", "content": "再次點擊<strong>+</strong>並輸入<strong class=\"code\">2606:4700:4700::1001</strong>（這是為了實現冗餘）"},
         {"tag": "li", "content": "點擊 <strong>[確定]</strong>，然後點擊 <strong>[套用]</strong>。"},
         {"tag": "li", "content": "一切就緒！您的設備現在擁有更快、更私密的DNS服務器 ✌️✌️"}
       ]
@@ -53,8 +55,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -115,8 +117,10 @@
         {"tag": "li", "content": "點擊<strong> [Wi-Fi] </strong>，然後點擊列表中您最喜歡的網路"},
         {"tag": "li", "content": "點擊<strong> [配置DNS] </strong>，然後輕按<strong> [手動] </strong>。"},
         {"tag": "li", "content": "如果有任何現有條目，點擊每個條目旁邊的<strong>- </strong>按鈕，並點擊<strong> [刪除] </strong>。"},
-        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong>1.0.0.1</strong>。這是為了實現冗餘。"},
+        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">1.0.0.1</strong>。這是為了實現冗餘。"},
+        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">2606:4700:4700::1111</strong>。這是為了實現冗餘。"},
+        {"tag": "li", "content": "點擊<strong> [+ 添加服務器] </strong>按鈕，然後輸入<strong class=\"code\">2606:4700:4700::1001</strong>。這是為了實現冗餘。"},
         {"tag": "li", "content": "點擊右上角的<strong>“保存”</strong>按鈕。"},
         {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
       ]
@@ -132,8 +136,10 @@
         {"tag": "li", "content": "更改<strong> [動態] </strong>為<strong> [靜態]</strong>。"},
         {"tag": "li", "content": "使用您的路由器配置，輸入設備的 IP 地址和閘道。"},
         {"tag": "li", "content": "點擊<strong> [DNS] </strong> 領域，然後刪除該領域的數量。"},
-        {"tag": "li", "content": "在<strong> [DNS 1] </strong> 領域中，輸入<strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong>1.0.0.1</strong>（這是為了實現冗餘。）"},
+        {"tag": "li", "content": "在<strong> [DNS 1] </strong> 領域中，輸入<strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘。）"},
+        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">2606:4700:4700::1111</strong>（這是為了實現冗餘。）"},
+        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">2606:4700:4700::1001</strong>（這是為了實現冗餘。）"},
         {"tag": "li", "content": "點擊<strong> [保存] </strong>。"},
         {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
       ]
@@ -154,7 +160,7 @@
               "tag": "ul",
               "children": [
                 {"tag": "li", "content": "對於IPv4：<strong>1.1.1.1 </strong>和/或<strong>1.0.0.1 </strong>"},
-                {"tag": "li", "content": "對於IPv6：<strong>2606:4700:4700::1111</strong>和/或<strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "對於IPv6：<strong class=\"code\">2606:4700:4700::1111</strong>和/或<strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -171,7 +177,7 @@
   "share.tweetBody": "✌️✌️ 快速、安全和私密的網際網路就在這裡。在不到 2 分鐘內完成設置 Cloudflare 的 DNS 解析器。",
 
   "faq.whosBehindThis": "誰在這背後？",
-  "faq.partnership": "<strong>1.1.1.1</strong>是 Cloudflare 和APNIC 之間的合作項目。",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>是 Cloudflare 和APNIC 之間的合作項目。",
   "faq.network": "Cloudflare 運行全球規模最大、速度最快的網路之一。 APNIC 是亞太和大洋洲地區的一個非營利組織，管理 IP 地址分配。",
   "faq.networkContinued": "Cloudflare 具備優質的網路。APNIC 有 IP 地址（1.1.1.1）。一個共同的使命激發了我們，那就是建立一個更好的網際網路。 如欲詳細了解我們的宗旨，請訪問我們各自的部落格：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 部落格</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 部落格</a>。",
   "faq.canIintegrate": "我可以跟 1.1.1.1 整合嗎？",

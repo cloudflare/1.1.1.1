@@ -37,7 +37,8 @@ interface CustomConfiguration extends webpack.Configuration {
 const $: CustomConfiguration = {
   mode: environment,
   entry: {
-    site: ['./source/pages/index.ts']
+    site: ['./source/pages/index.ts'],
+    help: ['./source/pages/help.ts']
   },
   plugins: []
 }
@@ -51,8 +52,8 @@ $.output = {
   publicPath: '/',
   // publicPath: '',
   path: joinP('build'),
-  filename: '[hash].js',
-  library: '[hash]',
+  filename: '[name]-[hash].js',
+  library: '[name]-[hash]',
   libraryTarget: 'umd'
 }
 
@@ -100,10 +101,10 @@ if (environment === 'production') {
 
   $.plugins.push(
     new SourceMapDevToolPlugin({
-      filename: '[hash].map'
+      filename: '[name]-[hash].map'
     }),
     new MiniCssExtractPlugin({
-      filename: '[hash].css',
+      filename: '[name]-[hash].css',
       chunkFilename: '[id].css',
     }),
     new UglifyJsPlugin({
@@ -120,7 +121,7 @@ if (environment === 'production') {
   )
 }
 
-let htmlMinify: boolean | any = false
+let htmlMinify: boolean | { [index: string]: boolean } = false
 
 if (environment !== 'development') {
   htmlMinify = {
@@ -165,6 +166,11 @@ const locales = [
     label: 'Nederlands'
   },
   {
+    path: 'tr-TR/',
+    code: 'tr-TR',
+    label: 'Türkçe'
+  },
+  {
     path: 'zh-Hans/',
     code: 'zh-Hans',
     label: '简体中文'
@@ -194,7 +200,7 @@ const pugLoaders = locales.map((locale) => {
   return {
     test: /\.pug$/,
     exclude,
-    include: new RegExp(`${locale.code}\\.pug`),
+    include: new RegExp(`${locale.code}.*\/index\.pug$`),
     use: [
       {
         loader: 'html-loader',
@@ -228,8 +234,18 @@ const pugLoaders = locales.map((locale) => {
 $.plugins.push(...locales.map((locale) => {
   return new HtmlWebpackPlugin({
     favicon: 'source/media/favicon.png',
-    template: joinP(`source/pages/${locale.code}.pug`),
-    filename: `${locale.path}index.html`
+    template: joinP(`source/pages/${locale.code}/index.pug`),
+    filename: `${locale.path}index.html`,
+    chunks: ['site']
+  })
+}))
+
+$.plugins.push(...locales.map((locale) => {
+  return new HtmlWebpackPlugin({
+    favicon: 'source/media/favicon.png',
+    template: joinP(`source/pages/${locale.code}/help/index.pug`),
+    filename: `${locale.path}help/index.html`,
+    chunks: ['help']
   })
 }))
 

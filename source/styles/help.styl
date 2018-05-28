@@ -1,0 +1,99 @@
+@import "mixins/media-query-variables"
+
+:root
+  --bg-background-color hsl(47, 34%, 98%)
+
+body.help-page
+  background-color var(--bg-background-color)
+
+  .help-initial-hidden
+    display none
+
+  section[data-section="setup"]
+    border-top 3px solid hsla(0, 0%, 20%, .05)
+    background-color transparent
+    padding-top 1.4em
+
+    .additional-content.debug-link
+      display none
+
+section[data-section="help"]
+  display flex
+  justify-content center
+  align-items center
+  flex-flow column
+  font-family var(--sans-serif-fonts)
+  font-weight 300
+  -webkit-font-smoothing antialiased
+  min-height calc(90vh)
+  padding var(--section-vertical-padding) 0 1em
+  text-align left
+  z-index 1
+  translate transform3d(0, 0, 0)
+
+  header
+    margin 0 auto
+    text-align center
+
+    h2
+      border-top 10px solid hsla(0, 0%, 20%, 1)
+      color hsla(0, 0%, 20%, 1)
+      display inline-block
+      font-size 2.5rem
+
+      @media desktopMinWidthQuery
+        padding 11px 2.7em
+
+      @media mobileMaxWidthQuery
+        padding 11px .7em
+
+  .hero-copy > svg
+    height 10rem
+    fill hsla(0, 0%, 20%, 1)
+
+  h2
+    font-weight 700
+
+  h3
+    margin-bottom 0
+    font-weight 600
+    & > a
+      text-decoration none
+      color currentColor
+      box-shadow inset 0px -3px var(--bg-background-color), inset 0px -5px rgba(0,0,0,0.1)
+
+      &:hover
+        box-shadow inset 0px -3px var(--bg-background-color), inset 0px -5px rgba(0,0,0,0.25)
+
+  .entry
+    padding-bottom .3em
+    padding-left 1em
+    padding-right 1em
+
+    & + .entry
+      margin-top .7em
+      border-top 3px solid hsla(0, 0%, 0%, 0.01)
+
+  .response
+    margin .4em 0
+    font-weight 500
+    font-size 1.8rem
+    line-height 1.6
+
+    &[data-ref="datacenterLocation"]
+      margin .4em 0
+      font-style italic
+
+    &.resolved.code
+      font-family var(--monospace-fonts)
+
+  .map.resolved
+    display block
+    height 70vh
+    max-height 400px
+    margin-bottom 1.3em
+    width 100%
+
+    border-top 2px solid hsla(0, 0%, 0%, 0.08)
+    border-bottom 2px solid hsla(0, 0%, 0%, 0.08)
+

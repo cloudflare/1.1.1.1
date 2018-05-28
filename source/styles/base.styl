@@ -72,7 +72,7 @@ strong
   :root
     --section-vertical-padding 5em
 
-code
+code, strong.code
   font-family var(--monospace-fonts)
 
   &.inline
@@ -119,6 +119,23 @@ header
 .light-on-dark
   color white
   text-shadow 0 0 6px hsla(0, 0%, 0%, 0.66)
+
+.svg-inline--fa
+  display inline-block
+  font-size inherit
+  height 1em
+  overflow visible
+  vertical-align -.125em
+  fill white
+
+  &.fa-w-10
+    width .625em
+
+svg:not(:root).svg-inline--fa
+  overflow visible
+
+.svg-inline--fa.fa-w-16
+  width 1em
 
 section[data-section]
   position relative
@@ -311,3 +328,4 @@ ul, ol
 @import share
 @import faq
 @import footer
+@import help

@@ -9,10 +9,10 @@
   "explanation.dnsHeader": "DNS: Internet’s Directory",
   "explanation.dnsExplanation": "Nearly everything on the Internet starts with a DNS request. DNS is the Internet’s directory. Click on a link, open an app, send an email and the first thing your device does is ask the directory: <strong class=\"subtle\">Where can I find this?</strong>",
   "explanation.dnsSlowInsecure": "Unfortunately, by default, DNS is usually slow and insecure. Your ISP, and anyone else listening in on the Internet, can see every site you visit and every app you use — even if their content is encrypted. Creepily, some DNS providers sell data about your Internet activity or use it to target you with ads.",
-  "explanation.dnsAlternative": "We think that’s gross. If you do too, now there’s an alternative: <strong>1.1.1.1</strong>",
+  "explanation.dnsAlternative": "We think that’s gross. If you do too, now there’s an alternative: <strong class=\"code\">1.1.1.1</strong>",
 
   "explanation.privacyHeader": "Privacy First: Guaranteed.",
-  "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong>1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
+  "explanation.privacyExplanation": "We’re rethinking the 1983-era DNS protocol. <strong class=\"code\">1.1.1.1</strong> supports encrypted DNS as well as DNS over HTTPS.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We will never sell your data or use it to target ads.</span> Period.",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We will never log your IP address</span> (the way other companies identify you). And we’re not just saying that. We’ve retained KPMG to audit our systems annually to ensure that we're doing what we say.",
   "explanation.privacyConclusion": "Frankly, we don’t want to know what you do on the Internet—it’s none of our business—and we’ve taken the technical steps to ensure we can’t.",
@@ -25,13 +25,16 @@
   "instructions": {
     "header": "Setup on {{device}}",
     "explanation": "Setting up <strong>1.1.1.1</strong> takes two minutes and requires no technical skill or special software. Even if you’re a computer novice, pick your device below for an easy-to-follow setup guide.",
-    "questions": "Questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
+    "debug": "Looking for more info about your internet connection? Check out our <a target=\"_blank\" href=\"./help\">debug page</a>.",
+    "questions": "Still have questions? Visit our <a href=\"https://community.cloudflare.com/c/reliability/1111\" target=\"_blank\">Community Forum</a>",
     "mac-os": {
       "steps": [
         {"tag": "li", "content": "Open System Preferences."},
         {"tag": "li", "content": "Search for <strong>DNS Servers</strong> and select it from the dropdown."},
-        {"tag": "li", "content": "Click the <strong>+</strong> button to add a DNS Server and enter <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong>1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Click the <strong>+</strong> button to add a DNS Server and enter <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong class=\"code\">1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong class=\"code\">2606:4700:4700::1111</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "Click <strong>+</strong> again and enter <strong class=\"code\">2606:4700:4700::1001</strong> (This is for redundancy.)"},
         {"tag": "li", "content": "Click <strong>Ok</strong>, then click <strong>Apply</strong>."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
@@ -53,8 +56,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -93,7 +96,7 @@
               {
                 "tag": "ul",
                 "children": [
-                  {"tag": "li", "content": "<strong>1.0.0.1</strong>"},
+                  {"tag": "li", "content": "<strong class=\"code\">1.0.0.1</strong>"},
                   {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"}
                 ]
               }
@@ -115,8 +118,10 @@
         {"tag": "li", "content": "Tap <strong>Wi-Fi</strong>, then tap your preferred network in the list."},
         {"tag": "li", "content": "Tap <strong>Configure DNS</strong>, then tap <strong>Manual</strong>."},
         {"tag": "li", "content": "If there are any existing entries, tap the <strong>-</strong> button, and <strong>Delete</strong> next to each one."},
-        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button, then type <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong>1.0.0.1</strong>. This is for redundancy."},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button, then type <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong class=\"code\">1.0.0.1</strong>. This is for redundancy."},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong class=\"code\">2606:4700:4700::1111</strong>. This is for redundancy."},
+        {"tag": "li", "content": "Tap the <strong>+ Add Server</strong> button again, then type <strong class=\"code\">2606:4700:4700::1001</strong>. This is for redundancy."},
         {"tag": "li", "content": "Tap the <strong>Save</strong> button on the top right."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
@@ -132,8 +137,10 @@
         {"tag": "li", "content": "Change <strong>Dynamic</strong> to <strong>Static</strong>."},
         {"tag": "li", "content": "Using your router’s configuration, enter your device’s IP address and gateway."},
         {"tag": "li", "content": "Tap the <strong>DNS</strong> field, then erase the number in the field."},
-        {"tag": "li", "content": "In the <strong>DNS 1</strong> field, enter <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong>1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "In the <strong>DNS 1</strong> field, enter <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">1.0.0.1</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">2606:4700:4700::1111</strong> (This is for redundancy.)"},
+        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">2606:4700:4700::1001</strong> (This is for redundancy.)"},
         {"tag": "li", "content": "Tap <strong>Save</strong>."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
@@ -153,8 +160,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -171,7 +178,7 @@
   "share.tweetBody": "✌️✌️ Fast, safe, and private internet is here. Setup the 1.1.1.1 DNS Resolver in less than two minutes.",
 
   "faq.whosBehindThis": "Who’s behind this?",
-  "faq.partnership": "<strong>1.1.1.1</strong> is a partnership between Cloudflare and APNIC.",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> is a partnership between Cloudflare and APNIC.",
   "faq.network": "Cloudflare runs one of the world’s largest, fastest networks. APNIC is a non-profit organization managing IP address allocation for the Asia Pacific and Oceania regions.",
   "faq.networkContinued": "Cloudflare had the network. APNIC had the IP address (1.1.1.1). Both of us were motivated by a mission to help build a better Internet. You can read more about each organization’s motivations on our respective posts: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>.",
   "faq.canIintegrate": "Can I integrate with 1.1.1.1?",

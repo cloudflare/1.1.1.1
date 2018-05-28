@@ -1,0 +1,39 @@
+section(data-section="help")
+  header
+    h1.hero-copy(alt="1.1.1.1 DNS resolver")
+      include ../../media/logo.svg
+
+    h2.description Connection Information
+
+  .connection-info
+    .entry
+      h3 What's my IP address?
+      h4.response.code(data-ref="myIPAddress") 🚚 Fetching...
+
+    .entry
+      h3
+        | Which
+        | <a href="https://support.cloudflare.com/hc/en-us/articles/200169986-Which-Cloudflare-data-center-do-I-reach-" target="_blank">Cloudflare datacenter</a>
+        | am I connecting to?
+
+      h4.response(data-ref="datacenterLocation") 🚚 Fetching...
+
+    //- .map#datacenter-map
+
+    .entry
+      h3 How fast is my connection to the Cloudflare datacenter?
+      h4.response(data-ref="datacenterConnectionSpeed") 🚚 Fetching...
+
+    .entry
+      h3 What's the IP address of my DNS resolver?
+      h4.response.code(data-ref="dnsResolverIP") 🚚 Fetching...
+
+    .entry
+      h3 Does my ISP support IPv6?
+      h4.response(data-ref="supportsIPv6") 🚚 Fetching...
+
+    .entry
+      h3
+        | Does my DNS resolver support
+        | <a href="https://www.cloudflare.com/dns/dnssec/" target="_blank">DNSSEC</a>?
+      h4.response(data-ref="supportsDNSSEC") 🚚 Fetching...

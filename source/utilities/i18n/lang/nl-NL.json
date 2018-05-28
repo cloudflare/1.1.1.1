@@ -9,10 +9,10 @@
   "explanation.dnsHeader": "DNS: Het internet's telefoonboek",
   "explanation.dnsExplanation": "Bijna alles op het internet begint met een DNS verzoek. DNS is het telefoonboek van het internet. Klik op een link, open een app, stuur een email, en het eerste wat je toestel doet is aan een telefoonboek vragen: <strong class=\"subtle\">Waar kan ik dit vinden?</strong>",
   "explanation.dnsSlowInsecure": "Helaas, vaak is DNS traag en onveilig. Je ISP, en iedereen die aan het luisteren is op het internet, kunnen elke website zien die je bezoekt, en elke app die je gebruikt — zelfs als de inhoud versleutelt is. Griezelig genoeg, verkopen sommige DNS voorzieners de data over je internet activeiten, of gebruiken het om heel specifieke advertenties op je te richten.",
-  "explanation.dnsAlternative": "We vinden dat heel vuil. Als jij dat ook vindt, dan is er nu een alternatief: <strong>1.1.1.1</strong>",
+  "explanation.dnsAlternative": "We vinden dat heel vuil. Als jij dat ook vindt, dan is er nu een alternatief: <strong class=\"code\">1.1.1.1</strong>",
 
   "explanation.privacyHeader": "Privacy eerst: Gegarandeerd.",
-  "explanation.privacyExplanation": "We hebben het DNS protocol uit 1983 herbedacht. <strong>1.1.1.1</strong> ondersteunt versleutelde DNS en DNS over HTTPS.",
+  "explanation.privacyExplanation": "We hebben het DNS protocol uit 1983 herbedacht. <strong class=\"code\">1.1.1.1</strong> ondersteunt versleutelde DNS en DNS over HTTPS.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">We gaan nooit je data verkopen, of gebruiken voor gerichte advertenties.</span> Punt.",
   "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">We gaan nooit je IP adres loggen</span> (zo identificeren andere bedrijven jou). En we zeggen dat niet zomaar. We hebben KPMG aangeworven om jaarlijks een audit van onze systemen te doen om te verzekeren dat we doen wat we zeggen.",
   "explanation.privacyConclusion": "Eerlijk gezegd willen we niet weten wat je doet op het internet-Het is onze zaak niet-en we hebben de technische voorzorgen genomen dat we het niet kunnen.",
@@ -30,8 +30,10 @@
       "steps": [
         {"tag": "li", "content": "Open Systeem Voorkeuren."},
         {"tag": "li", "content": "Zoek naar <strong>DNS Servers</strong> en selecteer dit in het keuzemenu."},
-        {"tag": "li", "content": "Klik op de <strong>+</strong> knop om een DNS server toe te voegen, en vul <strong>1.1.1.1</strong> in"},
-        {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong>1.0.0.1</strong> in (dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "Klik op de <strong>+</strong> knop om een DNS server toe te voegen, en vul <strong class=\"code\">1.1.1.1</strong> in"},
+        {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong class=\"code\">1.0.0.1</strong> in (dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong class=\"code\">2606:4700:4700::1111</strong> in (dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "Klik opnieuw op de <strong>+</strong> knop, en vul dan <strong class=\"code\">2606:4700:4700::1001</strong> in (dit is voor extra zekerheid.)"},
         {"tag": "li", "content": "Klik op <strong>Ok</strong>, en dan op <strong>Pas Toe</strong>."},
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
       ]
@@ -53,8 +55,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "Voor IPv4: <strong>1.1.1.1</strong> en <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "Voor IPv6: <strong>2606:4700:4700::1111</strong> en <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "Voor IPv4: <strong class=\"code\">1.1.1.1</strong> en <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "Voor IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> en <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -117,7 +119,8 @@
         {
             "children": [
               {"tag": "span", "content": "Vul de 1.1.1.1 DNS addressen in in het DNS veld:"},
-              {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"}
+              {"tag": "li", "content": "<strong>1.1.1.1,1.0.0.1</strong>"},
+              {"tag": "li", "content": "<strong>2606:4700:4700::1111,2606:4700:4700::1001</strong>"}
             ]
         },
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
@@ -133,8 +136,10 @@
         {"tag": "li", "content": "Wijzig in je <strong>IP-instellingen</strong> <strong>DHCP</strong> naar <strong>Statisch</strong>."},
         {"tag": "li", "content": "Change <strong>Dynamic</strong> to <strong>Static</strong>."},
         {"tag": "li", "content": "Vul je IP-adres en Gateway in aan de hand van je router instellingen."},
-        {"tag": "li", "content": "In het <strong>DNS 1</strong> veld, voer <strong>1.1.1.1</strong> in"},
-        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong>1.0.0.1</strong> in (Dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "In het <strong>DNS 1</strong> veld, voer <strong class=\"code\">1.1.1.1</strong> in"},
+        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">1.0.0.1</strong> in (Dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">2606:4700:4700::1111</strong> in (Dit is voor extra zekerheid.)"},
+        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">2606:4700:4700::1001</strong> in (Dit is voor extra zekerheid.)"},
         {"tag": "li", "content": "Tik <strong>Opslaan</strong>. aan"},
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
       ]
@@ -154,8 +159,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "Voor IPv4: <strong>1.1.1.1</strong> en <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "Voor IPv6: <strong>2606:4700:4700::1111</strong> en <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "Voor IPv4: <strong class=\"code\">1.1.1.1</strong> en <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "Voor IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> en <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -172,7 +177,7 @@
   "share.tweetBody": "️✌️✌️ Het veilig, snel internet met een focus op privacy is hier. Stel de 1.1.1.1 DNS Resolver in in minder dan twee minuten.",
 
   "faq.whosBehindThis": "Wie zit hier achter?",
-  "faq.partnership": "<strong>1.1.1.1</strong> is een vennootschap tussen Cloudflare en APNIC.",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> is een vennootschap tussen Cloudflare en APNIC.",
   "faq.network": "Cloudflare beheert een van de grootste en snelste netwerken ter wereld. APNIC is een VZW die instaat voor het beheren van IP-adressen in de Aziatische-Pacifische en Oceanië regio's.",
   "faq.networkContinued": "Cloudflare had het netwerk. APNIC had het IP-adres (1.1.1.1). Beide zijn we gemotiveerd door een missie om een beter internet te bouwen. Je kan meer lezen over de motivaties van elke organisatie op de respectievelijke blogs: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"http://blog.apnic.net/\" target=\"_blank\">APNIC Blog</a>.",
   "faq.canIintegrate": "Kan ik integreren met 1.1.1.1?",

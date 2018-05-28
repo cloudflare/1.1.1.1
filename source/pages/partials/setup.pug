@@ -6,7 +6,7 @@ mixin render(input)
   else if input.content
     #{input.tag}!=input.content
 
-section#setup-instructions(data-section="setup" data-ref="setup")
+section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="setup")
   h1.collapsed-top-margin(
     data-ref="deviceLabel"
     data-label=htmlWebpackPlugin.options.t('instructions').header)
@@ -15,22 +15,22 @@ section#setup-instructions(data-section="setup" data-ref="setup")
 
   .instruction-picker.desktop-only(data-ref="instructionPicker")
     button.button.choice(type="button" data-platform="iphone")
-      i.fas.fa-mobile
+      include ../../media/iphone.svg
       span.label iPhone
     button.button.choice(type="button" data-platform="android")
-      i.fab.fa-android
+      include ../../media/android.svg
       span.label Android
     button.button.choice(type="button" data-platform="mac-os")
-      i.fab.fa-apple
+      include ../../media/mac-os.svg
       span.label MacOS
     button.button.choice(type="button" data-platform="windows")
-      i.fab.fa-windows
+      include ../../media/windows.svg
       span.label Windows
     button.button.choice(type="button" data-platform="linux")
-      i.fab.fa-linux
+      include ../../media/linux.svg
       span.label Linux
     button.button.choice(type="button" data-platform="router")
-      i.fas.fa-sitemap
+      include ../../media/sitemap.svg
       span.label Router
 
   .instructions(data-platform="mac-os")
@@ -82,7 +82,6 @@ section#setup-instructions(data-section="setup" data-ref="setup")
       defer
       src="https://embed.cloudflarestream.com/embed/we4g.fla9.latest.js?video=92b27227d737a866adc8b0572cf0db89")
 
-
   .instructions(data-platform="android")
     .message
       p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
@@ -107,4 +106,5 @@ section#setup-instructions(data-section="setup" data-ref="setup")
       each instruction in htmlWebpackPlugin.options.t('instructions').router.steps
         +render(instruction)
 
-  p.questions-link!=htmlWebpackPlugin.options.t('instructions').questions
+  //- p.additional-content.debug-link!=htmlWebpackPlugin.options.t('instructions').debug
+  p.additional-content.questions-link!=htmlWebpackPlugin.options.t('instructions').questions

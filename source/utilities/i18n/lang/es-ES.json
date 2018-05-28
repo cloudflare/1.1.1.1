@@ -9,7 +9,7 @@
   "explanation.dnsHeader": "DNS: Directorio de Internet",
   "explanation.dnsExplanation": "Casi todo en Internet comienza con una petición DNS. DNS es el directorio de Internet. Haz clic en un enlace, abre una aplicación, envía un correo electrónico y lo primero que hace el dispositivo es preguntarle al directorio: <strong>¿Dónde puedo encontrarlo? </strong>",
   "explanation.dnsSlowInsecure": "Desafortunadamente, DNS suele ser lento e inseguro por defecto. Tu proveedor de servicio de Internet, y cualquier otra persona que esté en Internet, puede ver cada sitio que visitas y cada aplicación que utilices —incluso si tu contenido está encriptado. Es espeluznante que algunos proveedores de DNS vendan datos sobre tu actividad en Internet o los usen con el objetivo de mostrarte anuncios.",
-  "explanation.dnsAlternative": "Creemos que eso es intolerable. Si tu también lo crees, ahora tienes una alternativa: <strong>1.1.1.1</strong>",
+  "explanation.dnsAlternative": "Creemos que eso es intolerable. Si tu también lo crees, ahora tienes una alternativa: <strong class=\"code\">1.1.1.1</strong>",
   "explanation.privacyHeader": "Privacidad Primero: Garantizado.",
   "explanation.privacyExplanation": "Estamos repensando el protocolo DNS de la era de 1983. </strong>1.1.1.1<strong> es compatible con el encriptado DNS así como DNS a través de HTTPS.",
   "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Nunca venderemos tus datos ni los utilizaremos para mostrarte anuncios.</span> Punto.",
@@ -38,8 +38,10 @@
       "steps": [
         {"tag": "li", "content": "Abre Preferencias del Sistema."},
         {"tag": "li", "content": "Busca <strong>Servidores DNS</strong> y selecciónalo en el menú desplegable."},
-        {"tag": "li", "content": "Haz clic en <strong>+</strong> para añadir un servidor DNS y escribe <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong>1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> para añadir un servidor DNS y escribe <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong class=\"code\">1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong class=\"code\">2606:4700:4700::1111</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Haz clic en <strong>+</strong> de nuevo y escribe <strong class=\"code\">2606:4700:4700::1001</strong> (esto es por redundancia)."},
         {"tag": "li", "content": "Haz clic en <strong>Ok</strong> y a continuación haz clic en <strong>Aplicar</strong>."},
         {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
       ]
@@ -61,8 +63,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -123,8 +125,10 @@
         {"tag": "li", "content": "Toca <strong>Wi-Fi</strong> y a continuación elije tu red preferida de la lista."},
         {"tag": "li", "content": "Toca <strong>Configuración DNS</strong> y a continuación toca <strong>Manual</strong>."},
         {"tag": "li", "content": "Si ya existen entradas, toca <strong>-</strong> y en <strong>Borrar</strong> al lado de cada una."},
-        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> y a continuación escribe <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong>1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> y a continuación escribe <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong class=\"code\">1.0.0.1</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong class=\"code\">2606:4700:4700::1111</strong> (esto es por redundancia)."},
+        {"tag": "li", "content": "Toca <strong>+ Añadir Servidor</strong> de nuevo y a continuación escribe <strong class=\"code\">2606:4700:4700::1001</strong> (esto es por redundancia)."},
         {"tag": "li", "content": "Toca <strong>Guardar</strong> en la parte superior derecha."},
         {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
       ]
@@ -140,10 +144,10 @@
         {"tag": "li", "content": "Cambia <strong>dinámico</strong> a <strong>estático</strong>."},
         {"tag": "li", "content": "Use la configuración de tu router para introducir la dirección IP del dispositivo y la puerta de enlace."},
         {"tag": "li", "content": "Toca el campo <strong>DNS</strong> y a continuación borra el número del campo."},
-        {"tag": "li", "content": "En el campo <strong>DNS 1</strong>, escribe <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "En el campo <strong>DNS 2</strong>, escribe <strong>1.0.0.1</strong>"},
-        {"tag": "li", "content": "En el campo <strong>DNS 3</strong>, escribe <strong>2606:4700:4700::1111</strong>"},
-        {"tag": "li", "content": "En el campo <strong>DNS 4</strong>, escribe <strong>2606:4700:4700::1001</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 1</strong>, escribe <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 2</strong>, escribe <strong class=\"code\">1.0.0.1</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 3</strong>, escribe <strong class=\"code\">2606:4700:4700::1111</strong>"},
+        {"tag": "li", "content": "En el campo <strong>DNS 4</strong>, escribe <strong class=\"code\">2606:4700:4700::1001</strong>"},
         {"tag": "li", "content": "Toca <strong>Guardar</strong>."},
         {"tag": "li", "content": "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"}
       ]
@@ -163,8 +167,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "Para IPv4: <strong>1.1.1.1</strong> y <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "Para IPv6: <strong>2606:4700:4700::1111</strong> y <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> y <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "Para IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> y <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]

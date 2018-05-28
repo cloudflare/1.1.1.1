@@ -9,7 +9,7 @@
   "explanation.dnsHeader": "DNS: 互联网的目录。",
   "explanation.dnsExplanation": "几乎互联网上的一切活动均由一个 DNS 请求开始。DNS 是互联网的目录。 点击链接、打开应用、发送电子邮件时，设备所要做的第一件事就是询问目录：<strong class=\"subtle\">我能在哪里找到这项内容？</strong>",
   "explanation.dnsSlowInsecure": "不幸的是，默认情况下，DNS 通常缓慢且不安全。 您的 ISP 及其他在互联网上窥听的人都能看到您访问的每个网站和使用的每个应用 - 即使这些内容已加密。 令人感到不安的是，一些 DNS 提供商还会出售您的互联网使用信息或用其向您发送广告。",
-  "explanation.dnsAlternative": "我们认为那样做极不道德。如果您也这么想，那么现在有另一个选择，那就是： <strong>1.1.1.1</strong>",
+  "explanation.dnsAlternative": "我们认为那样做极不道德。如果您也这么想，那么现在有另一个选择，那就是： <strong class=\"code\">1.1.1.1</strong>",
 
   "explanation.privacyHeader": "保证：隐私优先。",
   "explanation.privacyExplanation": "我们在重新考虑 1983 年的 DNS 协议。<strong>1.1.1.1 </strong>即支持加密 DNS ，也支持 DNS over HTTPS。",
@@ -31,7 +31,9 @@
         {"tag": "li", "content": "打开“系统首选项”。"},
         {"tag": "li", "content": "搜索 <strong>“DNS 服务器”</strong>，并从下拉列表中将其选中。"},
         {"tag": "li", "content": "点击 <strong>+</strong> 按钮以添加 DNS 服务器，然后输入 <strong>1.1.1.1 </strong>"},
-        {"tag": "li", "content": "再次点击 <strong>+</strong>，然后输入 <strong>1.0.0.1</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "再次点击 <strong>+</strong>，然后输入 <strong class=\"code\">1.0.0.1</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "再次点击 <strong>+</strong>，然后输入 <strong class=\"code\">2606:4700:4700::1111</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "再次点击 <strong>+</strong>，然后输入 <strong class=\"code\">2606:4700:4700::1001</strong>（此步骤设置冗余服务器。）"},
         {"tag": "li", "content": "依次点击 <strong>“确定”</strong>和<strong>“应用”</strong>。"},
         {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
       ]
@@ -53,8 +55,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "For IPv4: <strong>1.1.1.1</strong> and <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "For IPv6: <strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "For IPv4: <strong class=\"code\">1.1.1.1</strong> and <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "For IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -115,8 +117,10 @@
         {"tag": "li", "content": "点击<strong>“WiFi”</strong>，然后在列表中点击您的首选网络。"},
         {"tag": "li", "content": "依次点击<strong>“配置 DNS“</strong>和<strong>“手动”</strong>。"},
         {"tag": "li", "content": "如果已有条目存在，点击 <strong>-</strong> 按钮及其相邻的<strong>删除</strong>。"},
-        {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入<strong>1.1.1.1</strong>"},
+        {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入<strong class=\"code\">1.1.1.1</strong>"},
         {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入 <strong>1.0.0.1 </strong>。（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入 <strong>2606:4700:4700::1111 </strong>。（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "点击 <strong>+ 添加服务器</strong>按钮，然后输入 <strong>2606:4700:4700::1001 </strong>。（此步骤设置冗余服务器。）"},
         {"tag": "li", "content": "点击右上角的<strong>“保存”</strong>按钮。"},
         {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
       ]
@@ -132,8 +136,10 @@
         {"tag": "li", "content": "将<strong>“动态”</strong>更改为<strong>“静态”</strong>。"},
         {"tag": "li", "content": "通过路由器配置，输入设备的 IP 地址和网关。"},
         {"tag": "li", "content": "点击<strong>DNS”</strong>字段，然后删除其中的数字。"},
-        {"tag": "li", "content": "在<strong>DNS 1</strong>字段中输入 <strong>1.1.1.1</strong>"},
-        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong>1.0.0.1</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "在<strong>DNS 1</strong>字段中输入 <strong class=\"code\">1.1.1.1</strong>"},
+        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong class=\"code\">1.0.0.1</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong class=\"code\">2606:4700:4700::1111</strong>（此步骤设置冗余服务器。）"},
+        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong class=\"code\">2606:4700:4700::1001</strong>（此步骤设置冗余服务器。）"},
         {"tag": "li", "content": "点击<strong>“保存”</strong>。"},
         {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
       ]
@@ -153,8 +159,8 @@
             {
               "tag": "ul",
               "children": [
-                {"tag": "li", "content": "如果是 IPv4，输入：<strong>1.1.1.1</strong> 和/或 <strong>1.0.0.1</strong>"},
-                {"tag": "li", "content": "如果是 IPv6，输入：<strong>2606:4700:4700::1111</strong> and <strong>2606:4700:4700::1001</strong>"}
+                {"tag": "li", "content": "如果是 IPv4，输入：<strong class=\"code\">1.1.1.1</strong> 和/或 <strong class=\"code\">1.0.0.1</strong>"},
+                {"tag": "li", "content": "如果是 IPv6，输入：<strong class=\"code\">2606:4700:4700::1111</strong> and <strong class=\"code\">2606:4700:4700::1001</strong>"}
               ]
             }
           ]
@@ -171,7 +177,7 @@
   "share.tweetBody": "✌️✌️ 快速、安全、私密的互联网来了。设置 Cloudflare DNS 解析器仅需 2 分钟。",
 
   "faq.whosBehindThis": "Who’s behind this?",
-  "faq.partnership": "<strong>1.1.1.1</strong> 是 Cloudflare 和 APNIC 的合作項目。",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> 是 Cloudflare 和 APNIC 的合作項目。",
   "faq.network": "Cloudflare 运行全球规模最大、速度最快的网络之一。APNIC 是一个非营利组织，管理着亚太和大洋洲地区的 IP 地址分配。",
   "faq.networkContinued": "Cloudflare 有网络，APNIC 有 IP 地址（1.1.1.1）。一个共同的使命激发了我们，那就是建立一个更好的互联网。如欲详细了解我们的宗旨，请访问我们各自的博文：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 博客</a> /<a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 博客</a>。",
   "faq.canIintegrate": "Can I integrate with 1.1.1.1?",

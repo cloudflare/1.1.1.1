@@ -5,23 +5,23 @@
     "hero.description": "Você está a dois minutos de navegar em uma Internet mais rápida e privada.",
     "hero.getStarted": "Instalar",
     "hero.info": "Informações",
-  
+
     "explanation.dnsHeader": "DNS: Diretório da Internet",
     "explanation.dnsExplanation": "Quase tudo na internet começa com uma requisição DNS. DNS é o diretório da internet. Clique em um link, abra um app, envie um e-mail e a primeira coisa que seu dispositivo fará é perguntar ao diretório: <strong class=\"subtle\">Onde posso encontrar isso?</strong>",
     "explanation.dnsSlowInsecure": "Infelizmente, por padrão, o DNS é lento e inseguro. Seu provedor de internet, e qualquer outra pessoa na rede, pode ver cada site que você visita e todo aplicativo que você usa — mesmo que o conteúdo seja criptografado. Espantosamente, alguns provedores de DNS vendem seus dados sobre sua atividade na internet ou usa esses dados para lhe fornecer anúncios.",
-    "explanation.dnsAlternative": "Nós achamos isso bem sujo. Se você também acha, agora você tem uma alternativa: <strong>1.1.1.1</strong>",
-  
+    "explanation.dnsAlternative": "Nós achamos isso bem sujo. Se você também acha, agora você tem uma alternativa: <strong class=\"code\">1.1.1.1</strong>",
+
     "explanation.privacyHeader": "Privacidade em primeiro lugar: Garantido.",
-    "explanation.privacyExplanation": "Nós estamos reimaginando o protocol de DNS da era de 1983. <strong>1.1.1.1</strong> suporta DNS criptografado e também DNS over HTTPS.",
+    "explanation.privacyExplanation": "Nós estamos reimaginando o protocol de DNS da era de 1983. <strong class=\"code\">1.1.1.1</strong> suporta DNS criptografado e também DNS over HTTPS.",
     "explanation.privacyGuaranteeData": "<span class=\"mobile-emphasis\">Nós nunca venderemos seus dados ou os usaremos para oferecer anúncios.</span> Ponto final.",
     "explanation.privacyGuaranteeLogs": "<span class=\"mobile-emphasis\">Nós nunca vamos registrar seu endereço de IP</span> (a maneira que as empresas usam para te identificar). E nós não estamos dizendo isso da boca pra fora. A KPMG realiza auditorias em nossos sistemas todo ano para garantir que estamos cumprindo com o que prometemos.",
     "explanation.privacyConclusion": "Francamente, nós não queremos saber o que você está fazendo na internet - não é da nossa conta - e nós tomamos providências técnicas para garantir que nós não consigamos.",
-  
+
     "explanation.performanceHeader": "Mais rápido que qualquer outra coisa.",
     "explanation.performanceSubheader": "28% mais rápido, na verdade.",
     "explanation.fastestDNS": "Nós projetamos o 1.1.1.1 para ser o diretório DNS mais rápido da internet. Não só dizemos isso. O monitor independente de DNS <a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a> posicionou o 1.1.1.1 como o serviço de DNS mais rápido do mundo.",
     "explanation.speedContinued": "Já que praticamente tudo na internet começa com uma requisição DNS, escolher o diretório DNS mais rápido em todos seus dispositivos vai acelerar quase tudo que você faz online.",
-  
+
     "instructions": {
       "header": "Configure no {{device}}",
       "explanation": "Configurar o <strong>1.1.1.1</strong> leva dois minutos e não precisa de habilidades técnicas ou software específico. Mesmo que você seja um iniciante em computadores, escolha um dispositivo abaixo para um passo-a-passo fácil de seguir.",
@@ -30,8 +30,10 @@
         "steps": [
           {"tag": "li", "content": "Abra System Preferences."},
           {"tag": "li", "content": "Procure por <strong>DNS Servers</strong> e selecione isso do dropdown."},
-          {"tag": "li", "content": "Clique no botão de <strong>+</strong> para adicionar um servidor DNS e digite <strong>1.1.1.1</strong>"},
-          {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong>1.0.0.1</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "Clique no botão de <strong>+</strong> para adicionar um servidor DNS e digite <strong class=\"code\">1.1.1.1</strong>"},
+          {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong class=\"code\">1.0.0.1</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong class=\"code\">2606:4700:4700::1111</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "Clique no botão de <strong>+</strong> novamente e digite <strong class=\"code\">2606:4700:4700::1001</strong> (Esse é para redundância.)"},
           {"tag": "li", "content": "Clique <strong>Ok</strong>, e então clique em <strong>Apply</strong>."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
@@ -53,8 +55,8 @@
               {
                 "tag": "ul",
                 "children": [
-                  {"tag": "li", "content": "Para IPv4: <strong>1.1.1.1</strong> e <strong>1.0.0.1</strong>"},
-                  {"tag": "li", "content": "Para IPv6: <strong>2606:4700:4700::1111</strong> e <strong>2606:4700:4700::1001</strong>"}
+                  {"tag": "li", "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> e <strong class=\"code\">1.0.0.1</strong>"},
+                  {"tag": "li", "content": "Para IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> e <strong class=\"code\">2606:4700:4700::1001</strong>"}
                 ]
               }
             ]
@@ -93,8 +95,8 @@
                 {
                   "tag": "ul",
                   "children": [
-                    {"tag": "li", "content": "Para IPv4: <strong>1.0.0.1</strong> e <strong>1.0.0.1</strong>"},
-                    {"tag": "li", "content": "Para IPv6: <strong>2606:4700:4700::1111</strong> e <strong>2606:4700:4700::1001</strong>"}
+                    {"tag": "li", "content": "Para IPv4: <strong class=\"code\">1.0.0.1</strong> e <strong class=\"code\">1.0.0.1</strong>"},
+                    {"tag": "li", "content": "Para IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> e <strong class=\"code\">2606:4700:4700::1001</strong>"}
                   ]
                 }
               ]
@@ -115,8 +117,10 @@
           {"tag": "li", "content": "Toque em <strong>Wi-Fi</strong>, e então toque na sua conexão preferida na lista."},
           {"tag": "li", "content": "Toque em <strong>Configurar DNS</strong>, e então toque em <strong>Manual</strong>."},
           {"tag": "li", "content": "Se tiver algumas entradas existentes, toque no botão de <strong>-</strong>, e <strong>Apagar</strong> em cada uma delas."},
-          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong>, e então digite <strong>1.1.1.1</strong>"},
-          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong>1.0.0.1</strong>. Esse é para redundância."},
+          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong>, e então digite <strong class=\"code\">1.1.1.1</strong>"},
+          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong class=\"code\">1.0.0.1</strong>. Esse é para redundância."},
+          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong class=\"code\">2606:4700:4700::1111</strong>. Esse é para redundância."},
+          {"tag": "li", "content": "Toque no botão de <strong>+ Adicionar Servidor</strong> novamente, e então digite <strong class=\"code\">2606:4700:4700::1001</strong>. Esse é para redundância."},
           {"tag": "li", "content": "Toque no botão de <strong>Salvar</strong> no topo-direito."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
@@ -132,8 +136,10 @@
           {"tag": "li", "content": "Troque <strong>Dinâmico</strong> para <strong>Estático</strong>."},
           {"tag": "li", "content": "Usando as configurações do seu roteador, escreva o endereço de IP do seu dispositivo e o gateway."},
           {"tag": "li", "content": "Toque no campo <strong>DNS</strong> e apague o número existente."},
-          {"tag": "li", "content": "No campo <strong>DNS 1</strong>, digite <strong>1.1.1.1</strong>"},
-          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong>1.0.0.1</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "No campo <strong>DNS 1</strong>, digite <strong class=\"code\">1.1.1.1</strong>"},
+          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong class=\"code\">1.0.0.1</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong class=\"code\">2606:4700:4700::1111</strong> (Esse é para redundância.)"},
+          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong class=\"code\">2606:4700:4700::1001</strong> (Esse é para redundância.)"},
           {"tag": "li", "content": "Toque em <strong>Salvar</strong>."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
@@ -153,8 +159,8 @@
               {
                 "tag": "ul",
                 "children": [
-                  {"tag": "li", "content": "Para IPv4: <strong>1.1.1.1</strong> e <strong>1.0.0.1</strong>"},
-                  {"tag": "li", "content": "Para IPv6: <strong>2606:4700:4700::1111</strong> e <strong>2606:4700:4700::1001</strong>"}
+                  {"tag": "li", "content": "Para IPv4: <strong class=\"code\">1.1.1.1</strong> e <strong class=\"code\">1.0.0.1</strong>"},
+                  {"tag": "li", "content": "Para IPv6: <strong class=\"code\">2606:4700:4700::1111</strong> e <strong class=\"code\">2606:4700:4700::1001</strong>"}
                 ]
               }
             ]
@@ -164,18 +170,18 @@
         ]
       }
     },
-  
+
     "share.header": "✌️✌️ Compartilhe uma internet mais rápida, segura e privada com seus amigos.",
     "share.emailSubject": "✌️✌️ Navegue em uma internet mais rápida e privada — 1.1.1.1 DNS Resolver",
     "share.emailBody": "“1.1.1.1” transforma a navegação na internet mais rápida e segura. Veja https://1.1.1.1 para mais informações e como configurar seu dispositivo em menos de dois minutos!",
     "share.tweetBody": "✌️✌️ Internet rápida, segura, e privada está aqui! Configure o 1.1.1.1 DNS Resolver em menos de dois minutos.",
-  
+
     "faq.whosBehindThis": "Quem está por trás disso?",
-    "faq.partnership": "<strong>1.1.1.1</strong> é uma parceira entre Cloudflare e APNIC.",
+    "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> é uma parceira entre Cloudflare e APNIC.",
     "faq.network": "Cloudflare possui uma das mais maiores e mais rápidas redes de internet do mundo. APNIC é uma organização sem fins lucrativos que gerencia alocação de endereços de IP para as regiões da Ásia-Pacífico e Oceania.",
     "faq.networkContinued": "Cloudflare tinha a rede. APNIC tinha o endereço de IP (1.1.1.1). Ambos estávamos motivados pela missão de construir uma internet melhor. Você pode ler mais sobre a motivação de cada organização em nossos respectivos posts: <a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare Blog</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC Blog</a>.",
     "faq.canIintegrate": "Eu posso integrar com 1.1.1.1?",
     "faq.integrationInfo": "Se você for fabricante de um navegador, sistema operacional, aplicativo, roteador ou VPN e quer construir em cima de um serviço de DNS privado, rápido e moderno, então <strong class=\"subtle\">sim!</strong>",
     "faq.integrationDocs": "Usando nosso DNS over HTTPS (DoH) você pode, transparentemente, oferecer segurança aprimorada aos seus clientes, e ao mesmo tempo melhorar a velocidade dos seus dispositivos. Melhor ainda, você pode fazer isso sem custo nenhum, tanto em termos de licenciamente quanto em privacidade do cliente. Saiba mais sobre o 1.1.1.1 e nosso suporte a DNS over HTTPS (DoH) na nossa <a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Documentação de Desenvolvedor</a>."
   }
-  
+
