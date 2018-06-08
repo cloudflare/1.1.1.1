@@ -138,8 +138,6 @@
         {"tag": "li", "content": "點擊<strong> [DNS] </strong> 領域，然後刪除該領域的數量。"},
         {"tag": "li", "content": "在<strong> [DNS 1] </strong> 領域中，輸入<strong class=\"code\">1.1.1.1</strong>"},
         {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘。）"},
-        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">2606:4700:4700::1111</strong>（這是為了實現冗餘。）"},
-        {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">2606:4700:4700::1001</strong>（這是為了實現冗餘。）"},
         {"tag": "li", "content": "點擊<strong> [保存] </strong>。"},
         {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
       ]

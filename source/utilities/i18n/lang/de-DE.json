@@ -138,8 +138,6 @@
         {"tag": "li", "content": "Tippen Sie das <strong>DNS</strong>Feld, dann löschen Sie die Zahl in dem Feld."},
         {"tag": "li", "content": "Im <strong>DNS 1</strong> Feld, geben Sie <strong class=\"code\">1.1.1.1</strong>"},
         {"tag": "li", "content": "Im <strong>DNS 2</strong> Feld, geben Sie <strong class=\"code\">1.0.0.1</strong>"},
-        {"tag": "li", "content": "Im <strong>DNS 3</strong> Feld, geben Sie <strong class=\"code\">2606:4700:4700::1111</strong>"},
-        {"tag": "li", "content": "Im <strong>DNS 4</strong> Feld, geben Sie <strong class=\"code\">2606:4700:4700::1001</strong>"},
         {"tag": "li", "content": "Tippen Sie <strong>Speichern</strong>."},
         {"tag": "li", "content": "Sie sind fertig! Ihr Gerät hat jetzt einen schnelleren, privaten DNS-Server ✌️✌️"}
       ]

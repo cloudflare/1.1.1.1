@@ -139,8 +139,6 @@
         {"tag": "li", "content": "Tap the <strong>DNS</strong> field, then erase the number in the field."},
         {"tag": "li", "content": "In the <strong>DNS 1</strong> field, enter <strong class=\"code\">1.1.1.1</strong>"},
         {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">1.0.0.1</strong> (This is for redundancy.)"},
-        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">2606:4700:4700::1111</strong> (This is for redundancy.)"},
-        {"tag": "li", "content": "In the <strong>DNS 2</strong> field, enter <strong class=\"code\">2606:4700:4700::1001</strong> (This is for redundancy.)"},
         {"tag": "li", "content": "Tap <strong>Save</strong>."},
         {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]

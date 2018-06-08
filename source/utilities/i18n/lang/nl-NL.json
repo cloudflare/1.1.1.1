@@ -138,8 +138,6 @@
         {"tag": "li", "content": "Vul je IP-adres en Gateway in aan de hand van je router instellingen."},
         {"tag": "li", "content": "In het <strong>DNS 1</strong> veld, voer <strong class=\"code\">1.1.1.1</strong> in"},
         {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">1.0.0.1</strong> in (Dit is voor extra zekerheid.)"},
-        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">2606:4700:4700::1111</strong> in (Dit is voor extra zekerheid.)"},
-        {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">2606:4700:4700::1001</strong> in (Dit is voor extra zekerheid.)"},
         {"tag": "li", "content": "Tik <strong>Opslaan</strong>. aan"},
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS servers, met een focus op privacy ✌️✌️"}
       ]

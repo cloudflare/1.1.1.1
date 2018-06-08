@@ -138,8 +138,6 @@
         {"tag": "li", "content": "点击<strong>DNS”</strong>字段，然后删除其中的数字。"},
         {"tag": "li", "content": "在<strong>DNS 1</strong>字段中输入 <strong class=\"code\">1.1.1.1</strong>"},
         {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong class=\"code\">1.0.0.1</strong>（此步骤设置冗余服务器。）"},
-        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong class=\"code\">2606:4700:4700::1111</strong>（此步骤设置冗余服务器。）"},
-        {"tag": "li", "content": "在<strong>“DNS 2”</strong>字段中输入<strong class=\"code\">2606:4700:4700::1001</strong>（此步骤设置冗余服务器。）"},
         {"tag": "li", "content": "点击<strong>“保存”</strong>。"},
         {"tag": "li", "content": "一切就绪！您设备的 DNS 服务器现在速度更快、私密性更强 ✌️✌️"}
       ]

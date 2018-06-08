@@ -139,8 +139,6 @@
         {"tag": "li", "content": "Cliquez sur le champ <strong>DNS</strong>, puis effacez le numéro dans le champ."},
         {"tag": "li", "content": "Dans le champ <strong>DNS 1</strong>, entrez <strong class=\"code\">1.1.1.1</strong>"},
         {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong class=\"code\">1.0.0.1</strong> (Ceci est pour la redondance.)"},
-        {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong class=\"code\">2606:4700:4700::1111</strong> (Ceci est pour la redondance.)"},
-        {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong class=\"code\">2606:4700:4700::1001</strong> (Ceci est pour la redondance.)"},
         {"tag": "li", "content": "Appuyez sur <strong>Enregistrer</strong>."},
         {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
       ]

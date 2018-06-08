@@ -138,8 +138,6 @@
           {"tag": "li", "content": "Toque no campo <strong>DNS</strong> e apague o número existente."},
           {"tag": "li", "content": "No campo <strong>DNS 1</strong>, digite <strong class=\"code\">1.1.1.1</strong>"},
           {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong class=\"code\">1.0.0.1</strong> (Esse é para redundância.)"},
-          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong class=\"code\">2606:4700:4700::1111</strong> (Esse é para redundância.)"},
-          {"tag": "li", "content": "No campo <strong>DNS 2</strong>, digite <strong class=\"code\">2606:4700:4700::1001</strong> (Esse é para redundância.)"},
           {"tag": "li", "content": "Toque em <strong>Salvar</strong>."},
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
