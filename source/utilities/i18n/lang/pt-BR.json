@@ -126,6 +126,7 @@
         ]
       },
       "android": {
+        "version": "Previous Versions",
         "message": "Note que dispositivos Android exigem que você use um IP estático para configurar servidores DNS. Isso requer configuração adicional no seu roteador, afetando a estratégia de rede para adicionar novos dispositivos à rede. Nós recomendamos que ao invés disso você configure o <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS do roteador</button>. Isso vai dar a todos os dispositivos na sua rede a velocidade máxima e benefícios de privacidade do DNS 1.1.1.1.",
         "steps": [
           {"tag": "li", "content": "Na lista de apps do seu Android’s, abra o app <strong>Configurações</strong>."},
@@ -142,6 +143,16 @@
           {"tag": "li", "content": "Pronto! Seu dispositivo agora tem um servidor DNS mais rápido e mais privado ✌️✌️"}
         ]
       },
+      "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
       "router": {
         "message": "A configuração do seu roteador pode variar. Consulte o manual para mais informações.",
         "steps": [

@@ -74,6 +74,12 @@ section#setup-instructions.help-initial-hidden(data-section="setup" data-ref="se
     )
 
   .instructions(data-platform="android")
+    h3!=htmlWebpackPlugin.options.t('instructions').android9.version
+    ol
+      each instruction in htmlWebpackPlugin.options.t('instructions').android9.steps
+        +render(instruction)
+
+    h3!=htmlWebpackPlugin.options.t('instructions').android.version
     .message
       p.collapsed-margins.message-content!=htmlWebpackPlugin.options.t('instructions').android.message
     ol

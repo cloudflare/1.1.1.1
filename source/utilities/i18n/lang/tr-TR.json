@@ -127,6 +127,7 @@
       ]
     },
     "android": {
+      "version": "Previous Versions",
       "message": "Android üzerinde DNS adresinizi değiştirmek için ağınızda statik IP adresi kullanmanız gerekmektedir. Bu ayar, İnternet router'ınız üzerinde bazı ayarları değiştirmenizi gerektrimektedir. Bu nedenle, <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">router</button>'ınız üzerinde DNS ayarlarınızı değiştirmenizi tavsiye ederiz.",
       "steps": [
         {"tag": "li", "content": "Android app'lerinizden <strong>ayarlar</strong>ı seçin."},
@@ -141,6 +142,16 @@
         {"tag": "li", "content": "<strong>DNS 2</strong> kısmına, <strong>1.0.0.1</strong> girin. (Yedek olarak.)"},
         {"tag": "li", "content": "<strong>Kaydet</strong>'e basın."},
         {"tag": "li", "content": "Bu kadar! Şimdi cihazınız daha hızlı ve daha güvenli bir DNS servisini kullanıyor ✌️✌️"}
+      ]
+    },
+    "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
     },
     "router": {

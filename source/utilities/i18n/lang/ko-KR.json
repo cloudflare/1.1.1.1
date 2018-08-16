@@ -126,6 +126,7 @@
       ]
     },
     "android": {
+      "version": "Previous Versions",
       "message": "안드로이드는 수동으로 DNS를 변경하려면 고정 IP가 필요합니다. 이렇게 하면 인터넷 공유기에 추가 설정을 해야 하고 네트워크에 신규 장치를 추가할 때의 설정에 영향을 미칩니다. 대신 <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">공유기의 DNS 설정</button>을 변경하는 것을 권장 합니다. 이렇게 하면 사용중인 네트워크의 모든 장치에 1.1.1.1 DNS의 속도와 안정성을 제공하게 됩니다.",
       "steps": [
         {"tag": "li", "content": "안드로이드 앱 목록에서 <strong>설정</strong> 앱을 누릅니다."},
@@ -140,6 +141,16 @@
         {"tag": "li", "content": "<strong>DNS 2</strong>필드를 누르고 <strong class=\"code\">1.0.0.1</strong>을 입력합니다(이것은 여분의 설정을 위한 것입니다)."},
         {"tag": "li", "content": "<strong>저장</strong>을 누릅니다."},
         {"tag": "li", "content": "완료되었습니다! 이제 더 빠르고 더 안전한 DNS 서버를 이용할 수 있습니다  ✌️✌️"}
+      ]
+    },
+    "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
     },
     "router": {
