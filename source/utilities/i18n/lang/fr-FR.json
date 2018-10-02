@@ -127,6 +127,7 @@
       ]
     },
     "android": {
+      "version": "Previous Versions",
       "message": "Notez qu’Android nécessite une adresse IP statique pour utiliser des serveurs DNS personnalisés. Cette configuration nécessite une configuration supplémentaire sur votre routeur, ce qui affecte la stratégie de votre réseau pour ajouter de nouveaux appareils au réseau. Nous vous recommandons de configurer le <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS de votre routeur</button> à la place. Cela donnera à tous les appareils de votre réseau les avantages du DNS Cloudflare en termes de performance et confidentialité.",
       "steps": [
         {"tag": "li", "content": "Dans la liste des applications de votre Android, ouvrez l’application <strong>Paramètres</strong> app."},
@@ -141,6 +142,16 @@
         {"tag": "li", "content": "Dans le champ <strong>DNS 2</strong>, entrez <strong class=\"code\">1.0.0.1</strong> (Ceci est pour la redondance.)"},
         {"tag": "li", "content": "Appuyez sur <strong>Enregistrer</strong>."},
         {"tag": "li", "content": "Tout est prêt! Votre appareil dispose désormais de serveurs DNS plus rapides et plus privés ✌️✌️"}
+      ]
+    },
+    "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
     },
     "router": {

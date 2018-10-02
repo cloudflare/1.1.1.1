@@ -126,6 +126,7 @@
       ]
     },
     "android": {
+      "version": "Previous Versions",
       "message": "請注意，Android 需要一個靜態 IP 以使用自定義的 DNS 服務器。 此設置需要在路由器上進行額外設置，會影響到您增加新設備到網絡的策略。 我們建議配置您<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">router 的 DNS </button>。 這會給您網絡上所有設備的 Cloudflare DNS 全速且具私密性的好處。",
       "steps": [
         {"tag": "li", "content": "這會給您網絡上所有設備的 Cloudflare DNS 全速且具私密性的好處。"},
@@ -140,6 +141,16 @@
         {"tag": "li", "content": "在<strong> [DNS 2] </strong> 領域中，輸入<strong class=\"code\">1.0.0.1</strong>（這是為了實現冗餘。）"},
         {"tag": "li", "content": "點擊<strong> [保存] </strong>。"},
         {"tag": "li", "content": "一切就緒！ 您的設備現在具有更快、更私密的 DNS 服務器 ✌️✌️"}
+      ]
+    },
+    "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
     },
     "router": {

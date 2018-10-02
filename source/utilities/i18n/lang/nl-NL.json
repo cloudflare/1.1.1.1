@@ -127,6 +127,7 @@
       ]
     },
     "android": {
+      "version": "Previous Versions",
       "message": "Wees ervan bewust dat Android een statisch IP-adres vereist om niet-standaard DNS-servers te gebruiken. Dit vereist extra instellingen op je router, wat een impact heeft op de manier waarop nieuwe toestellen toegang kunnen krijgen tot het netwerk. We raden je aan om je router zijn <button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">DNS instellingen</button> aan te passen. Dit geeft alle toestellen op je netwerk de snelheid en privacy voordelen van de <strong>1.1.1.1<strong> DNS-servers.",
       "steps": [
         {"tag": "li", "content": "Open de <strong>Instellingen</strong> app."},
@@ -140,6 +141,16 @@
         {"tag": "li", "content": "In het <strong>DNS 2</strong> veld, voer <strong class=\"code\">1.0.0.1</strong> in (Dit is voor extra zekerheid.)"},
         {"tag": "li", "content": "Tik <strong>Opslaan</strong>. aan"},
         {"tag": "li", "content": "Je bent helemaal klaar! Je toestel heeft nu snellere DNS-servers, met een focus op privacy ✌️✌️"}
+      ]
+    },
+    "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
     },
     "router": {

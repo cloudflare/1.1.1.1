@@ -213,6 +213,23 @@
         "content" : "¡Ya está todo listo! Tu dispositivo tiene ahora los servidores DNS más rápidos y privados ??"
       } ]
     },
+    "android9" : {
+      "version" : "Android 9 Pie",
+      "message" : "Nulo",
+      "steps" : [ {
+        "tag" : "li",
+        "content" : "Ve a <strong>Configuración → Red e Internet → Avanzado → DNS privado</strong>."
+      }, {
+        "tag" : "li",
+        "content" : "Selecciona la opción <strong>Nombre de host del proveedor de DNS privado</strong>."
+      }, {
+        "tag" : "li",
+        "content" : "Introduce <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> y presiona <strong>Guardar</strong>."
+      }, {
+        "tag" : "li",
+        "content" : "¡Ya está todo listo! Su dispositivo tiene ahora los servidores DNS más rápidos y privados ✌️✌️"
+      } ]
+    },
     "router" : {
       "message" : "La configuración de tu router puede variar. Consulta tu manual para obtener más información.",
       "steps" : [ {

@@ -126,6 +126,7 @@
       ]
     },
     "android": {
+      "version": "Previous Versions",
       "message": "Androidでは、カスタムDNSサーバーを使用するためには静的IPが必要です。このセットアップを行うにはルーターの追加設定が必要です。これにより、ルーターが新しいデバイスを追加するためのネットワークの戦略に影響を与える場合があります。 代わりに、<button class=\"inline-button\" type=\"button\" onclick=\"chooseInstructions('router')\">ルーターのDNS </button>の設定をお勧めします。 これにより、お客様のネットワーク上のすべてのデバイスで、Cloudflare DNSが提供する高速でプライバシー性の高いネット環境が実現します。",
       "steps": [
         {"tag": "li", "content": "Androidのアプリのリストから、<strong>設定 </strong>アプリを開きます。"},
@@ -140,6 +141,16 @@
         {"tag": "li", "content": "<strong>「DNS 2」</strong>フィールドで、<strong class=\"code\">1.0.0.1</strong>を入力してください。（これは、冗長性を確保するためです。）"},
         {"tag": "li", "content": "<strong>「保存」</strong>をタップします。"},
         {"tag": "li", "content": "これで完了です！お使いのデバイスはこれで、より速く、よりプライベートなDNSサーバーに設定されました✌️✌️"}
+      ]
+    },
+    "android9": {
+      "version": "Android 9 Pie",
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
       ]
     },
     "router": {

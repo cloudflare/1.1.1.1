@@ -142,6 +142,15 @@
         {"tag": "li", "content": "Sie sind fertig! Ihr Gerät hat jetzt einen schnelleren, privaten DNS-Server ✌️✌️"}
       ]
     },
+    "android9": {
+      "message": "Null",
+      "steps": [
+        {"tag": "li", "content": "Go to <strong>Settings</strong> → <strong>Network & internet</strong> → <strong>Advanced</strong> → <strong>Private DNS</strong>."},
+        {"tag": "li", "content": "Select the </strong>Private DNS provider hostname</strong> option."},
+        {"tag": "li", "content": "Enter <strong class=\"code\">1dot1dot1dot1.cloudflare-dns.com</strong> and hit <strong>Save</strong>."},
+        {"tag": "li", "content": "You’re all set! Your device now has faster, more private DNS servers ✌️✌️"}
+      ]
+    },
     "router": {
       "message": "Ihre Router-Konfiguration kann variieren. Finden Sie im Handbuch weitere Informationen.",
       "steps": [
