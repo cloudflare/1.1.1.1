@@ -335,7 +335,7 @@
   "share.tweetBody": "✌️✌️ 快速、安全且私密的網際網路就在這裡。兩分鐘內即可設定 1.1.1.1 DNS 解析服務。",
 
   "faq.whosBehindThis": "是誰在提供技術支援？",
-  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> 是 loudflare 和 APNIC 的合作項目。",
+  "faq.partnership": "<strong class=\"code\">1.1.1.1</strong> 是 Cloudflare 和 APNIC 的合作項目。",
   "faq.network": "Cloudflare 運營世界上最大、最快的網路之一。APNIC 是一家管理亞太和大洋洲地區 IP 位址分配的非營利組織。",
   "faq.networkContinued": "Cloudflare 擁有網路。APNIC 擁有 IP 位址 (1.1.1.1)。打造更好的網際網路環境是我們兩者肩負的使命。您可以在我們各自的貼文中，了解我們的宗旨：<a href=\"https://blog.cloudflare.com/announcing-1111/\" target=\"_blank\">Cloudflare 部落格</a> / <a href=\"https://labs.apnic.net/?p=1127\" target=\"_blank\">APNIC 部落格</a>。",
   "faq.canIintegrate": "我是否能與 1.1.1.1 整合？",
