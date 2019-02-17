@@ -3,6 +3,7 @@ import '../styles/base.styl'
 import SweetScroll from 'sweet-scroll'
 import { logoBanner } from './console'
 import initInstructionPicker from './instruction-picker'
+import { bannerOs } from './banner'
 
 function isElementPartiallyInViewport (element: HTMLElement) {
   const { left, top, height, width } = element.getBoundingClientRect()
@@ -26,11 +27,16 @@ function init () {
   const scroller = new SweetScroll() // Initialized for its DOM side effects.
 
   const $el = {
+    banners: ref('banner'),
     slideshow: ref('slideshow'),
     setupSection: ref('setup'),
     statsChart: ref('statsChart'),
     languageSelector: ref('languageSelector')
   }
+
+  // Show corresponding OS banner
+  const bannerEl = <HTMLElement>document.querySelector(`.banner.${bannerOs}`)
+  bannerEl.classList.add('show')
 
   document.addEventListener('click', (event) => {
     if (event.target === $el.languageSelector || $el.languageSelector.contains(<Node>event.target)) {
