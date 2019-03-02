@@ -196,6 +196,11 @@ const locales = [
     path: "id-ID/",
     code: "id-ID",
     label: "Indonesian"
+  },
+  {
+    path: "pl-PL/",
+    code: "pl-PL",
+    label: "Polish"
   }
 ];
 
