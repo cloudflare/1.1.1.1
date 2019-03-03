@@ -200,7 +200,7 @@ const locales = [
   {
     path: "pl-PL/",
     code: "pl-PL",
-    label: "Polish"
+    label: "Polski"
   }
 ];
 
