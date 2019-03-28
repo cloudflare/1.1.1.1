@@ -39,6 +39,7 @@ const $: CustomConfiguration = {
   mode: environment,
   entry: {
     site: ["./source/pages/index.ts"],
+    dns: ["./source/pages/dns.ts"],
     help: ["./source/pages/help.ts"],
     purgeCache: ["./source/pages/purge-cache.ts"],
     faq: ["./source/pages/faq.ts"]
@@ -210,7 +211,7 @@ const pugLoaders = locales.map(locale => {
   return {
     test: /\.pug$/,
     exclude,
-    include: new RegExp(`${locale.code}.*\/index\.pug$`),
+    include: new RegExp(`${locale.code}.*/(dns/)?index\.pug$`),
     use: [
       {
         loader: "html-loader",
@@ -258,6 +259,17 @@ $.plugins.push(
       template: joinP(`source/pages/${locale.code}/faq/index.pug`),
       filename: `${locale.path}faq/index.html`,
       chunks: ["faq"]
+    });
+  })
+);
+
+$.plugins.push(
+  ...locales.map(locale => {
+    return new HtmlWebpackPlugin({
+      favicon: "source/media/favicon.png",
+      template: joinP(`source/pages/${locale.code}/dns/index.pug`),
+      filename: `${locale.path}dns/index.html`,
+      chunks: ["dns"]
     });
   })
 );

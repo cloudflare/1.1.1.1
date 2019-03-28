@@ -32,4 +32,37 @@ html(lang=htmlWebpackPlugin.options.locale.code prefix="og: http://ogp.me/ns#")
       ......111111..ooo..111111..ooo..111111..ooo..111111.........
       ............................................................
 
- 
+    meta(property="og:title" content=htmlWebpackPlugin.options.t('title'))
+    meta(name="twitter:title" content=htmlWebpackPlugin.options.t('title'))
+
+    meta(name="author" content="1.1.1.1")
+    meta(name="generator" content="1.1.1.1")
+
+    meta(name="twitter:card" content="summary")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge, chrome=1")
+
+    meta(name="description" content=htmlWebpackPlugin.options.t('description'))
+    meta(name="og:description" content=htmlWebpackPlugin.options.t('description'))
+    meta(name="twitter:description" content=htmlWebpackPlugin.options.t('description'))
+
+    meta(property="og:url" content="https://1.1.1.1")
+    meta(property="og:image" content="https://1.1.1.1/media/card-v2.png")
+
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width")
+
+    link(rel="canonical" href="https://1.1.1.1")
+
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet")
+
+
+  body
+    // Noscript Google Tag Manager
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-PKQFGQB' height='0' width='0' style='display:none;visibility:hidden')
+    main
+      include ./hero.pug
+      include ./explanation.pug
+      include ./setup.pug
+      include ./share.pug
+      include ./faq.pug
+      include ./footer.pug

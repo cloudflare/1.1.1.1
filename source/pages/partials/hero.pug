@@ -11,7 +11,7 @@ section(data-section="hero")
     .dropdown
       each locale in htmlWebpackPlugin.options.locales.filter(locale => locale.code !== htmlWebpackPlugin.options.locale.code)
         a.language(
-          href="/" + locale.path
+          href="/" + locale.path + "dns/"
           class={selected: htmlWebpackPlugin.options.locale.code === locale.code})
           | #{locale.label}
 
