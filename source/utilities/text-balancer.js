@@ -86,7 +86,7 @@ const textBalancer = (function () {
 
         ORIGINAL_ELEMENT_TEXT = element.innerHTML;
 
-        // usually there is around a 5px discrepency between
+        // usually there is around a 5px discrepancy between
         // the first word and the height of the whole headline
         // so subtract the height of the headline by 10 px and
         // we should be good
