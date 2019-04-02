@@ -13,7 +13,7 @@ html[theme="dark"] {
   --dialog-background-color-rgb: 23, 23, 23;
   --subtitle-color: rgba(var(--color-rgb), .7);
   --focus-shadow-color: rgba(var(--orange-rgb), .5);
-  --selection-background-color: #ff9e40; /* If we were to use rgb(var(--orange-rgb)) what we would get would end up looking too red. This is because the browser automatically tints/alters lighter selection background colors. For example if you specify #fff you end up with something closer to #a4a4a4. So we specify a more saturated and lighter orange to componensate such that the final composited color is as close rgb(var(--orange-rgb)) as possible */
+  --selection-background-color: #ff9e40; /* If we were to use rgb(var(--orange-rgb)) what we would get would end up looking too red. This is because the browser automatically tints/alters lighter selection background colors. For example if you specify #fff you end up with something closer to #a4a4a4. So we specify a more saturated and lighter orange to compensate such that the final composited color is as close rgb(var(--orange-rgb)) as possible */
   --selection-color: #fff;
 }
 
