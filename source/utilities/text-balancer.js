@@ -61,7 +61,7 @@ const textBalancer = (function () {
         headline.style.maxWidth = mid + 'px';
 
         if (headline.clientHeight > originalHeight) {
-            // we've squoze too far and headline has spilled onto an additional line; recurse on wider range
+            // we've squeezed too far and headline has spilled onto an additional line; recurse on wider range
             squeezeContainer(headline, originalHeight, mid+1, topRange);
         } else {
             // headline has not wrapped to another line; keep squeezing!
