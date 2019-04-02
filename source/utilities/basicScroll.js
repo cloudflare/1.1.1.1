@@ -642,7 +642,7 @@ var getProps = function getProps(instance) {
 
     var value = prop.from.value - diff * time;
 
-    // Round to avoid unprecise values.
+    // Round to avoid imprecise values.
     // The precision of floating point computations is only as precise as the precision it uses.
     // http://stackoverflow.com/questions/588004/is-floating-point-math-broken
     var rounded = Math.round(value * 10000) / 10000;
