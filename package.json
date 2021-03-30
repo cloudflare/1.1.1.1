@@ -42,7 +42,7 @@
     "lodash.defaultsdeep": "^4.6.0",
     "mini-css-extract-plugin": "^0.2.0",
     "optimize-css-assets-webpack-plugin": "^4.0.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-html-loader": "^1.1.5",
     "style-loader": "^0.20.3",
     "stylus": "^0.54.5",
