@@ -8,7 +8,7 @@ const serve = require('webpack-serve')
 const convert = require('koa-connect')
 
 const compiler = webpack(config)
-let notified = false
+let notified = true
 
 compiler.plugin('done', stats => {
   if (notified) return
@@ -25,7 +25,7 @@ serve({
   compiler,
   port,
   logLevel: 'silent',
-  logTime: false,
+  logTime: true,
   add: (app: any, middleware: any, options: any) => {
     middleware.webpack()
     middleware.content()
