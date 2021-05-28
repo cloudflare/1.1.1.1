@@ -1,7 +1,9 @@
 {
   "title": "1.1.1.1 - インターネット最速､プライバシー優先DNSリゾルバ",
   "description": "✌️✌️ より速く､よりプライベートにインターネットを閲覧できます｡",
-  "hero.introducing": "新登場",
+  "warp.nav.name": "1.1.1.1",
+  "warp.title": "1.1.1.1 — The free app that makes your Internet faster.",
+  "warp.description": "スマホのインターネットをより速く、よりプライベートで、より信頼性の高いものにする無料アプリをインストールしましょう。",
   "hero.description": "もう少しで、より速く､よりプライベートなインターネット閲覧が可能になります。",
   "hero.getStarted": "インストール",
   "hero.info": "詳細情報",
@@ -9,7 +11,7 @@
   "explanation.dnsHeader": "DNS：インターネットのディレクトリ",
   "explanation.dnsExplanation": "インターネット上のほぼすべてのことは、DNSリクエストに端を発します。DNSは、インターネットのディレクトリです。リンクをクリックしたり、アプリを開いたり、メールを送信したりしたとき、お使いの機器が最初にすることは、ディレクトリに次のことを問い合わせることです。<strong class=\"subtle\">どこで見つけることができますか？</strong>",
   "explanation.dnsSlowInsecure": "残念ながら、デフォルトのDNSは通常は遅く、安全ではありません。ご利用のISPや、インターネット上で傍受しようとしているすべての人物が、お客様の訪問サイトや利用アプリを一つ残らず把握できます。コンテンツが暗号化されていても、このことは変わりません。恐ろしいことに、一部のDNSプロバイダーは顧客のインターネット活動に関するデータを販売したり、ターゲティング広告に利用したりします。",
-  "explanation.dnsAlternative": "何とも薄気味悪い話だと思いませんか。お客様も同じ考えであれば、幸い代替手段が存在します：<strong class=\"code\">それが、1.1.1.1です。</strong>",
+  "explanation.dnsAlternative": "何とも薄気味悪い話だと思いませんか。お客様も同じ考えであれば、幸いにも代替手段が存在します：<strong class=\"code\">それが、1.1.1.1です。</strong>",
 
   "explanation.privacyHeader": "プライバシー優先：保証されています。",
   "explanation.privacyExplanation": "当社は、1983年当時のままのDNSプロトコルを再考しています。<strong class=\"code\">1.1.1.1</strong>は、暗号化DNSばかりでなく、DNS over HTTPSにも対応しています。",
@@ -18,9 +20,10 @@
   "explanation.privacyConclusion": "当社は、お客様のインターネット活動に一切関与するつもりはありません。そこで、技術的な措置を講じてお客様のインターネット活動を見ることができないよう制限しました。",
 
   "explanation.performanceHeader": "他社よりも高速。",
-  "explanation.fastestDNS": "1.1.1.1は、私たちによりインターネットで最速のDNSディレクトリになりました。利用されたお客様の声をお聞きください。独立DNSモニター機関である<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>は、1.1.1.1を世界最速のDNSサービスとランク付けしています。",
-  "explanation.speedContinued": "インターネット上のほぼすべてのアクティビティがDNSリクエストから始まりますから、お使いの機器のすべてで最速のDNSディレクトリを選ぶことは、オンラインアクティビティのほぼすべてが高速化されることを意味します。",
-
+  "explanation.fastestDNS": "1.1.1.1はインターネット最速のDNSディレクトリになるように構築しました。独立したDNSモニター機関である<a href='https://www.dnsperf.com/#!dns-resolvers' target='_blank'>DNSPerf</a>は、1.1.1.1を世界最速のDNSサービスとランク付けしています。",
+  "explanation.speedContinued": "インターネット上のほぼすべてのアクティビティがDNSリクエストから始まるため、すべてのデバイスで最速のDNSディレクトリを選択することは、オンラインアクティビティのほぼすべてが高速化されます。",
+  "explanation.timeStamp": "* 2020年3月",
+  
   "instructions": {
     "header": "セットアップ手順：{{device}}",
     "explanation": "<strong>1.1.1.1</strong> の設定はわずか2分です。技術的なスキルや特別なソフトウェアも必要ありません。コンピュータ初心者でも、デバイスを選択し、セットアップガイドに従うことで簡単に設定することができます。",
@@ -127,7 +130,7 @@
       ]
     },
     "linux": {
-      "notice": "以上の手順はUbuntu向けですが、ほとんどのLinuxディストリビューションは、Network Managerを使用してDNSの設定を行います。また、DNS設定は<code class=\"inline\">/etc/resolv.conf</code>で指定することができます。",
+      "notice": "この手順はUbuntu向けですが、ほとんどのLinuxディストリビューションは、Network Managerを使用してDNSの設定を行います。また、DNS設定は<code class=\"inline\">/etc/resolv.conf</code>で指定することができます。",
       "steps": [
         {
           "content": "左のメニューバー上のアプリケーション<i class=\"fas fa-th\"></i>アイコンをクリックします。",
@@ -192,7 +195,7 @@
         },
         {
           "tag": "li",
-          "content": "「<strong>Configure DNS（DNSを設定）</strong>」をタップして、「<strong>Manual（手動）</strong>」をタップします。"
+          "content": "「<strong>Configure DNS（DNSを構成）</strong>」をタップして、「<strong>Manual（手動）</strong>」をタップします。"
         },
         {
           "tag": "li",
@@ -200,19 +203,19 @@
         },
         {
           "tag": "li",
-          "content": "「<strong>+ Add Server</strong>」ボタンをタップして、<strong class=\"code\">1.1.1.1</strong>と入力します。"
+          "content": "「<strong>+ Add Server (サーバー追加)</strong>」ボタンをタップして、<strong class=\"code\">1.1.1.1</strong>と入力します。"
         },
         {
           "tag": "li",
-          "content": "再度「<strong>+ Add Server</strong>」ボタンをタップして、<strong class=\"code\">1.0.0.1</strong>と入力します。これは、冗長性を確保するための入力です。"
+          "content": "再度「<strong>+ Add Server (サーバー追加)</strong>」ボタンをタップして、<strong class=\"code\">1.0.0.1</strong>と入力します（冗長性のため）。"
         },
         {
           "tag": "li",
-          "content": "再び「<strong>+ Add Server</strong>」ボタンをタップして、<strong class=\"code\">2606:4700:4700::1111</strong>と入力します。これは、冗長性を確保するための入力です。"
+          "content": "再び「<strong>+ Add Server (サーバー追加)</strong>」ボタンをタップして、<strong class=\"code\">2606:4700:4700::1111</strong>と入力します（冗長性のため）。"
         },
         {
           "tag": "li",
-          "content": "再び「<strong>+ Add Server（サーバーを追加）</strong>」ボタンをタップして、<strong class=\"code\">2606:4700:4700::1001</strong>と入力します。これは、冗長性を確保するための入力です。"
+          "content": "再び「<strong>+ Add Server (サーバー追加)</strong>」ボタンをタップして、<strong class=\"code\">2606:4700:4700::1001</strong>と入力します（冗長性のため）。"
         },
         {
           "tag": "li",
@@ -334,8 +337,8 @@
 
   "share.header": "✌️✌️ より高速でプライバシー優先のインターネットをお友達とシェアしてください。",
   "share.emailSubject": "✌️✌️ より高速、よりプライベートにインターネットを閲覧 -  1.1.1.1 DNSリゾルバ",
-  "share.emailBody": "“1.1.1.1”によってインターネットの閲覧はより高速、よりプライベートになります。詳しくは、https://1.1.1.1をご覧ください。2分もかからずにご使用の機器をセットアップできます。",
-  "share.tweetBody": "✌️✌️ 高速で安全、プライベートなインターネットの誕生です。1.1.1.1 DNSリゾルバのセットアップは2分もかかりません。",
+  "share.emailBody": "“1.1.1.1”によってインターネットの閲覧はより高速、よりプライベートになります。詳しくは、https://1.1.1.1をご覧ください。",
+  "share.tweetBody": "✌️✌️ 高速で安全なプライベートインターネットがここにあります。1.1.1.1 DNSリゾルバのセットアップは2分もかかりません。",
 
   "faq.whosBehindThis": "1.1.1.1誕生の背後にあるもの",
   "faq.partnership": "<strong class=\"code\">1.1.1.1</strong>はCloudflareとAPNICのパートナーシップによって誕生しました。",
@@ -344,6 +347,8 @@
   "faq.canIintegrate": "自社のサービスを1.1.1.1と統合できますか？",
   "faq.integrationInfo": "お客様がプライバシー優先で高速かつ最新のDNSサービスを備えたブラウザ、オペレーティングシステム、アプリケーション、ルーター、またはVPNのメーカーである場合、統合が<strong class=\"subtle\">可能</strong>です。",
   "faq.integrationDocs": "DNS over HTTPS（DoH）を利用することで、機器のスピードを向上しながら、トランスペアレントにお客様にセキュリティ強化機能を提供することができます。さらに、ライセンスやお客様の<a href=\"https://developers.cloudflare.com/1.1.1.1/commitment-to-privacy/privacy-policy/privacy-policy/\" target=\"_blank\">プライバシー</a>のどちらの面でも費用はいっさいかかりません。1.1.1.1および当社のDNS over HTTPS（DoH）サポートについては、<a href=\"https://developers.cloudflare.com/1.1.1.1/dns-over-https/\" target=\"_blank\">Developer Docs（開発者向け資料）</a>をご覧ください。",
+  "faq.warpVsDNS": "Warpは1.1.1.1.1のDNSサービスを置き換えるものなのでしょうか？",
+  "faq.warpVsDNSAnswer": "いいえ、Cloudflareは無料、高速、プライベートDNSの価値を深く信じており、1.1.1.1のDNSサービスを今後も提供していくつもりです。ワープは、当社のモバイルアプリを強化する追加機能ですが、常にオプションであることに変わりはありません。",
 
   "faqpage.header": "よくある質問",
   "faqpage.general": "一般",
@@ -355,7 +360,7 @@
   "faqpage.whatDoDNSA1": "リゾルバは、ドメイン名のアドレスをどのようにして見つけることができるのでしょうか？ドメイン名の最後にあたる、トップレベルドメインから取りかかるのです。",
   "faqpage.whatDoDNSA2": "すべてのリゾルバは、ドメイン名の末尾にある目に見えない「.」の見つけ方を知っています（例：cloudflare.com.）。世界中に存在する <a href='http://www.root-servers.org/' target='_blank'>何百ものサーバーが</a> 「.」ファイルをホスティングしています。Cloudflare自体は、 <a href='https://blog.cloudflare.com/f-root/' target='_blank'>ISCとのパートナーシップ</a>を通じて、世界中のサーバーで<a href='https://www.internic.net/domain/root.zone' target='_blank'>このファイル</a> をホスティングしています。リゾルバは、<a href='https://www.internic.net/domain/named.root' target='_blank'>それらサーバーのIPアドレスが分かるようにハードコーディング</a>されています。",
   "faqpage.whatDoDNSA3": "リゾルバは、チェーンの次のリンクをTLDまたはドメイン末尾のどちらで見つけるべきかをルートサーバーの1つに尋ねます。TLDには例えば.comや.orgがあります。幸いにも、ルートサーバーはすべてのTLDサーバーの場所を保管しているため、DNSリゾルバーが次に尋ねるべきIPアドレスを返すことができます。",
-  "faqpage.whatDoDNSA4": "次に、リゾルバは、TLDのサーバーに対し、探しているドメインをどこで見つけることができるか尋ねます。たとえば、リゾルバは、.com に対し、cloudflare.com がどこにあるかを尋ねます。TLDは、TLDを使用したあらゆるドメインの場所を保管したファイルをホスティングしています。最終的なIPアドレスが得られると、リゾルバは、問い合わせをしてきたコンピュータにその答えを返します。",
+  "faqpage.whatDoDNSA4": "次に、リゾルバは、TLDのサーバーに対し、探しているドメインをどこで見つけることができるか尋ねます。たとえば、リゾルバは、.com に対し、cloudflare.com がどこにあるかを尋ねます。TLDは、あらゆるドメインの場所を保管したファイルをホスティングしています。最終的なIPアドレスが得られると、リゾルバは、問い合わせをしてきたコンピュータにその答えを返します。",
   "faqpage.whatDoDNSA5": "情報をホスティングするサーバー（権威DNS）、そして情報を探すサーバー（DNSリゾルバー）からなるこのシステムを総合して、ドメインネームシステム（DNS）と呼びます。DNSは、インターネットのGoogle Mapsのような働きをします。場所の名前を住所に変換することで、目的地に辿り着けるようにします。",
   "faqpage.ipv6Q": "1.1.1.1はIPv6に対応していますか？",
   "faqpage.ipv6A": "はい。IPv6に完全対応しています。",
@@ -367,20 +372,20 @@
   "faqpage.devDocsA": "こちらです。",
   "faqpage.mobileApp": "モバイルアプリ",
   "faqpage.mobileAppWorkQ": "モバイルアプリはどのような働きをするのですか？",
-  "faqpage.mobileAppWorkA": "アプリは、ご利用の携帯電話内でローカルDNSリゾルバーを実行して、このリゾルバーのアドレスにDNSリクエストを送信するよう、ほかのすべてのアプリに依頼します。こうしたDNSリクエストは、ローカルDNSリゾルバーに届いた後で暗号化され、1.1.1.1に送信されます。",
+  "faqpage.mobileAppWorkA": "アプリは、ご利用のスマホ内でローカルDNSリゾルバーを実行して、このリゾルバーのアドレスにDNSリクエストを送信するよう、ほかのすべてのアプリに依頼します。こうしたDNSリクエストは、ローカルDNSリゾルバーに届いた後で暗号化され、1.1.1.1に送信されます。",
   "faqpage.vpnQ": "1.1.1.1アプリはVPNですか？",
   "faqpage.vpnA": "いいえ。通常、VPNはネットワークトラフィックのすべてをプロキシ経由にします。1.1.1.1アプリはご利用の携帯電話のDNSトラフィックだけを無効にして保護します。",
   "faqpage.dnsLogsQ": "DNSログとは何ですか？",
-  "faqpage.dnsLogsA": "iOSのDNSログには、ご利用の携帯電話が行うすべてのDNSクエリが含まれています。通常、それらDNS検索クエリは、アプリやモバイルブラウザによって作成されます。",
+  "faqpage.dnsLogsA": "iOSのDNSログには、ご利用のスマホが行うすべてのDNSクエリが含まれています。通常、それらDNS検索クエリは、アプリやモバイルブラウザによって作成されます。",
   "faqpage.logsForQ": "コンソールログはどのような目的のためにあるのでしょうか？",
   "faqpage.logsForA": "コンソールログの目的は、Cloudflareがお客様の接続をデバッグできるようにすることにあります。",
   "faqpage.suggestQ": "改善の提案はできますか？",
-  "faqpage.suggestA": "当社はお客様からの提案のすべてに目を通しています。アプリの使用中に機器を振ると、改善提案を送信できます。アプリメニューに移動して「Help（ヘルプ）」をタップすることで、フィードバックを送信することもできます。",
+  "faqpage.suggestA": "当社はお客様からの提案のすべてに目を通しています。アプリ内でスマホを振ると改善を提案することができます。アプリメニューに移動して「Help（ヘルプ）」をタップすることで、フィードバックを送信することもできます。",
   "faqpage.diffDnsTlsQ": "DNS over TLSとDNS over HTTPSの違いは何でしょうか？",
   "faqpage.diffDnsTlsA1": "DNS over TLSとDNS over HTTPSのどちらも、機器のDNS検索クエリ（プレーンテキスト）を暗号化します。",
   "faqpage.diffDnsTlsA2": "DNS over HTTPSはポート443、DNS over TLSはポート853を使用します。ネットワークによっては、これらのポートの一方がブロックされていることがあります。ポート4443がブロックされている場合は、DNS over TLSを使用します。ポート853がブロックされている場合は、DNS over HTTPSを使用します。場合によって、DNS over TLSの方がDNS over HTTPSより早いことがありますし、逆の場合もあります。",
   "faqpage.bugQ": "バグの報告はできますか？",
-  "faqpage.bugA": "アプリを使用しているときに機器を振ると、バグ報告を送信できます。バグの報告には、アプリによってスクリーンショットとコンソールログが添付されます。コンソールログは、当社がお客様の接続をデバッグして、アプリの利用環境全体を改善するのに役立ちます。",
+  "faqpage.bugA": "アプリ内でスマホを振ると、バグ報告を送信できます。バグの報告には、アプリによってスクリーンショットとコンソールログが添付されます。コンソールログは、当社がお客様の接続をデバッグして、アプリの利用環境全体を改善するのに役立ちます。",
   "faqpage.internetStoppedQ": "1.1.1.1アプリを使っていたら、インターネットが動かなくなくなりました。どうすればよいでしょうか？",
   "faqpage.internetStoppedA": "その場合は、アプリのホームページのトグルボタンを使って、いったんアプリをオフにしてから、オンにし直してみてください。問題がか解決しない場合は、アプリを無効にしてバグ報告をお送りください。",
   "faqpage.appStuckQ": "1.1.1.1アプリが「CONNECTING（接続しています）」または「REASSERTING（再確立しています）」で動かなくなります。どうすればよいでしょうか？",
@@ -503,5 +508,91 @@
       "tag": "li",
       "content": "1.1.1.1の「Always On（常時オン）」"
     }
-  ]
+  ],
+  "subscribe": "購読する",
+  "appstore": "App Store",
+  "googleplay": "Google Play",
+  "windows": "Windows (ベータ)",
+  "macos": "macOS (ベータ)",
+  "windows.comingsoon": "Windows <br> (近日公開予定)",
+  "macos.comingsoon": "macOS <br> (近日公開予定)",
+  "downloadfor.windows": "Windows",
+  "downloadfor.macos": "<span style='font-size: 14px'> ダウンロード </span> <br> macOS",
+  "windows.installationinstructions": "Windowsのインストール手順",
+  "macos.installationinstructions": "macOSのインストール手順",
+  "home.herotitle": "インターネットをより安全にする無料アプリ。",
+  "home.herosubtitle": "さらに多くのデバイスで利用できるようになりました。",
+  "home.overviewtitle": "より安全なインターネットをワンタップでアクセスできます",
+  "home.overviewdesc1": "インターネットが構築されたとき、コンピューターはモバイルではありませんでした。彼らはデータセンターの隣のオフィスに座っていました。インターネットは変化しましたが、30年前に行われた変更により、エクスペリエンスが遅くなり、安全性が低下しています。",
+  "home.overviewdesc2": "1.1.1.1 with WARP は、デバイスとインターネット間の接続を最新の最適化されたプロトコルに置き換えます。",
+  "learnmore": "もっと詳しく知る",
+  "downloadnow": "ダウンロード中",
+  "home.desktop.title": "macOS と Windows で利用できるようになりました",
+  "home.desktop.description": "<p>今日、何百万人もの人々がWARPアプリを使用してスマホのインターネット接続を保護しています。</p><p>同じ保護をmacOSとWindowsに拡張しました。</p>",
+  "home.performancetitle": "大規模なネットワーク上に構築されています。",
+  "home.performancedesc1": "WARP は、1.1.1.1.1 を地球上で<a class='CopyLink' href='https://www.dnsperf.com/#!dns-resolvers' target='_blank' rel='noreferrer'>最速の DNS リゾルバ</a>にしたのと同じネットワーク上に構築されています。",
+  "home.performancedesc2": "WARP への接続は、どこに住んでいても、どこに行っても、高速で信頼性の高いものとなっています。",
+  "home.performancedate": "2020年10月",
+  "home.privacytitle": "早い。無料。プライベート",
+  "home.privacydesc1": "インターネットサービスプロバイダーは、暗号化されている場合でも、使用しているすべてのサイトとアプリを表示できます。一部のプロバイダーは、このデータを販売したり、広告でターゲットにするために使用したりしています。",
+  "home.privacydesc2": "1.1.1.1 with WARP は、デバイスを離れるトラフィックをさらに暗号化することで、だれもあなたを詮索するのを防ぎます。",
+  "home.privacydesc3": "私たちはプライバシーが正しいと信じています。私たちはあなたのデータを決して販売しません。",
+  "sharewithtwitter": "Twitterでシェアする",
+  "home.warptitle": "インターネット高速レーンを使用する",
+  "home.warpdesc": "WARP+ サブスクリプションは、Cloudflareの最適化されたインターネットルートを介してすべてのインターネットトラフィックを送信することでWARPを拡張し、数千のWebサイトを平均30％高速化します。 WARP+ は、何百万ものインターネットルート測定値をCloudflareのプライベートインターネットバックボーンと組み合わせて、より優れたインターネットをデバイスに直接提供します。",
+  "home.warpdesc2": "既存のWARP+ サブスクリプションは、割引価格でプランにデバイスを追加できます。",
+  "home.sharewarp": "WARPをシェアする",
+  "home.footertitle": "Cloudflareがお届けします。",
+  "home.footerdesc1": "<a class='CopyLink' href='https://cloudflare.com' target='_blank'>Cloudflare</a> は、2500万件以上のインターネット・プロパティにセキュリティとパフォーマンスを提供しています。",
+  "home.footerdesc2mobile": "1.1.1.1アプリを入手して、順番待ちリストに登録してください。",
+  "home.footerdesc2desktop": "スマホのアプリストアで「1.1.1.1」を検索して、順番待ちリストに登録してください。",
+  "home.subscribe.title": "早期アクセスにサインアップ",
+  "home.subscribe.description": "macOSおよびWindowsクライアントが利用可能になったときに通知を受け取るように購読します。",
+  "dns": "DNS",
+  "family.name": "ファミリー",
+  "family.for": "ファミリー向け",
+  "family.herotitle": "自宅のインターネットを無料で保護します。",
+  "family.section.performance.description": "<p>1.1.1.1 with Familiesは、地球上で最速のパブリックDNSリゾルバーを使用して、インターネット接続を高速化します。</p><p>独立したDNSモニターDNSPerfは、1.1.1.1を世界最速のDNSサービスにランク付けしています。インターネットで行うほとんどすべてのことはDNSリクエストから始まるため、すべてのデバイスで最速のDNSディレクトリを選択すると、オンラインアクティビティのほぼすべての処理が高速化されます。</p>",
+  "family.section.protection.title": "マルウェアから家庭のインターネット接続を保護する",
+  "family.section.protection.description": "<p>家庭でのインターネットの使用が増加しているため、危険で悪意のあるサイトから家族を保護することがこれまで以上に重要になっています。</p><p>1.1.1.1 for Familiesは、Cloudflareのエンタープライズ製品を強化するのと同じサイト分類およびフィルタリングテクノロジーの上に構築されています。 Cloudflareのインターネットインテリジェンスを使用して、ホームインターネットネットワーク上のコンテンツをフィルタリングします。</p>",
+  "family.section.adultcontent.title": "アダルトコンテンツフィルタリング",
+  "family.section.adultcontent.description": "<p>常時オンのコンテンツコントロールを使用して、ネットワーク上の子供からアダルトコンテンツを遠ざけます。</p>",
+  "family.section.malware.title": "自動マルウェア保護",
+  "family.section.malware.description": "<p>攻撃者は、通常のように見えるサイトや電子メールに有害なコードを隠すことがよくあります。これらの攻撃は、家族の個人情報を悪用する可能性があります。</p><p>1.1.1.1 for Familiesは、ホームWi-Fiにマルウェア保護のレイヤーを追加し、既知の悪意のあるサイトへのアクセスを自動的にブロックします。</p>",
+  "family.section.privacy.title": "安全。プライベート。無料。",
+  "family.section.privacy.description": "<p>インターネットに接続するすべてのデバイスにはDNSリゾルバーが必要ですが、多くの場合、速度が遅く、プライバシーを尊重しません。</p><p>1.1.1.1 for Familiesは、誰でも無料で使用できるプライバシーファーストのDNSリゾルバーです。 Cloudflareは、家族の閲覧データを販売または共有することはありません。</p>",
+  "family.section.privacy.link": "もっと詳しく知る",
+  "family.section.setup.title": "今すぐ始めましょう",
+  "family.section.setup.description": "1.1.1.1 for Familiesには、マルウェアのみをブロックするオプションと、マルウェアとアダルトコンテンツの両方をブロックするオプションの2つのオプションがあります。自宅のインターネットルーターのIPアドレス設定を変更することでインストールできます。",
+  "family.section.setup.malware.title": "マルウェアのブロックのみ",
+  "family.section.setup.malware.description": "<p>ルーターのDNSを次のように変更:<p><ul><li>1.1.1.2</li><li>1.0.0.2</li></ul><p class='install-instructions'>セットアップする準備はできましたか？<a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>セットアップ手順</a>のページに、すべてのデバイスの簡単なガイドがあります。</p>",
+  "family.section.setup.all.title": "マルウェアとアダルトコンテンツが一緒にブロックする",
+  "family.section.setup.all.description": "<p>ルーターのDNSを次のように変更:</p><ul><li>1.1.1.3</li><li>1.0.0.3</li></ul><p class='install-instructions'>セットアップする準備はできましたか？<a href='https://developers.cloudflare.com/1.1.1.1/1.1.1.1-for-families/setup-instructions/' class='CopyLink' target='_blank'>セットアップ手順</a>のページに、すべてのデバイスの簡単なガイドがあります。</p>",
+  "family.cloudflare.tagline": "すべてのインターネットユーザーに速度、信頼性、パフォーマンスをもたらします",
+  "family.share.tweet.body": "自宅のインターネット接続をマルウェアから保護するために、1.1.1.1 forFamiliesを使用しています。 2分以内にセットアップできます。 https://one.one.one.one/family",
+  "family.share.facebook.body": "自宅のインターネット接続をマルウェアから保護するために、1.1.1.1 forFamiliesを使用しています。 2分以内にセットアップできます。 https://one.one.one.one/family",
+  "family.share.email.subject": "1.1.1.1 for Families",
+  "family.share.email.body": "自宅のインターネット接続をマルウェアから保護するために、1.1.1.1 forFamiliesを使用しています。 2分以内にセットアップできます。 https://one.one.one.one/family",
+  "home.privacyimportant": "お客様の<a href='https://www.cloudflare.com/privacypolicy/' class='CopyLink'>プライバシー</a>は、当社にとって重要なものです。",
+  "beta.name": "ベータ",
+  "beta.title": "macOSおよびWindows用の1.1.1.1ベータ版をダウンロードする",
+  "beta.section.title": "安全で高速なインターネットデスクトップ用のソフトウェア作成にご協力いただきありがとうございます",
+  "beta.section.description": "適切なリンクを選択して、システムのデスクトップアプリをダウンロードします。これはベータリリースであるため、以下のリンクを使用してフィードバックを提供し、既知の問題について学ぶことを忘れないでください。",
+  "beta.section.feedback.text": "フィードバックを提供",
+  "beta.section.feedback.link": "/",
+  "beta.section.learn.more": "既知の問題の詳細",
+  "beta.tag": "ベータデスクトップリリース",
+  "beta.mac": "macOS",
+  "beta.button.text": "ダウンロード",
+  "beta.windows": "Windows",
+  "beta.category1": "macOS Catalina",
+  "beta.category2": "Windows 10",
+  "beta.category3": " ",
+  "beta.min.req": "最小システム <br> 要件",
+  "beta.version.category1": "10.15以上 <br> 64ビットのみ",
+  "beta.version.category2": "1909以上 <br> 64ビットのみ",
+  "beta.mac.instructions": "macOSのインストール手順",
+  "beta.windows.instructions": "Windowsのインストール手順",
+  "teams.devices.title": "新しい機能: チームでWARPを使用する",
+  "teams.devices.description": "WARPをGatewayと統合することにより、WARPのパワーをビジネスにもたらします。組織にユーザーデバイスを登録し、リモートの従業員をオンラインの脅威から保護します。"
 }
