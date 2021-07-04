@@ -1,10 +1,11 @@
 .CopyLink {
   text-decoration: none;
   color: inherit;
-  --underline-size: -.16em;
-  --box-shadow: 0 0 0 var(--focus-shadow-size) var(--focus-shadow-color), inset 0 var(--underline-size) rgba(var(--color-rgb), .5); /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
+  --underline-size: -0.16em;
+  --box-shadow: 0 0 0 var(--focus-shadow-size) var(--focus-shadow-color),
+    inset 0 var(--underline-size) rgba(var(--color-rgb), 0.5); /* Workaround for Safari bug - https://bugs.webkit.org/show_bug.cgi?id=185940 */
   box-shadow: var(--box-shadow);
-  transition: color .3s ease, box-shadow .3s ease;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .CopyLink:hover {
@@ -17,7 +18,7 @@
 }
 
 .CopyLink-with-right-arrow {
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 .CopyLink-with-right-arrow::after {
@@ -25,14 +26,15 @@
 }
 
 .CopyLink.focus-visible {
-  transition: box-shadow .3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .CopyLink:focus {
   outline: none;
 }
 
-.CopyLink:not(.focus-visible):focus, .CopyLink:not(:focus) {
+.CopyLink:not(.focus-visible):focus,
+.CopyLink:not(:focus) {
   --focus-shadow-size: 0;
 }
 
@@ -42,7 +44,7 @@
 }
 
 .CopyLink-with-margin--small {
-  margin-right: 5.25em;
+  margin-right: 5em;
 }
 
 @media (max-width: 768px) {
@@ -52,4 +54,3 @@
     margin-right: 0;
   }
 }
-
